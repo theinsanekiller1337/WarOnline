@@ -1,0 +1,1183 @@
+fileFormatVersion: 2
+guid: af49dd5777c779a44b9f1aa96de2438b
+timeCreated: 1493294015
+licenseType: Free
+SketchUpImporter:
+  generateBackFace: 1
+  mergeCoplanarFaces: 1
+  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f000000300000003100000032000000330000003400000035000000360000003700000038000000390000003a0000003b0000003c0000003d000000
+  assetHash:
+    serializedVersion: 2
+    Hash: 844fc7f653a179de1d83f343efec28dc
+  longitude: -105.242139
+  latitude: 40.018309
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: 21.720968, y: 24.381874, z: -18.0933}
+      lookAt: {x: -36.63563, y: -18.765766, z: 53.233433}
+      up: {x: -0.26850203, y: 0.9056521, z: 0.32817835}
+      fov: 35
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Arrow-Dashed Straight
+    100002: Base_Platform
+    100004: Base_Platform 1
+    100006: Base_Platform 2
+    100008: block
+    100010: block 1
+    100012: block 2
+    100014: block 3
+    100016: block 4
+    100018: block 5
+    100020: block 6
+    100022: block#1
+    100024: block#1 1
+    100026: board
+    100028: board 1
+    100030: board 2
+    100032: board 3
+    100034: board 4
+    100036: board 5
+    100038: board 6
+    100040: caseta 1 puerta
+    100042: caseta 1 puerta 1
+    100044: caseta 1 puerta 2
+    100046: caseta 1 puerta 3
+    100048: Component#3
+    100050: Component#3 1
+    100052: Component#3 10
+    100054: Component#3 11
+    100056: Component#3 2
+    100058: Component#3 3
+    100060: Component#3 4
+    100062: Component#3 5
+    100064: Component#3 6
+    100066: Component#3 7
+    100068: Component#3 8
+    100070: Component#3 9
+    100072: Component#5
+    100074: Component#5 1
+    100076: Component#5 2
+    100078: Component#5 3
+    100080: Component#5 4
+    100082: Component#5 5
+    100084: curved leg
+    100086: curved leg 1
+    100088: curved leg#1
+    100090: curved leg#1 1
+    100092: Door3-0x6-8RHRev
+    100094: Door3-0x6-8RHRev 1
+    100096: DoorKnob
+    100098: DoorKnob 1
+    100100: DoorKnob 2
+    100102: DoorKnob 3
+    100104: F_Bench_Wood
+    100106: FlushDoor36
+    100108: FlushDoor36 1
+    100110: Group 10
+    100112: Group 11
+    100114: Group 124
+    100116: Group 126
+    100118: Group 128
+    100120: Group 13
+    100122: Group 130
+    100124: Group 132
+    100126: Group 133
+    100128: Group 135
+    100130: Group 139
+    100132: Group 141
+    100134: Group 143
+    100136: Group 145
+    100138: Group 147
+    100140: Group 17
+    100142: Group 187
+    100144: Group 189
+    100146: Group 19
+    100148: Group 196
+    100150: Group 198
+    100152: Group 2
+    100154: Group 21
+    100156: Group 226
+    100158: Group 227
+    100160: Group 23
+    100162: Group 230
+    100164: Group 231
+    100166: Group 234
+    100168: Group 235
+    100170: Group 238
+    100172: Group 239
+    100174: Group 242
+    100176: Group 243
+    100178: Group 246
+    100180: Group 247
+    100182: Group 25
+    100184: Group 254
+    100186: Group 255
+    100188: Group 285
+    100190: Group 287
+    100192: Group 294
+    100194: Group 296
+    100196: Group 303
+    100198: Group 305
+    100200: Group 312
+    100202: Group 314
+    100204: Group 4
+    100206: Group 6
+    100208: Group 63
+    100210: Group 65
+    100212: Group 67
+    100214: Group 69
+    100216: Group 71
+    100218: Group 72
+    100220: Group 74
+    100222: Group 78
+    100224: Group 8
+    100226: Group 80
+    100228: Group 82
+    100230: Group 84
+    100232: Group 86
+    100234: Group#36
+    100236: Group#36 1
+    100238: Group#36 2
+    100240: Group#49
+    100242: Group#49 1
+    100244: Group#49 2
+    100246: //RootNode
+    100248: PEXIN 09
+    100250: PEXIN 09 1
+    100252: PEXIN 09 2
+    100254: Platform_Leg_Large
+    100256: Platform_Leg_Large 1
+    100258: Platform_Leg_Large 10
+    100260: Platform_Leg_Large 11
+    100262: Platform_Leg_Large 2
+    100264: Platform_Leg_Large 3
+    100266: Platform_Leg_Large 4
+    100268: Platform_Leg_Large 5
+    100270: Platform_Leg_Large 6
+    100272: Platform_Leg_Large 7
+    100274: Platform_Leg_Large 8
+    100276: Platform_Leg_Large 9
+    100278: Platform_Legs_Small
+    100280: Platform_Legs_Small 1
+    100282: Platform_Legs_Small 2
+    100284: Platform_Legs_Small 3
+    100286: Platform_Legs_Small 4
+    100288: Platform_Legs_Small 5
+    100290: Railings2
+    100292: Railings2 1
+    100294: Railings2 2
+    100296: Railings2#1
+    100298: Railings2#1 1
+    100300: Railings2#1 2
+    100302: Railings_1
+    100304: Railings_1 1
+    100306: Railings_1 2
+    100308: Ramp1
+    100310: Ramp1 1
+    100312: Ramp1 2
+    100314: Ramp1 3
+    100316: Ramp1 4
+    100318: Ramp1 5
+    100320: RUMBA
+    100322: RUMBA 1
+    100324: Sawhorse Barrier 4'x3'
+    100326: Stairs1
+    100328: Stairs1 1
+    100330: Stairs1 2
+    100332: Stairs1#2
+    100334: Stairs1#2 1
+    100336: Stairs1#2 2
+    100338: windowSlider48x48
+    100340: windowSlider48x48 1
+    100342: windowSlider48x48 10
+    100344: windowSlider48x48 11
+    100346: windowSlider48x48 2
+    100348: windowSlider48x48 3
+    100350: windowSlider48x48 4
+    100352: windowSlider48x48 5
+    100354: windowSlider48x48 6
+    100356: windowSlider48x48 7
+    100358: windowSlider48x48 8
+    100360: windowSlider48x48 9
+    100362: Group 137
+    100364: Group 165
+    100366: Group 166
+    100368: Group 169
+    100370: Group 170
+    100372: Group 173
+    100374: Group 174
+    100376: Group 177
+    100378: Group 178
+    100380: Group 181
+    100382: Group 182
+    100384: Group 185
+    100386: Group 186
+    100388: Group 193
+    100390: Group 194
+    100392: Group 224
+    100394: Group 233
+    100396: Group 244
+    100398: Group 251
+    100400: Group 253
+    100402: Group 267
+    100404: Group 269
+    100406: Group 276
+    100408: Group 278
+    100410: House 1
+    100412: House 2
+    100414: House 3
+    100416: Rig 1
+    100418: Rig 2
+    100420: Rig 3
+    100422: Group 12
+    100424: Group 134
+    100426: Group 149
+    100428: Group 15
+    100430: Group 27
+    100432: Group 73
+    100434: Group 76
+    100436: Group 88
+    100438: Group 16
+    100440: Group 18
+    100442: Group 20
+    100444: Group 22
+    100446: Group 24
+    100448: Group 3
+    100450: Group 5
+    100452: Group 7
+    100454: Group 9
+    400000: Arrow-Dashed Straight
+    400002: Base_Platform
+    400004: Base_Platform 1
+    400006: Base_Platform 2
+    400008: block
+    400010: block 1
+    400012: block 2
+    400014: block 3
+    400016: block 4
+    400018: block 5
+    400020: block 6
+    400022: block#1
+    400024: block#1 1
+    400026: board
+    400028: board 1
+    400030: board 2
+    400032: board 3
+    400034: board 4
+    400036: board 5
+    400038: board 6
+    400040: caseta 1 puerta
+    400042: caseta 1 puerta 1
+    400044: caseta 1 puerta 2
+    400046: caseta 1 puerta 3
+    400048: Component#3
+    400050: Component#3 1
+    400052: Component#3 10
+    400054: Component#3 11
+    400056: Component#3 2
+    400058: Component#3 3
+    400060: Component#3 4
+    400062: Component#3 5
+    400064: Component#3 6
+    400066: Component#3 7
+    400068: Component#3 8
+    400070: Component#3 9
+    400072: Component#5
+    400074: Component#5 1
+    400076: Component#5 2
+    400078: Component#5 3
+    400080: Component#5 4
+    400082: Component#5 5
+    400084: curved leg
+    400086: curved leg 1
+    400088: curved leg#1
+    400090: curved leg#1 1
+    400092: Door3-0x6-8RHRev
+    400094: Door3-0x6-8RHRev 1
+    400096: DoorKnob
+    400098: DoorKnob 1
+    400100: DoorKnob 2
+    400102: DoorKnob 3
+    400104: F_Bench_Wood
+    400106: FlushDoor36
+    400108: FlushDoor36 1
+    400110: Group 10
+    400112: Group 11
+    400114: Group 124
+    400116: Group 126
+    400118: Group 128
+    400120: Group 13
+    400122: Group 130
+    400124: Group 132
+    400126: Group 133
+    400128: Group 135
+    400130: Group 139
+    400132: Group 141
+    400134: Group 143
+    400136: Group 145
+    400138: Group 147
+    400140: Group 17
+    400142: Group 187
+    400144: Group 189
+    400146: Group 19
+    400148: Group 196
+    400150: Group 198
+    400152: Group 2
+    400154: Group 21
+    400156: Group 226
+    400158: Group 227
+    400160: Group 23
+    400162: Group 230
+    400164: Group 231
+    400166: Group 234
+    400168: Group 235
+    400170: Group 238
+    400172: Group 239
+    400174: Group 242
+    400176: Group 243
+    400178: Group 246
+    400180: Group 247
+    400182: Group 25
+    400184: Group 254
+    400186: Group 255
+    400188: Group 285
+    400190: Group 287
+    400192: Group 294
+    400194: Group 296
+    400196: Group 303
+    400198: Group 305
+    400200: Group 312
+    400202: Group 314
+    400204: Group 4
+    400206: Group 6
+    400208: Group 63
+    400210: Group 65
+    400212: Group 67
+    400214: Group 69
+    400216: Group 71
+    400218: Group 72
+    400220: Group 74
+    400222: Group 78
+    400224: Group 8
+    400226: Group 80
+    400228: Group 82
+    400230: Group 84
+    400232: Group 86
+    400234: Group#36
+    400236: Group#36 1
+    400238: Group#36 2
+    400240: Group#49
+    400242: Group#49 1
+    400244: Group#49 2
+    400246: //RootNode
+    400248: PEXIN 09
+    400250: PEXIN 09 1
+    400252: PEXIN 09 2
+    400254: Platform_Leg_Large
+    400256: Platform_Leg_Large 1
+    400258: Platform_Leg_Large 10
+    400260: Platform_Leg_Large 11
+    400262: Platform_Leg_Large 2
+    400264: Platform_Leg_Large 3
+    400266: Platform_Leg_Large 4
+    400268: Platform_Leg_Large 5
+    400270: Platform_Leg_Large 6
+    400272: Platform_Leg_Large 7
+    400274: Platform_Leg_Large 8
+    400276: Platform_Leg_Large 9
+    400278: Platform_Legs_Small
+    400280: Platform_Legs_Small 1
+    400282: Platform_Legs_Small 2
+    400284: Platform_Legs_Small 3
+    400286: Platform_Legs_Small 4
+    400288: Platform_Legs_Small 5
+    400290: Railings2
+    400292: Railings2 1
+    400294: Railings2 2
+    400296: Railings2#1
+    400298: Railings2#1 1
+    400300: Railings2#1 2
+    400302: Railings_1
+    400304: Railings_1 1
+    400306: Railings_1 2
+    400308: Ramp1
+    400310: Ramp1 1
+    400312: Ramp1 2
+    400314: Ramp1 3
+    400316: Ramp1 4
+    400318: Ramp1 5
+    400320: RUMBA
+    400322: RUMBA 1
+    400324: Sawhorse Barrier 4'x3'
+    400326: Stairs1
+    400328: Stairs1 1
+    400330: Stairs1 2
+    400332: Stairs1#2
+    400334: Stairs1#2 1
+    400336: Stairs1#2 2
+    400338: windowSlider48x48
+    400340: windowSlider48x48 1
+    400342: windowSlider48x48 10
+    400344: windowSlider48x48 11
+    400346: windowSlider48x48 2
+    400348: windowSlider48x48 3
+    400350: windowSlider48x48 4
+    400352: windowSlider48x48 5
+    400354: windowSlider48x48 6
+    400356: windowSlider48x48 7
+    400358: windowSlider48x48 8
+    400360: windowSlider48x48 9
+    400362: Group 137
+    400364: Group 165
+    400366: Group 166
+    400368: Group 169
+    400370: Group 170
+    400372: Group 173
+    400374: Group 174
+    400376: Group 177
+    400378: Group 178
+    400380: Group 181
+    400382: Group 182
+    400384: Group 185
+    400386: Group 186
+    400388: Group 193
+    400390: Group 194
+    400392: Group 224
+    400394: Group 233
+    400396: Group 244
+    400398: Group 251
+    400400: Group 253
+    400402: Group 267
+    400404: Group 269
+    400406: Group 276
+    400408: Group 278
+    400410: House 1
+    400412: House 2
+    400414: House 3
+    400416: Rig 1
+    400418: Rig 2
+    400420: Rig 3
+    400422: Group 12
+    400424: Group 134
+    400426: Group 149
+    400428: Group 15
+    400430: Group 27
+    400432: Group 73
+    400434: Group 76
+    400436: Group 88
+    400438: Group 16
+    400440: Group 18
+    400442: Group 20
+    400444: Group 22
+    400446: Group 24
+    400448: Group 3
+    400450: Group 5
+    400452: Group 7
+    400454: Group 9
+    2300000: Arrow-Dashed Straight
+    2300002: Base_Platform
+    2300004: Base_Platform 1
+    2300006: Base_Platform 2
+    2300008: block
+    2300010: block 1
+    2300012: block 2
+    2300014: block 3
+    2300016: block 4
+    2300018: block 5
+    2300020: block 6
+    2300022: block#1
+    2300024: block#1 1
+    2300026: board
+    2300028: board 1
+    2300030: board 2
+    2300032: board 3
+    2300034: board 4
+    2300036: board 5
+    2300038: board 6
+    2300040: caseta 1 puerta
+    2300042: caseta 1 puerta 1
+    2300044: caseta 1 puerta 2
+    2300046: caseta 1 puerta 3
+    2300048: Component#3
+    2300050: Component#3 1
+    2300052: Component#3 10
+    2300054: Component#3 11
+    2300056: Component#3 2
+    2300058: Component#3 3
+    2300060: Component#3 4
+    2300062: Component#3 5
+    2300064: Component#3 6
+    2300066: Component#3 7
+    2300068: Component#3 8
+    2300070: Component#3 9
+    2300072: curved leg
+    2300074: curved leg 1
+    2300076: curved leg#1
+    2300078: curved leg#1 1
+    2300080: Door3-0x6-8RHRev
+    2300082: Door3-0x6-8RHRev 1
+    2300084: DoorKnob
+    2300086: DoorKnob 1
+    2300088: DoorKnob 2
+    2300090: DoorKnob 3
+    2300092: F_Bench_Wood
+    2300094: FlushDoor36
+    2300096: FlushDoor36 1
+    2300098: Group 11
+    2300100: Group 124
+    2300102: Group 126
+    2300104: Group 128
+    2300106: Group 13
+    2300108: Group 130
+    2300110: Group 133
+    2300112: Group 135
+    2300114: Group 139
+    2300116: Group 141
+    2300118: Group 143
+    2300120: Group 145
+    2300122: Group 147
+    2300124: Group 17
+    2300126: Group 187
+    2300128: Group 189
+    2300130: Group 19
+    2300132: Group 196
+    2300134: Group 198
+    2300136: Group 2
+    2300138: Group 21
+    2300140: Group 23
+    2300142: Group 25
+    2300144: Group 285
+    2300146: Group 287
+    2300148: Group 294
+    2300150: Group 296
+    2300152: Group 303
+    2300154: Group 305
+    2300156: Group 312
+    2300158: Group 314
+    2300160: Group 4
+    2300162: Group 6
+    2300164: Group 63
+    2300166: Group 65
+    2300168: Group 67
+    2300170: Group 69
+    2300172: Group 72
+    2300174: Group 74
+    2300176: Group 78
+    2300178: Group 8
+    2300180: Group 80
+    2300182: Group 82
+    2300184: Group 84
+    2300186: Group 86
+    2300188: Group#36
+    2300190: Group#36 1
+    2300192: Group#36 2
+    2300194: Group#49
+    2300196: Group#49 1
+    2300198: Group#49 2
+    2300200: //RootNode
+    2300202: PEXIN 09
+    2300204: PEXIN 09 1
+    2300206: PEXIN 09 2
+    2300208: Platform_Leg_Large
+    2300210: Platform_Leg_Large 1
+    2300212: Platform_Leg_Large 10
+    2300214: Platform_Leg_Large 11
+    2300216: Platform_Leg_Large 2
+    2300218: Platform_Leg_Large 3
+    2300220: Platform_Leg_Large 4
+    2300222: Platform_Leg_Large 5
+    2300224: Platform_Leg_Large 6
+    2300226: Platform_Leg_Large 7
+    2300228: Platform_Leg_Large 8
+    2300230: Platform_Leg_Large 9
+    2300232: Platform_Legs_Small
+    2300234: Platform_Legs_Small 1
+    2300236: Platform_Legs_Small 2
+    2300238: Platform_Legs_Small 3
+    2300240: Platform_Legs_Small 4
+    2300242: Platform_Legs_Small 5
+    2300244: Railings2
+    2300246: Railings2 1
+    2300248: Railings2 2
+    2300250: Railings2#1
+    2300252: Railings2#1 1
+    2300254: Railings2#1 2
+    2300256: Railings_1
+    2300258: Railings_1 1
+    2300260: Railings_1 2
+    2300262: Ramp1
+    2300264: Ramp1 1
+    2300266: Ramp1 2
+    2300268: Ramp1 3
+    2300270: Ramp1 4
+    2300272: Ramp1 5
+    2300274: RUMBA
+    2300276: RUMBA 1
+    2300278: Stairs1
+    2300280: Stairs1 1
+    2300282: Stairs1 2
+    2300284: Stairs1#2
+    2300286: Stairs1#2 1
+    2300288: Stairs1#2 2
+    2300290: windowSlider48x48
+    2300292: windowSlider48x48 1
+    2300294: windowSlider48x48 10
+    2300296: windowSlider48x48 11
+    2300298: windowSlider48x48 2
+    2300300: windowSlider48x48 3
+    2300302: windowSlider48x48 4
+    2300304: windowSlider48x48 5
+    2300306: windowSlider48x48 6
+    2300308: windowSlider48x48 7
+    2300310: windowSlider48x48 8
+    2300312: windowSlider48x48 9
+    2300314: Group 137
+    2300316: Group 224
+    2300318: Group 226
+    2300320: Group 233
+    2300322: Group 235
+    2300324: Group 242
+    2300326: Group 244
+    2300328: Group 251
+    2300330: Group 253
+    2300332: Group 267
+    2300334: Group 269
+    2300336: Group 276
+    2300338: Group 278
+    2300340: House 1
+    2300342: House 2
+    2300344: House 3
+    2300346: Rig 1
+    2300348: Rig 2
+    2300350: Rig 3
+    2300352: Group 10
+    2300354: Group 132
+    2300356: Group 149
+    2300358: Group 15
+    2300360: Group 27
+    2300362: Group 71
+    2300364: Group 76
+    2300366: Group 88
+    2300368: Group 12
+    2300370: Group 16
+    2300372: Group 18
+    2300374: Group 20
+    2300376: Group 22
+    2300378: Group 24
+    2300380: Group 3
+    2300382: Group 5
+    2300384: Group 7
+    3300000: Arrow-Dashed Straight
+    3300002: Base_Platform
+    3300004: Base_Platform 1
+    3300006: Base_Platform 2
+    3300008: block
+    3300010: block 1
+    3300012: block 2
+    3300014: block 3
+    3300016: block 4
+    3300018: block 5
+    3300020: block 6
+    3300022: block#1
+    3300024: block#1 1
+    3300026: board
+    3300028: board 1
+    3300030: board 2
+    3300032: board 3
+    3300034: board 4
+    3300036: board 5
+    3300038: board 6
+    3300040: caseta 1 puerta
+    3300042: caseta 1 puerta 1
+    3300044: caseta 1 puerta 2
+    3300046: caseta 1 puerta 3
+    3300048: Component#3
+    3300050: Component#3 1
+    3300052: Component#3 10
+    3300054: Component#3 11
+    3300056: Component#3 2
+    3300058: Component#3 3
+    3300060: Component#3 4
+    3300062: Component#3 5
+    3300064: Component#3 6
+    3300066: Component#3 7
+    3300068: Component#3 8
+    3300070: Component#3 9
+    3300072: curved leg
+    3300074: curved leg 1
+    3300076: curved leg#1
+    3300078: curved leg#1 1
+    3300080: Door3-0x6-8RHRev
+    3300082: Door3-0x6-8RHRev 1
+    3300084: DoorKnob
+    3300086: DoorKnob 1
+    3300088: DoorKnob 2
+    3300090: DoorKnob 3
+    3300092: F_Bench_Wood
+    3300094: FlushDoor36
+    3300096: FlushDoor36 1
+    3300098: Group 11
+    3300100: Group 124
+    3300102: Group 126
+    3300104: Group 128
+    3300106: Group 13
+    3300108: Group 130
+    3300110: Group 133
+    3300112: Group 135
+    3300114: Group 139
+    3300116: Group 141
+    3300118: Group 143
+    3300120: Group 145
+    3300122: Group 147
+    3300124: Group 17
+    3300126: Group 187
+    3300128: Group 189
+    3300130: Group 19
+    3300132: Group 196
+    3300134: Group 198
+    3300136: Group 2
+    3300138: Group 21
+    3300140: Group 23
+    3300142: Group 25
+    3300144: Group 285
+    3300146: Group 287
+    3300148: Group 294
+    3300150: Group 296
+    3300152: Group 303
+    3300154: Group 305
+    3300156: Group 312
+    3300158: Group 314
+    3300160: Group 4
+    3300162: Group 6
+    3300164: Group 63
+    3300166: Group 65
+    3300168: Group 67
+    3300170: Group 69
+    3300172: Group 72
+    3300174: Group 74
+    3300176: Group 78
+    3300178: Group 8
+    3300180: Group 80
+    3300182: Group 82
+    3300184: Group 84
+    3300186: Group 86
+    3300188: Group#36
+    3300190: Group#36 1
+    3300192: Group#36 2
+    3300194: Group#49
+    3300196: Group#49 1
+    3300198: Group#49 2
+    3300200: //RootNode
+    3300202: PEXIN 09
+    3300204: PEXIN 09 1
+    3300206: PEXIN 09 2
+    3300208: Platform_Leg_Large
+    3300210: Platform_Leg_Large 1
+    3300212: Platform_Leg_Large 10
+    3300214: Platform_Leg_Large 11
+    3300216: Platform_Leg_Large 2
+    3300218: Platform_Leg_Large 3
+    3300220: Platform_Leg_Large 4
+    3300222: Platform_Leg_Large 5
+    3300224: Platform_Leg_Large 6
+    3300226: Platform_Leg_Large 7
+    3300228: Platform_Leg_Large 8
+    3300230: Platform_Leg_Large 9
+    3300232: Platform_Legs_Small
+    3300234: Platform_Legs_Small 1
+    3300236: Platform_Legs_Small 2
+    3300238: Platform_Legs_Small 3
+    3300240: Platform_Legs_Small 4
+    3300242: Platform_Legs_Small 5
+    3300244: Railings2
+    3300246: Railings2 1
+    3300248: Railings2 2
+    3300250: Railings2#1
+    3300252: Railings2#1 1
+    3300254: Railings2#1 2
+    3300256: Railings_1
+    3300258: Railings_1 1
+    3300260: Railings_1 2
+    3300262: Ramp1
+    3300264: Ramp1 1
+    3300266: Ramp1 2
+    3300268: Ramp1 3
+    3300270: Ramp1 4
+    3300272: Ramp1 5
+    3300274: RUMBA
+    3300276: RUMBA 1
+    3300278: Stairs1
+    3300280: Stairs1 1
+    3300282: Stairs1 2
+    3300284: Stairs1#2
+    3300286: Stairs1#2 1
+    3300288: Stairs1#2 2
+    3300290: windowSlider48x48
+    3300292: windowSlider48x48 1
+    3300294: windowSlider48x48 10
+    3300296: windowSlider48x48 11
+    3300298: windowSlider48x48 2
+    3300300: windowSlider48x48 3
+    3300302: windowSlider48x48 4
+    3300304: windowSlider48x48 5
+    3300306: windowSlider48x48 6
+    3300308: windowSlider48x48 7
+    3300310: windowSlider48x48 8
+    3300312: windowSlider48x48 9
+    3300314: Group 137
+    3300316: Group 224
+    3300318: Group 226
+    3300320: Group 233
+    3300322: Group 235
+    3300324: Group 242
+    3300326: Group 244
+    3300328: Group 251
+    3300330: Group 253
+    3300332: Group 267
+    3300334: Group 269
+    3300336: Group 276
+    3300338: Group 278
+    3300340: House 1
+    3300342: House 2
+    3300344: House 3
+    3300346: Rig 1
+    3300348: Rig 2
+    3300350: Rig 3
+    3300352: Group 10
+    3300354: Group 132
+    3300356: Group 149
+    3300358: Group 15
+    3300360: Group 27
+    3300362: Group 71
+    3300364: Group 76
+    3300366: Group 88
+    3300368: Group 12
+    3300370: Group 16
+    3300372: Group 18
+    3300374: Group 20
+    3300376: Group 22
+    3300378: Group 24
+    3300380: Group 3
+    3300382: Group 5
+    3300384: Group 7
+    4300000: Mesh Oil Rig
+    4300002: Mesh Group 2
+    4300004: Mesh Group 4
+    4300006: Mesh Group 6
+    4300008: Mesh Group 11
+    4300010: Mesh Group 13
+    4300012: Mesh Group#36
+    4300014: Mesh Group 17
+    4300016: Mesh Group 19
+    4300018: Mesh Platform_Legs_Small
+    4300020: Mesh Platform_Leg_Large
+    4300022: Mesh Stairs1#2
+    4300024: Mesh Ramp1
+    4300026: Mesh Group#49
+    4300028: Mesh Base_Platform
+    4300030: Mesh Railings_1
+    4300032: Mesh Railings2
+    4300034: Mesh Railings2#1
+    4300036: Mesh Stairs1
+    4300038: Mesh PEXIN 09
+    4300040: Mesh windowSlider48x48
+    4300042: Mesh Group 63
+    4300044: Mesh Group 124
+    4300046: Mesh Group 187
+    4300048: Mesh Group 189
+    4300050: Mesh Component#3
+    4300052: Mesh caseta 1 puerta
+    4300054: Mesh Arrow-Dashed Straight
+    4300056: Mesh block
+    4300058: Mesh F_Bench_Wood
+    4300060: Mesh board
+    4300062: Mesh curved leg
+    4300064: Mesh curved leg#1
+    4300066: Mesh block#1
+    4300068: Mesh Door3-0x6-8RHRev
+    4300070: Mesh FlushDoor36
+    4300072: Mesh DoorKnob
+    4300074: Mesh Group 287
+    4300076: Mesh Component#3
+    4300078: Mesh RUMBA
+    4300080: Mesh Group 126
+    4300082: Mesh Group 128
+    4300084: Mesh Group 226
+    4300086: Mesh Group 269
+    4300088: Mesh Rig 1
+    4300090: Mesh Rig 3
+    4300092: Mesh House 1
+    4300094: Mesh Rig 2
+    4300096: Mesh Group 8
+    4300098: Mesh Group 15
+    4300100: Mesh Group 21
+    4300102: Mesh Group 3
+    4300104: Mesh Group 5
+    4300106: Mesh Group 10
+    4300108: Mesh Group 12
+    4300110: Mesh Group 16
+    4300112: Mesh Group 18
+    6400000: Arrow-Dashed Straight
+    6400002: Base_Platform
+    6400004: Base_Platform 1
+    6400006: block
+    6400008: block 1
+    6400010: block 2
+    6400012: block 3
+    6400014: block 4
+    6400016: block 5
+    6400018: block 6
+    6400020: block#1
+    6400022: block#1 1
+    6400024: board
+    6400026: board 1
+    6400028: board 2
+    6400030: board 3
+    6400032: board 4
+    6400034: board 5
+    6400036: board 6
+    6400038: caseta 1 puerta
+    6400040: caseta 1 puerta 1
+    6400042: caseta 1 puerta 2
+    6400044: caseta 1 puerta 3
+    6400046: Component#3
+    6400048: Component#3 1
+    6400050: Component#3 10
+    6400052: Component#3 11
+    6400054: Component#3 2
+    6400056: Component#3 3
+    6400058: Component#3 4
+    6400060: Component#3 5
+    6400062: Component#3 6
+    6400064: Component#3 7
+    6400066: Component#3 8
+    6400068: Component#3 9
+    6400070: curved leg
+    6400072: curved leg 1
+    6400074: curved leg#1
+    6400076: curved leg#1 1
+    6400078: Door3-0x6-8RHRev
+    6400080: Door3-0x6-8RHRev 1
+    6400082: DoorKnob
+    6400084: DoorKnob 1
+    6400086: DoorKnob 2
+    6400088: DoorKnob 3
+    6400090: F_Bench_Wood
+    6400092: FlushDoor36
+    6400094: FlushDoor36 1
+    6400096: Group 11
+    6400098: Group 126
+    6400100: Group 128
+    6400102: Group 13
+    6400104: Group 135
+    6400106: Group 137
+    6400108: Group 17
+    6400110: Group 19
+    6400112: Group 2
+    6400114: Group 21
+    6400116: Group 224
+    6400118: Group 226
+    6400120: Group 23
+    6400122: Group 233
+    6400124: Group 235
+    6400126: Group 242
+    6400128: Group 244
+    6400130: Group 25
+    6400132: Group 251
+    6400134: Group 253
+    6400136: Group 4
+    6400138: Group 6
+    6400140: Group 63
+    6400142: Group 65
+    6400144: Group 67
+    6400146: Group 69
+    6400148: Group 72
+    6400150: Group 74
+    6400152: Group 78
+    6400154: Group 8
+    6400156: Group 80
+    6400158: Group 82
+    6400160: Group 84
+    6400162: Group 86
+    6400164: Group#36
+    6400166: Group#36 1
+    6400168: Group#49
+    6400170: Group#49 1
+    6400172: //RootNode
+    6400174: PEXIN 09
+    6400176: PEXIN 09 1
+    6400178: Platform_Leg_Large
+    6400180: Platform_Leg_Large 1
+    6400182: Platform_Leg_Large 2
+    6400184: Platform_Leg_Large 3
+    6400186: Platform_Leg_Large 4
+    6400188: Platform_Leg_Large 5
+    6400190: Platform_Leg_Large 6
+    6400192: Platform_Leg_Large 7
+    6400194: Platform_Legs_Small
+    6400196: Platform_Legs_Small 1
+    6400198: Platform_Legs_Small 2
+    6400200: Platform_Legs_Small 3
+    6400202: Railings2
+    6400204: Railings2 1
+    6400206: Railings2#1
+    6400208: Railings2#1 1
+    6400210: Railings_1
+    6400212: Railings_1 1
+    6400214: Ramp1
+    6400216: Ramp1 1
+    6400218: Ramp1 2
+    6400220: Ramp1 3
+    6400222: RUMBA
+    6400224: RUMBA 1
+    6400226: Stairs1
+    6400228: Stairs1 1
+    6400230: Stairs1#2
+    6400232: Stairs1#2 1
+    6400234: windowSlider48x48
+    6400236: windowSlider48x48 1
+    6400238: windowSlider48x48 2
+    6400240: windowSlider48x48 3
+    6400242: windowSlider48x48 4
+    6400244: windowSlider48x48 5
+    6400246: windowSlider48x48 6
+    6400248: windowSlider48x48 7
+    6400250: windowSlider48x48 8
+    6400252: windowSlider48x48 9
+    6400254: Base_Platform 2
+    6400256: Group 124
+    6400258: Group 130
+    6400260: Group 133
+    6400262: Group 139
+    6400264: Group 141
+    6400266: Group 143
+    6400268: Group 145
+    6400270: Group 147
+    6400272: Group 187
+    6400274: Group 189
+    6400276: Group 196
+    6400278: Group 198
+    6400280: Group 267
+    6400282: Group 269
+    6400284: Group 276
+    6400286: Group 278
+    6400288: Group 285
+    6400290: Group 287
+    6400292: Group 294
+    6400294: Group 296
+    6400296: Group#36 2
+    6400298: Group#49 2
+    6400300: PEXIN 09 2
+    6400302: Platform_Leg_Large 10
+    6400304: Platform_Leg_Large 11
+    6400306: Platform_Leg_Large 8
+    6400308: Platform_Leg_Large 9
+    6400310: Platform_Legs_Small 4
+    6400312: Platform_Legs_Small 5
+    6400314: Railings2 2
+    6400316: Railings2#1 2
+    6400318: Railings_1 2
+    6400320: Ramp1 4
+    6400322: Ramp1 5
+    6400324: Stairs1 2
+    6400326: Stairs1#2 2
+    6400328: House 1
+    6400330: House 2
+    6400332: House 3
+    6400334: Rig 1
+    6400336: Rig 2
+    6400338: Rig 3
+    6400340: Group 10
+    6400342: Group 132
+    6400344: Group 149
+    6400346: Group 15
+    6400348: Group 27
+    6400350: Group 71
+    6400352: Group 76
+    6400354: Group 88
+    6400356: Group 12
+    6400358: Group 16
+    6400360: Group 18
+    6400362: Group 20
+    6400364: Group 22
+    6400366: Group 24
+    6400368: Group 3
+    6400370: Group 5
+    6400372: Group 7
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 3
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 1
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
