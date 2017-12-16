@@ -13,15 +13,15 @@ QualitySettings:
     shadowResolution: 1
     shadowProjection: 1
     shadowCascades: 2
-    shadowDistance: 500
+    shadowDistance: 450
     shadowNearPlaneOffset: 2
-    shadowCascade2Split: 0.33333334
+    shadowCascade2Split: 0.2992424
     shadowCascade4Split: {x: 0.15246548, y: 0.32426035, z: 0.6589743}
     shadowmaskMode: 1
     blendWeights: 1
-    textureQuality: 0
+    textureQuality: 1
     anisotropicTextures: 2
-    antiAliasing: 4
+    antiAliasing: 2
     softParticles: 1
     softVegetation: 1
     realtimeReflectionProbes: 1
@@ -32,7 +32,7 @@ QualitySettings:
     particleRaycastBudget: 4096
     asyncUploadTimeSlice: 2
     asyncUploadBufferSize: 4
-    resolutionScalingFixedDPIFactor: 8.14
+    resolutionScalingFixedDPIFactor: 4
     excludedTargetPlatforms: []
   m_PerPlatformDefaultQuality:
     Standalone: 0

@@ -6,10 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Harbour.unity
+    path: 
     guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Complete/Scenes/CompleteMainScene.unity
+    path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Lobby.unity
@@ -17,9 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Harbour.unity
     guid: 43ce7c138dd2550458dd8867798a7924
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Panipat.unity
     guid: 0defa3d0bbb93f346923ea5705217b6c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Fort Knox.unity
     guid: 472b16739048fa44a995d596e826ee80

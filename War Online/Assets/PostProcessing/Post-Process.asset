@@ -77,7 +77,7 @@ MonoBehaviour:
       useCameraFov: 0
       kernelSize: 1
   motionBlur:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
       shutterAngle: 15
       sampleCount: 4
@@ -153,14 +153,14 @@ MonoBehaviour:
               outSlope: 1
               tangentMode: 0
             - serializedVersion: 2
-              time: 0.23765433
-              value: 0.20394737
+              time: 0.26422763
+              value: 0.22123891
               inSlope: 1.2674752
               outSlope: 1.2674752
               tangentMode: 0
             - serializedVersion: 2
-              time: 0.6537217
-              value: 0.7847222
+              time: 0.6585366
+              value: 0.84070796
               inSlope: 1
               outSlope: 1
               tangentMode: 0
