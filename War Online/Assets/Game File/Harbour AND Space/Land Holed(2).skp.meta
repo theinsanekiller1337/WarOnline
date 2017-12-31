@@ -8,7 +8,7 @@ SketchUpImporter:
   selectedNodes: 000000000100000002000000
   assetHash:
     serializedVersion: 2
-    Hash: 12cedca2686d08a3f01be4d57b717c6c
+    Hash: 8d06a1e5efd1342255947d5d2a05fde9
   longitude: -105.242139
   latitude: 40.018309
   northCorrection: -0
@@ -23,7 +23,7 @@ SketchUpImporter:
       orthoSize: 1
       isPerspective: 1
     scenes: []
-  serializedVersion: 19
+  serializedVersion: 22
   fileIDToRecycleName:
     100000: Group 1
     100002: //RootNode
@@ -32,10 +32,23 @@ SketchUpImporter:
     2300000: Group 1
     3300000: Group 1
     4300000: Mesh Group 1
+    6400000: Group 1
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal Steel Textured
+    second: {fileID: 2100000, guid: 704acb6d814f7a7449b5c715e54ef476, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Translucent Glass Tinted
+    second: {fileID: 2100000, guid: 03811c788635f0f49a7eaed1b91c42b9, type: 2}
   materials:
     importMaterials: 1
     materialName: 2
     materialSearch: 0
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -48,20 +61,25 @@ SketchUpImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations: []
     isReadable: 1
   meshes:
     lODScreenPercentages: []
     globalScale: 0.0254
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -77,6 +95,7 @@ SketchUpImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
+    normalCalculationMode: 0
   importAnimation: 0
   copyAvatar: 0
   humanDescription:

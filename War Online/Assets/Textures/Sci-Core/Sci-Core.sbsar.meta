@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 5939e40f420edc14a9f83b1d5049fa89
-timeCreated: 1511698450
+timeCreated: 1514463438
 licenseType: Pro
 SubstanceImporter:
   externalObjects: {}
@@ -11,9 +11,9 @@ SubstanceImporter:
     prototypeName: sci-core
     shaderName: 
     shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-    shaderKeywords: _METALLICGLOSSMAP _NORMALMAP _PARALLAXMAP
+    shaderKeywords: _EMISSION _METALLICGLOSSMAP _NORMALMAP _PARALLAXMAP _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
     renderQueue: -1
-    lightmapFlags: 4
+    lightmapFlags: 2
     inputs:
     - name: $outputsize
       value:
@@ -290,7 +290,7 @@ SubstanceImporter:
     materialInformation:
       serializedVersion: 5
       offset: {x: 0, y: 0}
-      scale: {x: 1, y: 1}
+      scale: {x: 0.24, y: 0.24}
       generateMipmaps: 1
       generateAllOutputs: 0
       animationUpdateRate: 42
@@ -299,7 +299,7 @@ SubstanceImporter:
       texEnvs:
       - _BumpMap:
           texture: {instanceID: 0}
-          scale: {x: 1, y: 1}
+          scale: {x: 0.24, y: 0.24}
           offset: {x: 0, y: 0}
       - _DetailAlbedoMap:
           texture: {instanceID: 0}
@@ -315,15 +315,15 @@ SubstanceImporter:
           offset: {x: 0, y: 0}
       - _EmissionMap:
           texture: {instanceID: 0}
-          scale: {x: 1, y: 1}
+          scale: {x: 0.24, y: 0.24}
           offset: {x: 0, y: 0}
       - _MainTex:
           texture: {instanceID: 0}
-          scale: {x: 1, y: 1}
+          scale: {x: 0.24, y: 0.24}
           offset: {x: 0, y: 0}
       - _MetallicGlossMap:
           texture: {instanceID: 0}
-          scale: {x: 1, y: 1}
+          scale: {x: 0.24, y: 0.24}
           offset: {x: 0, y: 0}
       - _OcclusionMap:
           texture: {instanceID: 0}
@@ -331,28 +331,29 @@ SubstanceImporter:
           offset: {x: 0, y: 0}
       - _ParallaxMap:
           texture: {instanceID: 0}
-          scale: {x: 1, y: 1}
+          scale: {x: 0.24, y: 0.24}
           offset: {x: 0, y: 0}
       floats:
-      - _BumpScale: 1
+      - _BumpScale: 14.63
       - _Cutoff: 0.5
       - _DetailNormalMapScale: 1
       - _DstBlend: 0
       - _GlossMapScale: 1
-      - _Glossiness: 0.5
+      - _Glossiness: 0
       - _GlossyReflections: 1
       - _Metallic: 0
       - _Mode: 0
       - _OcclusionStrength: 1
-      - _Parallax: 0.02
-      - _SmoothnessTextureChannel: 0
+      - _Parallax: 0.0302
+      - _SmoothnessTextureChannel: 1
       - _SpecularHighlights: 1
       - _SrcBlend: 1
       - _UVSec: 0
       - _ZWrite: 1
       colors:
       - _Color: {r: 1, g: 1, b: 1, a: 1}
-      - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+      - _EmissionColor: {r: 3.608, g: 3.608, b: 3.608, a: 1}
+      - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
     textureParameters:
     - name: sci-core_basecolor
       alphaSource: 6
@@ -386,15 +387,15 @@ SubstanceImporter:
     - shaderProp: _BumpMap
       material: {instanceID: 0}
       baseUID: 726416578
+    - shaderProp: _EmissionMap
+      material: {instanceID: 0}
+      baseUID: 717575194
     - shaderProp: _MetallicGlossMap
       material: {instanceID: 0}
       baseUID: 726416582
     - shaderProp: _ParallaxMap
       material: {instanceID: 0}
       baseUID: 717575223
-    - shaderProp: _EmissionMap
-      material: {instanceID: 0}
-      baseUID: 717575194
     buildTargetSettings:
     - serializedVersion: 2
       buildTarget: 

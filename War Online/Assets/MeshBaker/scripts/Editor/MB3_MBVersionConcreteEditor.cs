@@ -73,7 +73,7 @@ namespace DigitalOpus.MB.Core{
 			    EditorUserBuildSettings.activeBuildTarget == BuildTarget.StandaloneWindows64 ||
 			    EditorUserBuildSettings.activeBuildTarget == BuildTarget.StandaloneOSXIntel ||
                 EditorUserBuildSettings.activeBuildTarget == BuildTarget.StandaloneOSXIntel64 ||
-                EditorUserBuildSettings.activeBuildTarget == BuildTarget.StandaloneOSXUniversal
+                EditorUserBuildSettings.activeBuildTarget == BuildTarget.StandaloneOSX
 			    ){
 				return "Standalone";	
 			}
