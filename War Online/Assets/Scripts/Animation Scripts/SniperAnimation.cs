@@ -14,20 +14,22 @@ public class SniperAnimation : MonoBehaviour {
 	
 
 	void Update () {
-		 
-       if (Input.GetButtonDown("Fire")) {
-	     
-		 isScoped = !isScoped;
-	     animator.SetBool("Scoped", isScoped);
-		 if (isScoped) 
-		    StartCoroutine(OnScoped());
-		 else
-		    onUnscoped();
 
-        }
-		
+        if (Input.GetButtonDown("Fire")) {
 
+            isScoped = !isScoped;
+            animator.SetBool("Scoped", isScoped);
+            if (isScoped)
+                StartCoroutine(OnScoped());
+            
 
+        } else if (Input.GetButtonUp("Fire"))
+        {
+
+            onUnscoped();
+            return;
+
+        } 
 	}
 
 	void onUnscoped() {
