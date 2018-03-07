@@ -118,7 +118,7 @@ namespace ExitGames.Demos
 		public void BackToHub()
 		{
 			PhotonNetwork.Disconnect();
-			SceneManager.LoadScene(0);
+			SceneManager.LoadScene("DemoHub-Scene-V2");
 		}
 
 	}
