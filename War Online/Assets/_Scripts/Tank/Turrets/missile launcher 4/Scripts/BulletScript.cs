@@ -19,8 +19,13 @@ public class BulletScript : MonoBehaviour {
 			this.transform.rotation = Quaternion.Slerp(this.transform.rotation,Quaternion.LookRotation(direction),0.1f);
 
 			if (direction.magnitude >5f) {
-				this.transform.Translate (0, 0, 0.2f);
-			}
+                //this.transform.Translate (0.2f, 0.2f, 0);
+
+                direction.Normalize();
+                var rotateAmount = Vector3.Cross( direction, transform.up);
+                GetComponent<Rigidbody>().angularVelocity = -rotateAmount * 200f;
+                GetComponent<Rigidbody>().velocity = transform.up * 5f;
+            }
 		}
 	}
 	void OnCollisionEnter(Collision col)
