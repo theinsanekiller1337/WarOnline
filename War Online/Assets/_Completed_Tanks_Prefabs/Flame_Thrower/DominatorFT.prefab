@@ -502,7 +502,7 @@ GameObject:
   - component: {fileID: 114507136372782780}
   m_Layer: 0
   m_Name: DominatorFT
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1243,7 +1243,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1484811508918824}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -24.65}
+  m_LocalPosition: {x: 0, y: 0, z: -27.86}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4062736921409998}
@@ -1332,7 +1332,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1427969965975700}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 96.269135, y: 45.17799, z: 298.65775}
+  m_LocalPosition: {x: 1, y: 1.23, z: 1}
   m_LocalScale: {x: 0.8482242, y: 0.8482242, z: 0.8482242}
   m_Children:
   - {fileID: 4570346373401038}
@@ -2003,7 +2003,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1849363133947960}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 0.129, z: -6.488}
+  m_LocalPosition: {x: 0, y: 0.129, z: -6.31}
   m_LocalScale: {x: 50, y: 50, z: 50}
   m_Children: []
   m_Father: {fileID: 4062736921409998}
@@ -2273,7 +2273,7 @@ Camera:
     height: 1
   near clip plane: 0.01
   far clip plane: 3000
-  field of view: 50
+  field of view: 55
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -2286,7 +2286,7 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
+  m_AllowDynamicResolution: 1
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -2475,7 +2475,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 581be6d6e0dbe534ba77d2bc713fa195, type: 2}
+  - {fileID: 2100000, guid: dbca2de7804015343a38b2c4af0c93ff, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2543,7 +2543,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: ca4817b3e0363c24fa2c55f50d7710ee, type: 2}
+  - {fileID: 2100000, guid: cce2be15b4ad5f14f866a10554fc0c86, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3219,7 +3219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  profile: {fileID: 0}
+  profile: {fileID: 11400000, guid: fcfd93a948620d048a8cf6870d582d09, type: 2}
 --- !u!114 &114251366462750666
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3243,7 +3243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 4062736921409998}
-  offsetPosition: {x: 0, y: 6.4, z: 16.38}
+  offsetPosition: {x: 0, y: 5.47, z: 20}
   offsetPositionSpace: 1
   lookAt: 1
 --- !u!114 &114269535964952228
@@ -3401,7 +3401,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: e62044e80dee0814b868cf8c83670b2a, type: 2}
+  - {fileID: 2100000, guid: 1ade75b1d0701884e9d452c202df15ca, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3459,7 +3459,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: e62044e80dee0814b868cf8c83670b2a, type: 2}
+  - {fileID: 2100000, guid: 1ade75b1d0701884e9d452c202df15ca, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7188,7 +7188,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: -983850202
+  randomSeed: -1600734925
   InitialModule:
     serializedVersion: 3
     enabled: 1
