@@ -1,0 +1,286 @@
+fileFormatVersion: 2
+guid: 47d726f8e2972be41b5cc3df8c3ea688
+timeCreated: 1529755564
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Base_Platform_001
+    100002: Base_Platform_002
+    100004: Compass001
+    100006: Group#36_001
+    100008: Group#36_002
+    100010: Group#49_001
+    100012: Group_001
+    100014: Group_002
+    100016: Group_003
+    100018: Group_004
+    100020: Group_005
+    100022: Group_006
+    100024: Group_007
+    100026: Group_008
+    100028: Group_009
+    100030: Group_010
+    100032: Group_011
+    100034: Oil Rig_Daylight_001
+    100036: //RootNode
+    100038: PEXIN 09_001
+    100040: Platform_Leg_Large_001
+    100042: Platform_Leg_Large_002
+    100044: Platform_Leg_Large_003
+    100046: Platform_Leg_Large_004
+    100048: Platform_Legs_Small_001
+    100050: Platform_Legs_Small_002
+    100052: Railings2#1_001
+    100054: Railings2_001
+    100056: Railings_1_001
+    100058: Ramp1_001
+    100060: Ramp1_002
+    100062: Rig 1_001
+    100064: Rig 1_002
+    100066: skpCamera001
+    100068: skpCamera001.Target
+    100070: Sky002
+    100072: Stairs1#2_001
+    100074: Stairs1_001
+    100076: Sun001
+    100078: windowSlider48x48_001
+    100080: windowSlider48x48_002
+    400000: Base_Platform_001
+    400002: Base_Platform_002
+    400004: Compass001
+    400006: Group#36_001
+    400008: Group#36_002
+    400010: Group#49_001
+    400012: Group_001
+    400014: Group_002
+    400016: Group_003
+    400018: Group_004
+    400020: Group_005
+    400022: Group_006
+    400024: Group_007
+    400026: Group_008
+    400028: Group_009
+    400030: Group_010
+    400032: Group_011
+    400034: Oil Rig_Daylight_001
+    400036: //RootNode
+    400038: PEXIN 09_001
+    400040: Platform_Leg_Large_001
+    400042: Platform_Leg_Large_002
+    400044: Platform_Leg_Large_003
+    400046: Platform_Leg_Large_004
+    400048: Platform_Legs_Small_001
+    400050: Platform_Legs_Small_002
+    400052: Railings2#1_001
+    400054: Railings2_001
+    400056: Railings_1_001
+    400058: Ramp1_001
+    400060: Ramp1_002
+    400062: Rig 1_001
+    400064: Rig 1_002
+    400066: skpCamera001
+    400068: skpCamera001.Target
+    400070: Sky002
+    400072: Stairs1#2_001
+    400074: Stairs1_001
+    400076: Sun001
+    400078: windowSlider48x48_001
+    400080: windowSlider48x48_002
+    2000000: skpCamera001
+    2100000: dbl_Rig 1_001
+    2100002: dbl_Rig 1_002
+    2100004: dbl_Rig 1_003
+    2100006: dbl_Rig 1_004
+    2100008: dbl_Rig 1_005
+    2100010: dbl_Rig 1_006
+    2100012: dbl_Rig 1_007
+    2100014: dbl_Rig 1_008
+    2100016: No Name
+    2100018: dbl_Group_002
+    2100020: dbl_Group_003
+    2100022: dbl_Group_004
+    2100024: dbl_Group_005
+    2100026: dbl_Group_006
+    2100028: dbl_Group_001
+    2100030: dbl_Platform_Legs_Small_001
+    2100032: dbl_Stairs1#2_001
+    2100034: dbl_Stairs1#2_002
+    2100036: dbl_Ramp1_001
+    2100038: dbl_Base_Platform_001
+    2100040: dbl_Base_Platform_002
+    2100042: dbl_windowSlider48x48_001
+    2300000: Base_Platform_001
+    2300002: Group#36_001
+    2300004: Group#49_001
+    2300006: Group_001
+    2300008: Group_002
+    2300010: Group_003
+    2300012: Group_004
+    2300014: Group_005
+    2300016: Group_006
+    2300018: Group_008
+    2300020: Group_009
+    2300022: Group_010
+    2300024: Group_011
+    2300026: PEXIN 09_001
+    2300028: Platform_Leg_Large_001
+    2300030: Platform_Leg_Large_002
+    2300032: Platform_Leg_Large_003
+    2300034: Platform_Leg_Large_004
+    2300036: Platform_Legs_Small_001
+    2300038: Platform_Legs_Small_002
+    2300040: Railings2#1_001
+    2300042: Railings2_001
+    2300044: Railings_1_001
+    2300046: Ramp1_001
+    2300048: Ramp1_002
+    2300050: Rig 1_001
+    2300052: Stairs1#2_001
+    2300054: Stairs1_001
+    2300056: windowSlider48x48_001
+    2300058: windowSlider48x48_002
+    3300000: Base_Platform_001
+    3300002: Group#36_001
+    3300004: Group#49_001
+    3300006: Group_001
+    3300008: Group_002
+    3300010: Group_003
+    3300012: Group_004
+    3300014: Group_005
+    3300016: Group_006
+    3300018: Group_008
+    3300020: Group_009
+    3300022: Group_010
+    3300024: Group_011
+    3300026: PEXIN 09_001
+    3300028: Platform_Leg_Large_001
+    3300030: Platform_Leg_Large_002
+    3300032: Platform_Leg_Large_003
+    3300034: Platform_Leg_Large_004
+    3300036: Platform_Legs_Small_001
+    3300038: Platform_Legs_Small_002
+    3300040: Railings2#1_001
+    3300042: Railings2_001
+    3300044: Railings_1_001
+    3300046: Ramp1_001
+    3300048: Ramp1_002
+    3300050: Rig 1_001
+    3300052: Stairs1#2_001
+    3300054: Stairs1_001
+    3300056: windowSlider48x48_001
+    3300058: windowSlider48x48_002
+    4300000: Rig 1_001
+    4300002: Group_001
+    4300004: Group_002
+    4300006: Group_003
+    4300008: Group_004
+    4300010: Group_005
+    4300012: Group#36_001
+    4300014: Group_006
+    4300016: Group_008
+    4300018: Group_009
+    4300020: Group_010
+    4300022: Group_011
+    4300024: Platform_Legs_Small_001
+    4300026: Platform_Leg_Large_001
+    4300028: Platform_Leg_Large_002
+    4300030: Stairs1#2_001
+    4300032: Ramp1_001
+    4300034: Ramp1_002
+    4300036: Platform_Leg_Large_003
+    4300038: Group#49_001
+    4300040: Platform_Leg_Large_004
+    4300042: Base_Platform_001
+    4300044: Platform_Legs_Small_002
+    4300046: Railings_1_001
+    4300048: Railings2_001
+    4300050: Railings2#1_001
+    4300052: Stairs1_001
+    4300054: PEXIN 09_001
+    4300056: windowSlider48x48_001
+    4300058: windowSlider48x48_002
+    7400000: Take 001
+    9500000: //RootNode
+    10800000: Sky002
+    10800002: Sun001
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

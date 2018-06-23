@@ -8,7 +8,7 @@ SketchUpImporter:
   selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f000000300000003100000032000000330000003400000035000000360000003700000038000000390000003a0000003b0000003c0000003d000000
   assetHash:
     serializedVersion: 2
-    Hash: 844fc7f653a179de1d83f343efec28dc
+    Hash: d745c5944bd5f2fe52bbdea82167037f
   longitude: -105.242139
   latitude: 40.018309
   northCorrection: -0
@@ -23,7 +23,7 @@ SketchUpImporter:
       orthoSize: 1
       isPerspective: 1
     scenes: []
-  serializedVersion: 19
+  serializedVersion: 22
   fileIDToRecycleName:
     100000: Arrow-Dashed Straight
     100002: Base_Platform
@@ -1111,10 +1111,72 @@ SketchUpImporter:
     6400368: Group 3
     6400370: Group 5
     6400372: Group 7
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Color_000]'
+    second: {fileID: 2100000, guid: e363d216217d123458c48f6cb6b25ce3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Color_000]1'
+    second: {fileID: 2100000, guid: 80a3b8cb3aeafe748a812183f808ff0f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Color_004]1'
+    second: {fileID: 2100000, guid: da9fd5ff696911d4b9e36953a6b4bea2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Color_006]'
+    second: {fileID: 2100000, guid: 2085048f9fea97d4fa64d420f985b346, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Color_009]'
+    second: {fileID: 2100000, guid: 6887d4e869592f94eab6f0fa2c87da49, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Color_D01]'
+    second: {fileID: 2100000, guid: 29d7f87e04161b14797bff9410f82102, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Color_I01]'
+    second: {fileID: 2100000, guid: 48a6344f011cac549ae2985051c92f4d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Metal_Aluminum_Anodized]'
+    second: {fileID: 2100000, guid: ad205799ce107074b88283b184ebde82, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Metal_Steel_Textured_White]'
+    second: {fileID: 2100000, guid: 63cb35d9a2bad364abd86df962506816, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _Gray Glass_1
+    second: {fileID: 2100000, guid: 7029b7a8e917a0c4287b0cbf6ee89f7d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _Ivory_
+    second: {fileID: 2100000, guid: 0879055361634a042baeacea8ddf4b30, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _defaultMat
+    second: {fileID: 2100000, guid: 92ce8c5ce0d9e144ca35bf97ec5bd7ac, type: 2}
   materials:
     importMaterials: 1
     materialName: 2
     materialSearch: 0
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -1127,12 +1189,14 @@ SketchUpImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations: []
     isReadable: 1
   meshes:
@@ -1140,13 +1204,18 @@ SketchUpImporter:
     globalScale: 0.0254
     meshCompression: 3
     addColliders: 1
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
@@ -1156,6 +1225,7 @@ SketchUpImporter:
     normalSmoothAngle: 60
     normalImportMode: 1
     tangentImportMode: 3
+    normalCalculationMode: 0
   importAnimation: 0
   copyAvatar: 0
   humanDescription:
