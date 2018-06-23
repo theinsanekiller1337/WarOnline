@@ -72,6 +72,8 @@ namespace PlayFab.Internal
         /// </summary>
         public static void InitializeHttp()
         {
+            if (string.IsNullOrEmpty(PlayFabSettings.TitleId))
+                throw new PlayFabException(PlayFabExceptionCode.TitleNotSet, "You must set PlayFabSettings.TitleId before making API Calls.");
             if (_internalHttp != null)
                 return;
 
@@ -133,6 +135,19 @@ namespace PlayFab.Internal
         }
 #endif
 
+        public static void SimpleGetCall(string fullUrl, Action<byte[]> successCallback, Action<string> errorCallback)
+        {
+            InitializeHttp();
+            _internalHttp.SimpleGetCall(fullUrl, successCallback, errorCallback);
+        }
+
+
+        public static void SimplePutCall(string fullUrl, byte[] payload, Action successCallback, Action<string> errorCallback)
+        {
+            InitializeHttp();
+            _internalHttp.SimplePutCall(fullUrl, payload, successCallback, errorCallback);
+        }
+
         /// <summary>
         /// Internal method for Make API Calls
         /// </summary>
@@ -169,7 +184,7 @@ namespace PlayFab.Internal
             reqContainer.RequestHeaders["X-PlayFabSDK"] = PlayFabSettings.VersionString; // Tell PlayFab which SDK this is
             switch (authType)
             {
-#if ENABLE_PLAYFABSERVER_API || ENABLE_PLAYFABADMIN_API
+#if ENABLE_PLAYFABSERVER_API || ENABLE_PLAYFABADMIN_API || ENABLE_PLAYFABMATCHMAKER_API || UNITY_EDITOR
                 case AuthType.DevSecretKey: reqContainer.RequestHeaders["X-SecretKey"] = PlayFabSettings.DeveloperSecretKey; break;
 #endif
                 case AuthType.LoginSession: reqContainer.RequestHeaders["X-Authorization"] = _internalHttp.AuthKey; break;
@@ -214,9 +229,17 @@ namespace PlayFab.Internal
             var logRes = result as ClientModels.LoginResult;
             var regRes = result as ClientModels.RegisterPlayFabUserResult;
             if (logRes != null)
+            {
                 _internalHttp.AuthKey = logRes.SessionTicket;
+                if (logRes.EntityToken != null)
+                    _internalHttp.EntityToken = logRes.EntityToken.EntityToken;
+            }
             else if (regRes != null)
+            {
                 _internalHttp.AuthKey = regRes.SessionTicket;
+                //if (regRes.EntityToken != null)
+                //    _internalHttp.EntityToken = logRes.EntityToken.EntityToken;
+            }
 #endif
         }
 

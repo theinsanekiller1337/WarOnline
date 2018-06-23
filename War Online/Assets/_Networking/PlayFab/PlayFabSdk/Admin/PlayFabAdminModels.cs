@@ -1236,6 +1236,29 @@ namespace PlayFab.AdminModels
     }
 
     [Serializable]
+    public class DeleteMasterPlayerAccountRequest : PlayFabRequestCommon
+    {
+        /// <summary>
+        /// Unique PlayFab assigned ID of the user on whom the operation will be performed.
+        /// </summary>
+        public string PlayFabId;
+    }
+
+    [Serializable]
+    public class DeleteMasterPlayerAccountResult : PlayFabResultCommon
+    {
+        /// <summary>
+        /// A notification email with this job receipt Id will be sent to the title notification email address when deletion is
+        /// complete.
+        /// </summary>
+        public string JobReceiptId;
+        /// <summary>
+        /// List of titles from which the player's data will be deleted.
+        /// </summary>
+        public List<string> TitleIds;
+    }
+
+    [Serializable]
     public class DeletePlayerRequest : PlayFabRequestCommon
     {
         /// <summary>
@@ -1300,25 +1323,6 @@ namespace PlayFab.AdminModels
     {
     }
 
-    [Serializable]
-    public class DeleteUsersRequest : PlayFabRequestCommon
-    {
-        /// <summary>
-        /// An array of unique PlayFab assigned ID of the user on whom the operation will be performed.
-        /// </summary>
-        public List<string> PlayFabIds;
-        /// <summary>
-        /// Unique identifier for the title, found in the Settings > Game Properties section of the PlayFab developer site when a
-        /// title has been selected.
-        /// </summary>
-        public string TitleId;
-    }
-
-    [Serializable]
-    public class DeleteUsersResult : PlayFabResultCommon
-    {
-    }
-
     public enum EffectType
     {
         Allow,
@@ -1335,6 +1339,36 @@ namespace PlayFab.AdminModels
     [Serializable]
     public class EmptyResult : PlayFabResultCommon
     {
+    }
+
+    /// <summary>
+    /// Entity identifier class that contains both the ID and type.
+    /// </summary>
+    [Serializable]
+    public class EntityKey
+    {
+        /// <summary>
+        /// Entity profile ID.
+        /// </summary>
+        public string Id;
+        /// <summary>
+        /// Entity type. Optional to be used but one of EntityType or EntityTypeString must be set.
+        /// </summary>
+        public EntityTypes? Type;
+        /// <summary>
+        /// Entity type. Optional to be used but one of EntityType or EntityTypeString must be set.
+        /// </summary>
+        public string TypeString;
+    }
+
+    public enum EntityTypes
+    {
+        title,
+        master_player_account,
+        title_player_account,
+        character,
+        group,
+        service
     }
 
     [Serializable]
@@ -1388,6 +1422,25 @@ namespace PlayFab.AdminModels
         public int Revision;
     }
 
+    [Serializable]
+    public class ExportMasterPlayerDataRequest : PlayFabRequestCommon
+    {
+        /// <summary>
+        /// Unique PlayFab assigned ID of the user on whom the operation will be performed.
+        /// </summary>
+        public string PlayFabId;
+    }
+
+    [Serializable]
+    public class ExportMasterPlayerDataResult : PlayFabResultCommon
+    {
+        /// <summary>
+        /// An email with this job receipt Id containing the export download link will be sent to the title notification email
+        /// address when the export is complete.
+        /// </summary>
+        public string JobReceiptId;
+    }
+
     public enum GameBuildStatus
     {
         Available,
@@ -1416,6 +1469,421 @@ namespace PlayFab.AdminModels
         /// whether to start as an open session, meaning that players can matchmake into it (defaults to true)
         /// </summary>
         public bool? StartOpen;
+    }
+
+    public enum GenericErrorCodes
+    {
+        Success,
+        MatchmakingHopperIdInvalid,
+        UnkownError,
+        InvalidParams,
+        AccountNotFound,
+        AccountBanned,
+        InvalidUsernameOrPassword,
+        InvalidTitleId,
+        InvalidEmailAddress,
+        EmailAddressNotAvailable,
+        InvalidUsername,
+        InvalidPassword,
+        UsernameNotAvailable,
+        InvalidSteamTicket,
+        AccountAlreadyLinked,
+        LinkedAccountAlreadyClaimed,
+        InvalidFacebookToken,
+        AccountNotLinked,
+        FailedByPaymentProvider,
+        CouponCodeNotFound,
+        InvalidContainerItem,
+        ContainerNotOwned,
+        KeyNotOwned,
+        InvalidItemIdInTable,
+        InvalidReceipt,
+        ReceiptAlreadyUsed,
+        ReceiptCancelled,
+        GameNotFound,
+        GameModeNotFound,
+        InvalidGoogleToken,
+        UserIsNotPartOfDeveloper,
+        InvalidTitleForDeveloper,
+        TitleNameConflicts,
+        UserisNotValid,
+        ValueAlreadyExists,
+        BuildNotFound,
+        PlayerNotInGame,
+        InvalidTicket,
+        InvalidDeveloper,
+        InvalidOrderInfo,
+        RegistrationIncomplete,
+        InvalidPlatform,
+        UnknownError,
+        SteamApplicationNotOwned,
+        WrongSteamAccount,
+        TitleNotActivated,
+        RegistrationSessionNotFound,
+        NoSuchMod,
+        FileNotFound,
+        DuplicateEmail,
+        ItemNotFound,
+        ItemNotOwned,
+        ItemNotRecycleable,
+        ItemNotAffordable,
+        InvalidVirtualCurrency,
+        WrongVirtualCurrency,
+        WrongPrice,
+        NonPositiveValue,
+        InvalidRegion,
+        RegionAtCapacity,
+        ServerFailedToStart,
+        NameNotAvailable,
+        InsufficientFunds,
+        InvalidDeviceID,
+        InvalidPushNotificationToken,
+        NoRemainingUses,
+        InvalidPaymentProvider,
+        PurchaseInitializationFailure,
+        DuplicateUsername,
+        InvalidBuyerInfo,
+        NoGameModeParamsSet,
+        BodyTooLarge,
+        ReservedWordInBody,
+        InvalidTypeInBody,
+        InvalidRequest,
+        ReservedEventName,
+        InvalidUserStatistics,
+        NotAuthenticated,
+        StreamAlreadyExists,
+        ErrorCreatingStream,
+        StreamNotFound,
+        InvalidAccount,
+        PurchaseDoesNotExist,
+        InvalidPurchaseTransactionStatus,
+        APINotEnabledForGameClientAccess,
+        NoPushNotificationARNForTitle,
+        BuildAlreadyExists,
+        BuildPackageDoesNotExist,
+        CustomAnalyticsEventsNotEnabledForTitle,
+        InvalidSharedGroupId,
+        NotAuthorized,
+        MissingTitleGoogleProperties,
+        InvalidItemProperties,
+        InvalidPSNAuthCode,
+        InvalidItemId,
+        PushNotEnabledForAccount,
+        PushServiceError,
+        ReceiptDoesNotContainInAppItems,
+        ReceiptContainsMultipleInAppItems,
+        InvalidBundleID,
+        JavascriptException,
+        InvalidSessionTicket,
+        UnableToConnectToDatabase,
+        InternalServerError,
+        InvalidReportDate,
+        ReportNotAvailable,
+        DatabaseThroughputExceeded,
+        InvalidGameTicket,
+        ExpiredGameTicket,
+        GameTicketDoesNotMatchLobby,
+        LinkedDeviceAlreadyClaimed,
+        DeviceAlreadyLinked,
+        DeviceNotLinked,
+        PartialFailure,
+        PublisherNotSet,
+        ServiceUnavailable,
+        VersionNotFound,
+        RevisionNotFound,
+        InvalidPublisherId,
+        DownstreamServiceUnavailable,
+        APINotIncludedInTitleUsageTier,
+        DAULimitExceeded,
+        APIRequestLimitExceeded,
+        InvalidAPIEndpoint,
+        BuildNotAvailable,
+        ConcurrentEditError,
+        ContentNotFound,
+        CharacterNotFound,
+        CloudScriptNotFound,
+        ContentQuotaExceeded,
+        InvalidCharacterStatistics,
+        PhotonNotEnabledForTitle,
+        PhotonApplicationNotFound,
+        PhotonApplicationNotAssociatedWithTitle,
+        InvalidEmailOrPassword,
+        FacebookAPIError,
+        InvalidContentType,
+        KeyLengthExceeded,
+        DataLengthExceeded,
+        TooManyKeys,
+        FreeTierCannotHaveVirtualCurrency,
+        MissingAmazonSharedKey,
+        AmazonValidationError,
+        InvalidPSNIssuerId,
+        PSNInaccessible,
+        ExpiredAuthToken,
+        FailedToGetEntitlements,
+        FailedToConsumeEntitlement,
+        TradeAcceptingUserNotAllowed,
+        TradeInventoryItemIsAssignedToCharacter,
+        TradeInventoryItemIsBundle,
+        TradeStatusNotValidForCancelling,
+        TradeStatusNotValidForAccepting,
+        TradeDoesNotExist,
+        TradeCancelled,
+        TradeAlreadyFilled,
+        TradeWaitForStatusTimeout,
+        TradeInventoryItemExpired,
+        TradeMissingOfferedAndAcceptedItems,
+        TradeAcceptedItemIsBundle,
+        TradeAcceptedItemIsStackable,
+        TradeInventoryItemInvalidStatus,
+        TradeAcceptedCatalogItemInvalid,
+        TradeAllowedUsersInvalid,
+        TradeInventoryItemDoesNotExist,
+        TradeInventoryItemIsConsumed,
+        TradeInventoryItemIsStackable,
+        TradeAcceptedItemsMismatch,
+        InvalidKongregateToken,
+        FeatureNotConfiguredForTitle,
+        NoMatchingCatalogItemForReceipt,
+        InvalidCurrencyCode,
+        NoRealMoneyPriceForCatalogItem,
+        TradeInventoryItemIsNotTradable,
+        TradeAcceptedCatalogItemIsNotTradable,
+        UsersAlreadyFriends,
+        LinkedIdentifierAlreadyClaimed,
+        CustomIdNotLinked,
+        TotalDataSizeExceeded,
+        DeleteKeyConflict,
+        InvalidXboxLiveToken,
+        ExpiredXboxLiveToken,
+        ResettableStatisticVersionRequired,
+        NotAuthorizedByTitle,
+        NoPartnerEnabled,
+        InvalidPartnerResponse,
+        APINotEnabledForGameServerAccess,
+        StatisticNotFound,
+        StatisticNameConflict,
+        StatisticVersionClosedForWrites,
+        StatisticVersionInvalid,
+        APIClientRequestRateLimitExceeded,
+        InvalidJSONContent,
+        InvalidDropTable,
+        StatisticVersionAlreadyIncrementedForScheduledInterval,
+        StatisticCountLimitExceeded,
+        StatisticVersionIncrementRateExceeded,
+        ContainerKeyInvalid,
+        CloudScriptExecutionTimeLimitExceeded,
+        NoWritePermissionsForEvent,
+        CloudScriptFunctionArgumentSizeExceeded,
+        CloudScriptAPIRequestCountExceeded,
+        CloudScriptAPIRequestError,
+        CloudScriptHTTPRequestError,
+        InsufficientGuildRole,
+        GuildNotFound,
+        OverLimit,
+        EventNotFound,
+        InvalidEventField,
+        InvalidEventName,
+        CatalogNotConfigured,
+        OperationNotSupportedForPlatform,
+        SegmentNotFound,
+        StoreNotFound,
+        InvalidStatisticName,
+        TitleNotQualifiedForLimit,
+        InvalidServiceLimitLevel,
+        ServiceLimitLevelInTransition,
+        CouponAlreadyRedeemed,
+        GameServerBuildSizeLimitExceeded,
+        GameServerBuildCountLimitExceeded,
+        VirtualCurrencyCountLimitExceeded,
+        VirtualCurrencyCodeExists,
+        TitleNewsItemCountLimitExceeded,
+        InvalidTwitchToken,
+        TwitchResponseError,
+        ProfaneDisplayName,
+        UserAlreadyAdded,
+        InvalidVirtualCurrencyCode,
+        VirtualCurrencyCannotBeDeleted,
+        IdentifierAlreadyClaimed,
+        IdentifierNotLinked,
+        InvalidContinuationToken,
+        ExpiredContinuationToken,
+        InvalidSegment,
+        InvalidSessionId,
+        SessionLogNotFound,
+        InvalidSearchTerm,
+        TwoFactorAuthenticationTokenRequired,
+        GameServerHostCountLimitExceeded,
+        PlayerTagCountLimitExceeded,
+        RequestAlreadyRunning,
+        ActionGroupNotFound,
+        MaximumSegmentBulkActionJobsRunning,
+        NoActionsOnPlayersInSegmentJob,
+        DuplicateStatisticName,
+        ScheduledTaskNameConflict,
+        ScheduledTaskCreateConflict,
+        InvalidScheduledTaskName,
+        InvalidTaskSchedule,
+        SteamNotEnabledForTitle,
+        LimitNotAnUpgradeOption,
+        NoSecretKeyEnabledForCloudScript,
+        TaskNotFound,
+        TaskInstanceNotFound,
+        InvalidIdentityProviderId,
+        MisconfiguredIdentityProvider,
+        InvalidScheduledTaskType,
+        BillingInformationRequired,
+        LimitedEditionItemUnavailable,
+        InvalidAdPlacementAndReward,
+        AllAdPlacementViewsAlreadyConsumed,
+        GoogleOAuthNotConfiguredForTitle,
+        GoogleOAuthError,
+        UserNotFriend,
+        InvalidSignature,
+        InvalidPublicKey,
+        GoogleOAuthNoIdTokenIncludedInResponse,
+        StatisticUpdateInProgress,
+        LeaderboardVersionNotAvailable,
+        StatisticAlreadyHasPrizeTable,
+        PrizeTableHasOverlappingRanks,
+        PrizeTableHasMissingRanks,
+        PrizeTableRankStartsAtZero,
+        InvalidStatistic,
+        ExpressionParseFailure,
+        ExpressionInvokeFailure,
+        ExpressionTooLong,
+        DataUpdateRateExceeded,
+        RestrictedEmailDomain,
+        EncryptionKeyDisabled,
+        EncryptionKeyMissing,
+        EncryptionKeyBroken,
+        NoSharedSecretKeyConfigured,
+        SecretKeyNotFound,
+        PlayerSecretAlreadyConfigured,
+        APIRequestsDisabledForTitle,
+        InvalidSharedSecretKey,
+        PrizeTableHasNoRanks,
+        ProfileDoesNotExist,
+        ContentS3OriginBucketNotConfigured,
+        InvalidEnvironmentForReceipt,
+        EncryptedRequestNotAllowed,
+        SignedRequestNotAllowed,
+        RequestViewConstraintParamsNotAllowed,
+        BadPartnerConfiguration,
+        XboxBPCertificateFailure,
+        XboxXASSExchangeFailure,
+        InvalidEntityId,
+        StatisticValueAggregationOverflow,
+        EmailMessageFromAddressIsMissing,
+        EmailMessageToAddressIsMissing,
+        SmtpServerAuthenticationError,
+        SmtpServerLimitExceeded,
+        SmtpServerInsufficientStorage,
+        SmtpServerCommunicationError,
+        SmtpServerGeneralFailure,
+        EmailClientTimeout,
+        EmailClientCanceledTask,
+        EmailTemplateMissing,
+        InvalidHostForTitleId,
+        EmailConfirmationTokenDoesNotExist,
+        EmailConfirmationTokenExpired,
+        AccountDeleted,
+        PlayerSecretNotConfigured,
+        InvalidSignatureTime,
+        NoContactEmailAddressFound,
+        InvalidAuthToken,
+        AuthTokenDoesNotExist,
+        AuthTokenExpired,
+        AuthTokenAlreadyUsedToResetPassword,
+        MembershipNameTooLong,
+        MembershipNotFound,
+        GoogleServiceAccountInvalid,
+        GoogleServiceAccountParseFailure,
+        EntityTokenMissing,
+        EntityTokenInvalid,
+        EntityTokenExpired,
+        EntityTokenRevoked,
+        InvalidProductForSubscription,
+        XboxInaccessible,
+        SubscriptionAlreadyTaken,
+        SmtpAddonNotEnabled,
+        APIConcurrentRequestLimitExceeded,
+        XboxRejectedXSTSExchangeRequest,
+        VariableNotDefined,
+        TemplateVersionNotDefined,
+        FileTooLarge,
+        TitleDeleted,
+        TitleContainsUserAccounts,
+        TitleDeletionPlayerCleanupFailure,
+        EntityFileOperationPending,
+        NoEntityFileOperationPending,
+        EntityProfileVersionMismatch,
+        TemplateVersionTooOld,
+        MembershipDefinitionInUse,
+        PaymentPageNotConfigured,
+        FailedLoginAttemptRateLimitExceeded,
+        EntityBlockedByGroup,
+        RoleDoesNotExist,
+        EntityIsAlreadyMember,
+        DuplicateRoleId,
+        GroupInvitationNotFound,
+        GroupApplicationNotFound,
+        OutstandingInvitationAcceptedInstead,
+        OutstandingApplicationAcceptedInstead,
+        RoleIsGroupDefaultMember,
+        RoleIsGroupAdmin,
+        RoleNameNotAvailable,
+        GroupNameNotAvailable,
+        EmailReportAlreadySent,
+        EmailReportRecipientBlacklisted,
+        EventNamespaceNotAllowed,
+        EventEntityNotAllowed,
+        InvalidEntityType,
+        NullTokenResultFromAad,
+        InvalidTokenResultFromAad,
+        NoValidCertificateForAad,
+        InvalidCertificateForAad,
+        DuplicateDropTableId,
+        GameServerOk,
+        GameServerAccepted,
+        GameServerNoContent,
+        GameServerBadRequest,
+        GameServerUnauthorized,
+        GameServerForbidden,
+        GameServerNotFound,
+        GameServerConflict,
+        GameServerInternalServerError,
+        GameServerServiceUnavailable,
+        MatchmakingInvalidEntityKeyList,
+        MatchmakingInvalidTicketCreatorProfile,
+        MatchmakingInvalidUserAttributes,
+        MatchmakingCreateRequestMissing,
+        MatchmakingCreateRequestCreatorMissing,
+        MatchmakingCreateRequestCreatorIdMissing,
+        MatchmakingCreateRequestUserListMissing,
+        MatchmakingCreateRequestGiveUpAfterInvalid,
+        MatchmakingTicketIdMissing,
+        MatchmakingMatchIdMissing,
+        MatchmakingMatchIdIdMissing,
+        MatchmakingHopperIdMissing,
+        MatchmakingTitleIdMissing,
+        MatchmakingTicketIdIdMissing,
+        MatchmakingUserIdMissing,
+        MatchmakingJoinRequestUserMissing,
+        MatchmakingHopperConfigNotFound,
+        MatchmakingMatchNotFound,
+        MatchmakingTicketNotFound,
+        MatchmakingCreateTicketServerIdentityInvalid,
+        MatchmakingCreateTicketClientIdentityInvalid,
+        MatchmakingGetTicketUserMismatch,
+        MatchmakingJoinTicketServerIdentityInvalid,
+        MatchmakingJoinTicketUserIdentityMismatch,
+        MatchmakingCancelTicketServerIdentityInvalid,
+        MatchmakingCancelTicketUserIdentityMismatch,
+        MatchmakingGetMatchIdentityMismatch,
+        MatchmakingUserIdentityMismatch,
+        MatchmakingAlreadyJoinedTicket,
+        MatchmakingTicketAlreadyCompleted,
+        MatchmakingHopperConfigInvalid
     }
 
     [Serializable]
@@ -1678,6 +2146,24 @@ namespace PlayFab.AdminModels
         /// array of game modes available for the specified build
         /// </summary>
         public List<GameModeInfo> GameModes;
+    }
+
+    [Serializable]
+    public class GetPlayedTitleListRequest : PlayFabRequestCommon
+    {
+        /// <summary>
+        /// Unique PlayFab assigned ID of the user on whom the operation will be performed.
+        /// </summary>
+        public string PlayFabId;
+    }
+
+    [Serializable]
+    public class GetPlayedTitleListResult : PlayFabResultCommon
+    {
+        /// <summary>
+        /// List of titles the player has played
+        /// </summary>
+        public List<string> TitleIds;
     }
 
     [Serializable]
@@ -2368,8 +2854,8 @@ namespace PlayFab.AdminModels
         /// </summary>
         public string ItemId;
         /// <summary>
-        /// Optional list of Data-keys to remove from UserData.  Some SDKs cannot insert null-values into Data due to language
-        /// constraints.  Use this to delete the keys directly.
+        /// Optional list of Data-keys to remove from UserData. Some SDKs cannot insert null-values into Data due to language
+        /// constraints. Use this to delete the keys directly.
         /// </summary>
         public List<string> KeysToRemove;
         /// <summary>
@@ -2744,7 +3230,13 @@ namespace PlayFab.AdminModels
     [Serializable]
     public class NameIdentifier
     {
+        /// <summary>
+        /// Id Identifier, if present
+        /// </summary>
         public string Id;
+        /// <summary>
+        /// Name Identifier, if present
+        /// </summary>
         public string Name;
     }
 
@@ -2982,7 +3474,7 @@ namespace PlayFab.AdminModels
         public string TitleId;
         /// <summary>
         /// Sum of the player's purchases made with real-money currencies, converted to US dollars equivalent and represented as a
-        /// whole number of cents (1/100 USD).              For example, 999 indicates nine dollars and ninety-nine cents.
+        /// whole number of cents (1/100 USD).       For example, 999 indicates nine dollars and ninety-nine cents.
         /// </summary>
         public uint? TotalValueToDateInUSD;
         /// <summary>
@@ -3220,7 +3712,8 @@ namespace PlayFab.AdminModels
         /// </summary>
         public string PlayFabId;
         /// <summary>
-        /// Reason for refund. In the case of Facebook this must match one of their refund or dispute resolution enums (See:
+        /// The Reason parameter should correspond with the payment providers reason field, if they require one such as Facebook. In
+        /// the case of Facebook this must match one of their refund or dispute resolution enums (See:
         /// https://developers.facebook.com/docs/payments/implementation-guide/handling-disputes-refunds)
         /// </summary>
         public string Reason;
@@ -3361,7 +3854,8 @@ namespace PlayFab.AdminModels
         /// </summary>
         public string PlayFabId;
         /// <summary>
-        /// Reason for refund. In the case of Facebook this must match one of their refund or dispute resolution enums (See:
+        /// The Reason parameter should correspond with the payment providers reason field, if they require one such as Facebook. In
+        /// the case of Facebook this must match one of their refund or dispute resolution enums (See:
         /// https://developers.facebook.com/docs/payments/implementation-guide/handling-disputes-refunds)
         /// </summary>
         public string Reason;
@@ -3436,6 +3930,23 @@ namespace PlayFab.AdminModels
     }
 
     [Serializable]
+    public class RevokeInventoryItem
+    {
+        /// <summary>
+        /// Unique PlayFab assigned ID for a specific character owned by a user
+        /// </summary>
+        public string CharacterId;
+        /// <summary>
+        /// Unique PlayFab assigned instance identifier of the item
+        /// </summary>
+        public string ItemInstanceId;
+        /// <summary>
+        /// Unique PlayFab assigned ID of the user on whom the operation will be performed.
+        /// </summary>
+        public string PlayFabId;
+    }
+
+    [Serializable]
     public class RevokeInventoryItemRequest : PlayFabRequestCommon
     {
         /// <summary>
@@ -3453,8 +3964,39 @@ namespace PlayFab.AdminModels
     }
 
     [Serializable]
+    public class RevokeInventoryItemsRequest : PlayFabRequestCommon
+    {
+        /// <summary>
+        /// Array of player items to revoke, between 1 and 25 items.
+        /// </summary>
+        public List<RevokeInventoryItem> Items;
+    }
+
+    [Serializable]
+    public class RevokeInventoryItemsResult : PlayFabResultCommon
+    {
+        /// <summary>
+        /// Collection of any errors that occurred during processing.
+        /// </summary>
+        public List<RevokeItemError> Errors;
+    }
+
+    [Serializable]
     public class RevokeInventoryResult : PlayFabResultCommon
     {
+    }
+
+    [Serializable]
+    public class RevokeItemError
+    {
+        /// <summary>
+        /// Specific error that was encountered.
+        /// </summary>
+        public GenericErrorCodes? Error;
+        /// <summary>
+        /// Item information that failed to be revoked.
+        /// </summary>
+        public RevokeInventoryItem Item;
     }
 
     [Serializable]
@@ -4203,8 +4745,8 @@ namespace PlayFab.AdminModels
         /// </summary>
         public Dictionary<string,string> Data;
         /// <summary>
-        /// Optional list of Data-keys to remove from UserData.  Some SDKs cannot insert null-values into Data due to language
-        /// constraints.  Use this to delete the keys directly.
+        /// Optional list of Data-keys to remove from UserData. Some SDKs cannot insert null-values into Data due to language
+        /// constraints. Use this to delete the keys directly.
         /// </summary>
         public List<string> KeysToRemove;
         /// <summary>
@@ -4236,8 +4778,8 @@ namespace PlayFab.AdminModels
         /// </summary>
         public Dictionary<string,string> Data;
         /// <summary>
-        /// Optional list of Data-keys to remove from UserData.  Some SDKs cannot insert null-values into Data due to language
-        /// constraints.  Use this to delete the keys directly.
+        /// Optional list of Data-keys to remove from UserData. Some SDKs cannot insert null-values into Data due to language
+        /// constraints. Use this to delete the keys directly.
         /// </summary>
         public List<string> KeysToRemove;
         /// <summary>
@@ -4546,6 +5088,10 @@ namespace PlayFab.AdminModels
         /// source by which the user first joined the game, if known
         /// </summary>
         public UserOrigination? Origination;
+        /// <summary>
+        /// Title player account entity for this user
+        /// </summary>
+        public EntityKey TitlePlayerAccount;
     }
 
     [Serializable]

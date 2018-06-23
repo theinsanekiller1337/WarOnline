@@ -1101,25 +1101,51 @@ namespace PlayFab.ClientModels
     {
     }
 
+    /// <summary>
+    /// Entity identifier class that contains both the ID and type.
+    /// </summary>
+    [Serializable]
+    public class EntityKey
+    {
+        /// <summary>
+        /// Entity profile ID.
+        /// </summary>
+        public string Id;
+        /// <summary>
+        /// Entity type. Optional to be used but one of EntityType or EntityTypeString must be set.
+        /// </summary>
+        public EntityTypes? Type;
+        /// <summary>
+        /// Entity type. Optional to be used but one of EntityType or EntityTypeString must be set.
+        /// </summary>
+        public string TypeString;
+    }
+
     [Serializable]
     public class EntityTokenResponse : PlayFabResultCommon
     {
         /// <summary>
-        /// The identifier of the entity the token was issued for.
+        /// The entity id and type.
         /// </summary>
-        public string EntityId;
+        public EntityKey Entity;
         /// <summary>
         /// The token used to set X-EntityToken for all entity based API calls.
         /// </summary>
         public string EntityToken;
         /// <summary>
-        /// The type of entity the token was issued for.
-        /// </summary>
-        public string EntityType;
-        /// <summary>
         /// The time the token will expire, if it is an expiring token, in UTC.
         /// </summary>
         public DateTime? TokenExpiration;
+    }
+
+    public enum EntityTypes
+    {
+        title,
+        master_player_account,
+        title_player_account,
+        character,
+        group,
+        service
     }
 
     [Serializable]
@@ -1238,6 +1264,10 @@ namespace PlayFab.ClientModels
         /// </summary>
         public PlayerProfileModel Profile;
         /// <summary>
+        /// Available PSN information, if the user and PlayFab friend are both connected to PSN.
+        /// </summary>
+        public UserPsnInfo PSNInfo;
+        /// <summary>
         /// Available Steam information (if the user and PlayFab friend are also connected in Steam).
         /// </summary>
         public UserSteamInfo SteamInfo;
@@ -1253,6 +1283,10 @@ namespace PlayFab.ClientModels
         /// PlayFab unique username for this friend.
         /// </summary>
         public string Username;
+        /// <summary>
+        /// Available Xbox information, if the user and PlayFab friend are both connected to Xbox Live.
+        /// </summary>
+        public UserXboxInfo XboxInfo;
     }
 
     [Serializable]
@@ -1620,6 +1654,10 @@ namespace PlayFab.ClientModels
         /// The version of the leaderboard to get.
         /// </summary>
         public int? Version;
+        /// <summary>
+        /// Xbox token if Xbox friends should be included. Requires Xbox be configured on PlayFab.
+        /// </summary>
+        public string XboxToken;
     }
 
     [Serializable]
@@ -1672,6 +1710,10 @@ namespace PlayFab.ClientModels
         /// The version of the leaderboard to get.
         /// </summary>
         public int? Version;
+        /// <summary>
+        /// Xbox token if Xbox friends should be included. Requires Xbox be configured on PlayFab.
+        /// </summary>
+        public string XboxToken;
     }
 
     [Serializable]
@@ -1691,6 +1733,10 @@ namespace PlayFab.ClientModels
         /// the Game Manager "Client Profile Options" tab in the "Settings" section.
         /// </summary>
         public PlayerProfileViewConstraints ProfileConstraints;
+        /// <summary>
+        /// Xbox token if Xbox friends should be included. Requires Xbox be configured on PlayFab.
+        /// </summary>
+        public string XboxToken;
     }
 
     [Serializable]
@@ -2529,7 +2575,7 @@ namespace PlayFab.ClientModels
         /// </summary>
         public uint? IfChangedFromDataVersion;
         /// <summary>
-        /// Specific keys to search for in the custom data. Leave null to get all keys.
+        /// List of unique keys to load from.
         /// </summary>
         public List<string> Keys;
         /// <summary>
@@ -3629,17 +3675,6 @@ namespace PlayFab.ClientModels
         public string VirtualCurrency;
     }
 
-    /// <summary>
-    /// Identifier by either name or ID. Note that a name may change due to renaming, or reused after being deleted. ID is
-    /// immutable and unique.
-    /// </summary>
-    [Serializable]
-    public class NameIdentifier
-    {
-        public string Id;
-        public string Name;
-    }
-
     [Serializable]
     public class OpenTradeRequest : PlayFabRequestCommon
     {
@@ -3852,7 +3887,7 @@ namespace PlayFab.ClientModels
         public string TitleId;
         /// <summary>
         /// Sum of the player's purchases made with real-money currencies, converted to US dollars equivalent and represented as a
-        /// whole number of cents (1/100 USD).              For example, 999 indicates nine dollars and ninety-nine cents.
+        /// whole number of cents (1/100 USD).       For example, 999 indicates nine dollars and ninety-nine cents.
         /// </summary>
         public uint? TotalValueToDateInUSD;
         /// <summary>
@@ -4147,6 +4182,11 @@ namespace PlayFab.ClientModels
     [Serializable]
     public class RegisterPlayFabUserResult : PlayFabResultCommon
     {
+        /// <summary>
+        /// If LoginTitlePlayerAccountEntity flag is set on the login request the title_player_account will also be logged in and
+        /// returned.
+        /// </summary>
+        public EntityTokenResponse EntityToken;
         /// <summary>
         /// PlayFab unique identifier for this newly created account.
         /// </summary>
@@ -4738,7 +4778,7 @@ namespace PlayFab.ClientModels
         /// </summary>
         public string AcceptedPlayerId;
         /// <summary>
-        /// An optional list of players allowed to complete this trade.  If null, anybody can complete the trade.
+        /// An optional list of players allowed to complete this trade. If null, anybody can complete the trade.
         /// </summary>
         public List<string> AllowedPlayerIds;
         /// <summary>
@@ -4954,7 +4994,7 @@ namespace PlayFab.ClientModels
     public class UnlockContainerInstanceRequest : PlayFabRequestCommon
     {
         /// <summary>
-        /// Specifies the catalog version that should be used to determine container contents.  If unspecified, uses catalog
+        /// Specifies the catalog version that should be used to determine container contents. If unspecified, uses catalog
         /// associated with the item instance.
         /// </summary>
         public string CatalogVersion;
@@ -4967,7 +5007,7 @@ namespace PlayFab.ClientModels
         /// </summary>
         public string ContainerItemInstanceId;
         /// <summary>
-        /// ItemInstanceId of the key that will be consumed by unlocking this container.  If the container requires a key, this
+        /// ItemInstanceId of the key that will be consumed by unlocking this container. If the container requires a key, this
         /// parameter is required.
         /// </summary>
         public string KeyItemInstanceId;
@@ -4977,7 +5017,7 @@ namespace PlayFab.ClientModels
     public class UnlockContainerItemRequest : PlayFabRequestCommon
     {
         /// <summary>
-        /// Specifies the catalog version that should be used to determine container contents.  If unspecified, uses default/primary
+        /// Specifies the catalog version that should be used to determine container contents. If unspecified, uses default/primary
         /// catalog.
         /// </summary>
         public string CatalogVersion;
@@ -5034,8 +5074,8 @@ namespace PlayFab.ClientModels
         /// </summary>
         public Dictionary<string,string> Data;
         /// <summary>
-        /// Optional list of Data-keys to remove from UserData.  Some SDKs cannot insert null-values into Data due to language
-        /// constraints.  Use this to delete the keys directly.
+        /// Optional list of Data-keys to remove from UserData. Some SDKs cannot insert null-values into Data due to language
+        /// constraints. Use this to delete the keys directly.
         /// </summary>
         public List<string> KeysToRemove;
         /// <summary>
@@ -5095,8 +5135,8 @@ namespace PlayFab.ClientModels
         /// </summary>
         public Dictionary<string,string> Data;
         /// <summary>
-        /// Optional list of Data-keys to remove from UserData.  Some SDKs cannot insert null-values into Data due to language
-        /// constraints.  Use this to delete the keys directly.
+        /// Optional list of Data-keys to remove from UserData. Some SDKs cannot insert null-values into Data due to language
+        /// constraints. Use this to delete the keys directly.
         /// </summary>
         public List<string> KeysToRemove;
         /// <summary>
@@ -5123,8 +5163,8 @@ namespace PlayFab.ClientModels
         /// </summary>
         public Dictionary<string,string> Data;
         /// <summary>
-        /// Optional list of Data-keys to remove from UserData.  Some SDKs cannot insert null-values into Data due to language
-        /// constraints.  Use this to delete the keys directly.
+        /// Optional list of Data-keys to remove from UserData. Some SDKs cannot insert null-values into Data due to language
+        /// constraints. Use this to delete the keys directly.
         /// </summary>
         public List<string> KeysToRemove;
         /// <summary>
@@ -5453,6 +5493,10 @@ namespace PlayFab.ClientModels
         /// source by which the user first joined the game, if known
         /// </summary>
         public UserOrigination? Origination;
+        /// <summary>
+        /// Title player account entity for this user
+        /// </summary>
+        public EntityKey TitlePlayerAccount;
     }
 
     [Serializable]
