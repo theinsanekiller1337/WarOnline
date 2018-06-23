@@ -6,12 +6,27 @@ ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
+    100002: acidton_turret:group1
+    100004: hull02
+    100006: NurbsCircle
     400000: //RootNode
+    400002: acidton_turret:group1
+    400004: hull02
+    400006: NurbsCircle
     2100000: Tank
+    2100002: lambert1
     2300000: //RootNode
+    2300002: hull02
+    2300004: NurbsCircle
     3300000: //RootNode
+    3300002: hull02
+    3300004: NurbsCircle
     4300000: NurbsCircle
+    4300002: hull02
     6400000: //RootNode
+    6400002: hull02
+    6400004: NurbsCircle
+    7400000: Take 001
     9500000: //RootNode
   externalObjects: {}
   materials:
@@ -43,7 +58,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 3.55
+    globalScale: 0.475
     meshCompression: 1
     addColliders: 1
     importVisibility: 1
