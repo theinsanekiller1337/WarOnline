@@ -937,7 +937,7 @@ GameObject:
   - component: {fileID: 114358575558229838}
   m_Layer: 0
   m_Name: TrapperFM
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1015,6 +1015,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4005514902183342}
   - component: {fileID: 114126751064097068}
+  - component: {fileID: 114603894106258654}
   m_Layer: 0
   m_Name: 'Flame_Thrower '
   m_TagString: Untagged
@@ -2343,7 +2344,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 5486769c74cb9d344b753e5ee8a60fb8, type: 2}
+  - {fileID: 2100000, guid: c17df59d26317894689c0c2d98fdbf6f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2649,7 +2650,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 581be6d6e0dbe534ba77d2bc713fa195, type: 2}
+  - {fileID: 2100000, guid: dbca2de7804015343a38b2c4af0c93ff, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3165,7 +3166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  profile: {fileID: 0}
+  profile: {fileID: 11400000, guid: fcfd93a948620d048a8cf6870d582d09, type: 2}
 --- !u!114 &114356974639279172
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3326,6 +3327,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shader: {fileID: 4800000, guid: 3d417cf48fde7da46b5a79811115e87f, type: 3}
+--- !u!114 &114603894106258654
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1840791424161106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16935992e3631bb47b673d0abd2aa2b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turnLeft: 2
+  turnRight: 2
 --- !u!124 &124707295445576708
 Behaviour:
   m_ObjectHideFlags: 1
@@ -3347,7 +3361,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: e62044e80dee0814b868cf8c83670b2a, type: 2}
+  - {fileID: 2100000, guid: 1ade75b1d0701884e9d452c202df15ca, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3405,7 +3419,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: e62044e80dee0814b868cf8c83670b2a, type: 2}
+  - {fileID: 2100000, guid: 1ade75b1d0701884e9d452c202df15ca, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

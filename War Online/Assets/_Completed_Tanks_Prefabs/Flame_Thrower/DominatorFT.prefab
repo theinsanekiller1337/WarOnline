@@ -287,6 +287,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4062736921409998}
   - component: {fileID: 114127524201424952}
+  - component: {fileID: 114050422468496276}
   m_Layer: 0
   m_Name: 'Flame_Thrower '
   m_TagString: Untagged
@@ -1331,8 +1332,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1427969965975700}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: 1.23, z: 1}
+  m_LocalRotation: {x: 0, y: -0.37832546, z: 0, w: 0.92567265}
+  m_LocalPosition: {x: -30.6, y: 4.4, z: -10.6}
   m_LocalScale: {x: 0.8482242, y: 0.8482242, z: 0.8482242}
   m_Children:
   - {fileID: 4570346373401038}
@@ -1351,7 +1352,7 @@ Transform:
   - {fileID: 4296104313331224}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -44.46, z: 0}
 --- !u!4 &4134093402675720
 Transform:
   m_ObjectHideFlags: 1
@@ -2288,7 +2289,7 @@ Camera:
   m_AllowMSAA: 1
   m_AllowDynamicResolution: 1
   m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
+  m_OcclusionCulling: 0
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
 --- !u!23 &23007697235461048
@@ -3193,6 +3194,19 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114050422468496276
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1190235681213624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16935992e3631bb47b673d0abd2aa2b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turnLeft: 2
+  turnRight: 2
 --- !u!114 &114127524201424952
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3350,7 +3364,7 @@ MonoBehaviour:
   brakeTorque: 7500
   minEngineRPM: 1000
   maxEngineRPM: 15000
-  maxSpeed: 62
+  maxSpeed: 35
   steerTorque: 5
   gasInput: 0
   brakeInput: 0

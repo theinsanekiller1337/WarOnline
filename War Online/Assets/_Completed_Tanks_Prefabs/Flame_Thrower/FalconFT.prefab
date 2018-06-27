@@ -555,7 +555,7 @@ GameObject:
   - component: {fileID: 114089238359814340}
   m_Layer: 0
   m_Name: FalconFT
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1002,6 +1002,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4855965673402448}
   - component: {fileID: 114526027588596940}
+  - component: {fileID: 114070997232062064}
   m_Layer: 0
   m_Name: 'Flame_Thrower '
   m_TagString: Untagged
@@ -2445,7 +2446,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 581be6d6e0dbe534ba77d2bc713fa195, type: 2}
+  - {fileID: 2100000, guid: dbca2de7804015343a38b2c4af0c93ff, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2786,7 +2787,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 58b8105f9d9031f4f92e28b6bebf34d2, type: 2}
+  - {fileID: 2100000, guid: c9089de7b6c3e1b44b3dc25f6e549eb1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3150,6 +3151,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b331d475c9159e4998db018316215b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114070997232062064
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1817258182678240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16935992e3631bb47b673d0abd2aa2b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turnLeft: 2
+  turnRight: 2
 --- !u!114 &114089238359814340
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3242,7 +3256,7 @@ MonoBehaviour:
   brakeTorque: 7500
   minEngineRPM: 1000
   maxEngineRPM: 15000
-  maxSpeed: 75
+  maxSpeed: 48
   steerTorque: 5
   gasInput: 0
   brakeInput: 0
@@ -3287,7 +3301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  profile: {fileID: 0}
+  profile: {fileID: 11400000, guid: fcfd93a948620d048a8cf6870d582d09, type: 2}
 --- !u!114 &114744900855581460
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3347,7 +3361,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: e62044e80dee0814b868cf8c83670b2a, type: 2}
+  - {fileID: 2100000, guid: 1ade75b1d0701884e9d452c202df15ca, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3405,7 +3419,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: e62044e80dee0814b868cf8c83670b2a, type: 2}
+  - {fileID: 2100000, guid: 1ade75b1d0701884e9d452c202df15ca, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13715,8 +13729,8 @@ ParticleSystemRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 2100000, guid: 686b6124da653dd46bbb7825a4d55a46, type: 2}
-  - {fileID: 0}
+  - {fileID: 2100000, guid: c9089de7b6c3e1b44b3dc25f6e549eb1, type: 2}
+  - {fileID: 2100000, guid: c9089de7b6c3e1b44b3dc25f6e549eb1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
