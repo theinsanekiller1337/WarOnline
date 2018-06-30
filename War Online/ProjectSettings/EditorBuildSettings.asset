@@ -35,3 +35,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/Space.unity
     guid: 840be9c71562d0841987fcbec7c1596e
+  - enabled: 1
+    path: Assets/_Scenes/LoginScene.unity
+    guid: ef651f473198bda4481b7a2ad51fba70
