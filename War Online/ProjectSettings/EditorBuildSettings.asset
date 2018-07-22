@@ -12,11 +12,17 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
+    path: Assets/_Scenes/LoginScene.unity
+    guid: ef651f473198bda4481b7a2ad51fba70
+  - enabled: 1
     path: Assets/_Scenes/Lobby.unity
     guid: 467492d8c9be02847b711ac45a9fe3dd
   - enabled: 1
     path: Assets/_Scenes/Harbour.unity
     guid: 43ce7c138dd2550458dd8867798a7924
+  - enabled: 1
+    path: Assets/_Scenes/Space.unity
+    guid: 840be9c71562d0841987fcbec7c1596e
   - enabled: 0
     path: Assets/_Scenes/Panipat.unity
     guid: 0defa3d0bbb93f346923ea5705217b6c
@@ -32,9 +38,3 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/_Scenes/Osaka.unity
     guid: 0926ae6bf6816f145834afd77ccb2410
-  - enabled: 1
-    path: Assets/_Scenes/Space.unity
-    guid: 840be9c71562d0841987fcbec7c1596e
-  - enabled: 1
-    path: Assets/_Scenes/LoginScene.unity
-    guid: ef651f473198bda4481b7a2ad51fba70

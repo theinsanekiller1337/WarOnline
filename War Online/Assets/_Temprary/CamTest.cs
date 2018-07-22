@@ -1,7 +1,7 @@
 ﻿ using UnityEngine;
  using System.Collections;
  
- public class CamTest : MonoBehaviour
+ public class CamTest : Photon.PunBehaviour
  {
      [SerializeField]
      private Transform target;
@@ -14,8 +14,13 @@
  
      [SerializeField]
      private bool lookAt = true;
- 
-     private void LateUpdate()
+
+    private void Start()
+    {
+        this.gameObject.SetActive(photonView.isMine);
+    }
+
+    private void LateUpdate()
      {
          Refresh();
      }

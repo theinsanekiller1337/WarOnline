@@ -239,7 +239,7 @@ MonoBehaviour:
   registerUserName: {fileID: 1730060202}
   loadingElementHandler: {fileID: 596430992}
   loadingText: {fileID: 2085176441}
-  nextScene: StartScene
+  nextScene: Lobby
   errorText: {fileID: 1166756992}
   versionText: {fileID: 1414519305}
 --- !u!1 &49069976
