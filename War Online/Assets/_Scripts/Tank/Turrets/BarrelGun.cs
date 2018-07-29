@@ -27,14 +27,6 @@ public class BarrelGun : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (reloading==true)
-        {
-            StartCoroutine(ReloadingAmmo());
-        }
-        else
-        {
-            reloading = false;
-        }
         if (Input.GetButton("Fire"))
         {
             BarrelRoll();
@@ -65,25 +57,27 @@ public class BarrelGun : MonoBehaviour
             {
              
                 var bulletPrefab = Instantiate(bullet, shootingPoint.transform.position, gameObject.transform.rotation);
-                bulletPrefab.AddComponent<TimeOut>();
+                
                 // Add velocity to the bullet
-                bulletPrefab.GetComponent<Transform>().Translate(Vector3.forward * Time.deltaTime * forceForBullet);
+                bulletPrefab.GetComponent<Rigidbody>().AddForce(Vector3.forward * Time.deltaTime * forceForBullet);
             } ammo--;
             reloading = false;
 
-        }  else if (ammo == 0)
+        }  else
         {
           
-            reloading = true;
-            
+                StartCoroutine(ReloadingAmmo());
+
+
         }
 
         
     }
     IEnumerator ReloadingAmmo() {
 
+        
         yield return new WaitForSeconds(5);
         ammo = fullAmmo;
-
+        reloading = false;
     }
 }
