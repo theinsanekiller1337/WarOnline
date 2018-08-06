@@ -116,9 +116,9 @@ public class RTCTankController : Photon.PunBehaviour
     public static GameObject LocalPlayerInstance;
 
     private void Awake()
-    {
+    {/*
         if (photonView.isMine) RTCTankController.LocalPlayerInstance = this.gameObject;
-        DontDestroyOnLoad(this.gameObject);
+        DontDestroyOnLoad(this.gameObject); */
     }
 
     void  Start (){
@@ -483,12 +483,12 @@ public class RTCTankController : Photon.PunBehaviour
 
 	void Inputs(){
 
-		if(!photonView.isMine){
+	/*	if(!photonView.isMine){
 			gasInput = 0;
 			brakeInput = 0;
 			steerInput = 0;
 			return;
-		}
+		} */
 		
 		//Motor Input.
 		gasInput = Input.GetAxis("Vertical") * gasInputMultiplier;

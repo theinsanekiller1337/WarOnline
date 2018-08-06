@@ -16,8 +16,8 @@
      private bool lookAt = true;
 
     private void Start()
-    {
-        this.gameObject.SetActive(photonView.isMine);
+    { /*
+        this.gameObject.SetActive(photonView.isMine);*/
     }
 
     private void LateUpdate()
