@@ -1,0 +1,181 @@
+fileFormatVersion: 2
+guid: a36762d49581c884dbc2f2be122438c7
+timeCreated: 1533981992
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: bldg6_Form22_2
+    100002: bldg6_Form24_2
+    100004: default
+    100006: Form22
+    100008: Form24
+    100010: mesh01
+    100012: //RootNode
+    400000: bldg6_Form22_2
+    400002: bldg6_Form24_2
+    400004: default
+    400006: Form22
+    400008: Form24
+    400010: mesh01
+    400012: //RootNode
+    2100000: material_1
+    2100002: material_2
+    2100004: default_bldg_scifi_gothic
+    2100006: default_Terrain_1b
+    2100008: default_bldg1_1
+    2100010: default_bldg4_1
+    2100012: default_roof
+    2100014: default_bldg5_1
+    2100016: default_bldg7
+    2100018: default_bldg8
+    2100020: default_bldg9
+    2100022: default_bldg10
+    2100024: default_windows_bldg10
+    2100026: default_bldg11
+    2100028: default_windos_bldg2b
+    2100030: default_bldg12
+    2100032: default_windows_bldg3
+    2100034: default_bldg13
+    2100036: default_bldg14
+    2100038: default_bldg15
+    2100040: default_bldg_corp
+    2100042: default_floors
+    2100044: default_windows_bldg_corp
+    2100046: default_beacon
+    2100048: default_bldg_sony
+    2100050: default_bldg
+    2100052: default_sony_sign
+    2100054: default_sector_city1
+    2100056: default_windows2
+    2100058: default_bldgs_sector_city1
+    2100060: default_bldgs
+    2100062: default_bldg2
+    2100064: default
+    2100066: default_anouncement1
+    2100068: default_light_poles_lightbulb
+    2100070: default_light_poles
+    2100072: default_bldg_scifi
+    2100074: default_bldg3
+    2100076: default_hospital
+    2100078: default_bldg1
+    2100080: default_bldg4
+    2100082: default_bldg5
+    2100084: default_walls
+    2100086: default_b3
+    2100088: default_windows
+    2100090: default_bldg6
+    2100092: default_walls1
+    2100094: default_windows_bldg4
+    2100096: default_windows_bldg5
+    2100098: default_windows_bldg6
+    2100100: default_bldg_scifi2
+    2100102: default_windows_bldg7
+    2100104: default_bldg_small
+    2100106: default_apt_complex
+    2100108: default_roof2
+    2100110: default_windows_bldg3_apt_complex
+    2100112: default_bldg_small_1
+    2100114: default_house1a
+    2100116: default_bldg1_2
+    2100118: default_bldg2_1
+    2100120: default_w16
+    2100122: default_bldg16
+    2300000: bldg6_Form22_2
+    2300002: bldg6_Form24_2
+    2300004: default
+    2300006: Form22
+    2300008: Form24
+    2300010: mesh01
+    3300000: bldg6_Form22_2
+    3300002: bldg6_Form24_2
+    3300004: default
+    3300006: Form22
+    3300008: Form24
+    3300010: mesh01
+    4300000: bldg6_Form22_2
+    4300002: bldg6_Form24_2
+    4300004: default
+    4300006: Form22
+    4300008: Form24
+    4300010: mesh01
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.05
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

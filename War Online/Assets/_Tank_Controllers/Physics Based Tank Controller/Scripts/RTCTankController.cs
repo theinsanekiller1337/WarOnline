@@ -606,7 +606,7 @@ public class RTCTankController : Photon.PunBehaviour
 	}
 		
 	void Smoke (){
-
+        /*
 		if (wheelParticles.Count > 0){
 
 			for(int i = 0; i < allWheelColliders.Count; i++){
@@ -630,7 +630,7 @@ public class RTCTankController : Photon.PunBehaviour
 			exhaustSmoke.startSpeed = Mathf.Lerp(0f, 10f, engineRPM / maxEngineRPM);
 			exhaustSmoke.startSize = Mathf.Lerp(.1f, 1f, engineRPM / maxEngineRPM);
 		}
-		
+		*/
 	}
 
     #if !UNITY_MIN_5_4
