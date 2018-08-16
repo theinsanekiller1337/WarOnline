@@ -25,7 +25,7 @@ namespace Thinksquirrel.Fluvio.SamplePlugins
     /// </remarks>
     [AddComponentMenu("Fluvio/Example Project/Sample Plugins/Fluid Mixer")]
 #if !UNITY_5_0
-    [@HelpURL("https://docs.getfluv.io/" + VersionInfo.version + "/reference/fluidmixer.html?utm_source=fluvio_inspector_helpbutton&utm_campaign=fluvio_inspector_links&utm_medium=unity_editor")]
+   // [URL("https://docs.getfluv.io/" + VersionInfo.version + "/reference/fluidmixer.html?utm_source=fluvio_inspector_helpbutton&utm_campaign=fluvio_inspector_links&utm_medium=unity_editor")]
 #endif
     public class FluidMixer : FluidParticlePairPlugin
     {

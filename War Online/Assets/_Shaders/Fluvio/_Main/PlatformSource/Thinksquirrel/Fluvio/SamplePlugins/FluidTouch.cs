@@ -12,7 +12,7 @@ namespace Thinksquirrel.Fluvio.SamplePlugins
     /// </summary>
     [AddComponentMenu("Fluvio/Example Project/Sample Plugins/Fluid Touch")]
 #if !UNITY_5_0
-    [@HelpURL("https://docs.getfluv.io/" + VersionInfo.version + "/reference/fluidtouch.html?utm_source=fluvio_inspector_helpbutton&utm_campaign=fluvio_inspector_links&utm_medium=unity_editor")]
+   // [@HelpURL("https://docs.getfluv.io/" + VersionInfo.version + "/reference/fluidtouch.html?utm_source=fluvio_inspector_helpbutton&utm_campaign=fluvio_inspector_links&utm_medium=unity_editor")]
 #endif
     public class FluidTouch : FluidParticlePlugin
     {

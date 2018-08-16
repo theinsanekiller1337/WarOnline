@@ -126,7 +126,7 @@ public class MB3_BatchPrefabBakerEditor : Editor {
         for (int i = 0; i < gos.Count; i++)
         {
             GameObject go = (GameObject) PrefabUtility.FindPrefabRoot(gos[i]);
-            UnityEngine.Object obj = PrefabUtility.GetPrefabParent(go);
+            UnityEngine.Object obj = PrefabUtility.GetCorrespondingObjectFromSource(go);
             
             if (obj != null && obj is GameObject)
             {
