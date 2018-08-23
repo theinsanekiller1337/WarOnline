@@ -1,409 +1,84 @@
 fileFormatVersion: 2
 guid: 5939e40f420edc14a9f83b1d5049fa89
-timeCreated: 1514463438
-licenseType: Pro
-SubstanceImporter:
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: Sci-Core/Sci-Core
+    400000: Sci-Core/Sci-Core/Transform
+    2100000: mat.Sci-Core
+    2300000: Sci-Core/Sci-Core/MeshRenderer
+    2800000: Sci-Core_Base Color
+    2800002: Sci-Core_Normal
+    2800004: Sci-Core_Metallic
+    2800006: Sci-Core_height
+    2800008: Sci-Core_emissive
+    3300000: Sci-Core/Sci-Core/MeshFilter
+    11400000: sbsar
+    11400002: graph0
+    13500000: Sci-Core/Sci-Core/SphereCollider
+    100100000: Sci-Core
   externalObjects: {}
-  serializedVersion: 5
-  materialInstances:
-  - serializedVersion: 16
-    name: sci-core
-    prototypeName: sci-core
-    shaderName: 
-    shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-    shaderKeywords: _EMISSION _METALLICGLOSSMAP _NORMALMAP _PARALLAXMAP _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
-    renderQueue: -1
-    lightmapFlags: 2
-    inputs:
-    - name: $outputsize
-      value:
-        scalar[0]: 8
-        scalar[1]: 8
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: $randomseed
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: primary_panel_colour
-      value:
-        scalar[0]: 1
-        scalar[1]: 1
-        scalar[2]: 1
-        scalar[3]: 1
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: outline_colour_1
-      value:
-        scalar[0]: 0.964706
-        scalar[1]: 0.562753
-        scalar[2]: 0
-        scalar[3]: 1
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: outline_colour_mix
-      value:
-        scalar[0]: 1
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: pipe_colour
-      value:
-        scalar[0]: 0.27451
-        scalar[1]: 0.134569
-        scalar[2]: 0.106569
-        scalar[3]: 1
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: pipe_connector_colour_mix
-      value:
-        scalar[0]: 1
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: fan_box_colour
-      value:
-        scalar[0]: 0.306966
-        scalar[1]: 0.313726
-        scalar[2]: 0.301427
-        scalar[3]: 1
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: small_panel_colour
-      value:
-        scalar[0]: 0.224308
-        scalar[1]: 0.286275
-        scalar[2]: 0.208804
-        scalar[3]: 1
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: rust_A
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: paint_wear
-      value:
-        scalar[0]: 0.12
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: paint_wear_B
-      value:
-        scalar[0]: 0.15
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: surface_damage
-      value:
-        scalar[0]: 0.5
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: dust
-      value:
-        scalar[0]: 0.35
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: scratches
-      value:
-        scalar[0]: 0.13
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: dirt
-      value:
-        scalar[0]: 0.15
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: ambient_occlusion
-      value:
-        scalar[0]: 0.58
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: illumination_mask
-      value:
-        scalar[0]: 1
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: panel_illumination
-      value:
-        scalar[0]: 1
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: battery_illumination
-      value:
-        scalar[0]: 1
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: core_glow
-      value:
-        scalar[0]: 0.73
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: shadow_mix
-      value:
-        scalar[0]: 0.5
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: damage_normal
-      value:
-        scalar[0]: 0.13
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: illumination_pow
-      value:
-        scalar[0]: 0.2
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: core_illumination_colour
-      value:
-        scalar[0]: 0.678431
-        scalar[1]: 1
-        scalar[2]: 0.887449
-        scalar[3]: 1
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: core_illumination_glow_colour
-      value:
-        scalar[0]: 0
-        scalar[1]: 0.68333
-        scalar[2]: 1
-        scalar[3]: 1
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: baterry_illumination_colour
-      value:
-        scalar[0]: 0
-        scalar[1]: 0.933333
-        scalar[2]: 1
-        scalar[3]: 1
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: charge_illumination_colour
-      value:
-        scalar[0]: 1
-        scalar[1]: 0.11667
-        scalar[2]: 0
-        scalar[3]: 1
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: panel_illum_colour
-      value:
-        scalar[0]: 0.652369
-        scalar[1]: 0.797848
-        scalar[2]: 0.823529
-        scalar[3]: 1
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: panel_illum_glow_colour
-      value:
-        scalar[0]: 1
-        scalar[1]: 0.0666667
-        scalar[2]: 0
-        scalar[3]: 1
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: roughness_a
-      value:
-        scalar[0]: 0.07
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: roughness_b
-      value:
-        scalar[0]: 0.12
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: metallic_a
-      value:
-        scalar[0]: 0.75
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    - name: metallic_b
-      value:
-        scalar[0]: 0.44
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-        stringvalue: 
-    materialInformation:
-      serializedVersion: 5
-      offset: {x: 0, y: 0}
-      scale: {x: 0.24, y: 0.24}
-      generateMipmaps: 1
-      generateAllOutputs: 0
-      animationUpdateRate: 42
-    materialProperties:
-      serializedVersion: 3
-      texEnvs:
-      - _BumpMap:
-          texture: {instanceID: 0}
-          scale: {x: 0.24, y: 0.24}
-          offset: {x: 0, y: 0}
-      - _DetailAlbedoMap:
-          texture: {instanceID: 0}
-          scale: {x: 1, y: 1}
-          offset: {x: 0, y: 0}
-      - _DetailMask:
-          texture: {instanceID: 0}
-          scale: {x: 1, y: 1}
-          offset: {x: 0, y: 0}
-      - _DetailNormalMap:
-          texture: {instanceID: 0}
-          scale: {x: 1, y: 1}
-          offset: {x: 0, y: 0}
-      - _EmissionMap:
-          texture: {instanceID: 0}
-          scale: {x: 0.24, y: 0.24}
-          offset: {x: 0, y: 0}
-      - _MainTex:
-          texture: {instanceID: 0}
-          scale: {x: 0.24, y: 0.24}
-          offset: {x: 0, y: 0}
-      - _MetallicGlossMap:
-          texture: {instanceID: 0}
-          scale: {x: 0.24, y: 0.24}
-          offset: {x: 0, y: 0}
-      - _OcclusionMap:
-          texture: {instanceID: 0}
-          scale: {x: 1, y: 1}
-          offset: {x: 0, y: 0}
-      - _ParallaxMap:
-          texture: {instanceID: 0}
-          scale: {x: 0.24, y: 0.24}
-          offset: {x: 0, y: 0}
-      floats:
-      - _BumpScale: 14.63
-      - _Cutoff: 0.5
-      - _DetailNormalMapScale: 1
-      - _DstBlend: 0
-      - _GlossMapScale: 1
-      - _Glossiness: 0
-      - _GlossyReflections: 1
-      - _Metallic: 0
-      - _Mode: 0
-      - _OcclusionStrength: 1
-      - _Parallax: 0.0302
-      - _SmoothnessTextureChannel: 1
-      - _SpecularHighlights: 1
-      - _SrcBlend: 1
-      - _UVSec: 0
-      - _ZWrite: 1
-      colors:
-      - _Color: {r: 1, g: 1, b: 1, a: 1}
-      - _EmissionColor: {r: 3.608, g: 3.608, b: 3.608, a: 1}
-      - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
-    textureParameters:
-    - name: sci-core_basecolor
-      alphaSource: 6
-      filterMode: 1
-      aniso: 1
-      wrapMode: 0
-    - name: sci-core_normal
-      alphaSource: 0
-      filterMode: 1
-      aniso: 1
-      wrapMode: 0
-    - name: sci-core_metallic
-      alphaSource: 7
-      filterMode: 1
-      aniso: 1
-      wrapMode: 0
-    - name: sci-core_height
-      alphaSource: 0
-      filterMode: 1
-      aniso: 1
-      wrapMode: 0
-    - name: sci-core_illlumination
-      alphaSource: 0
-      filterMode: 1
-      aniso: 1
-      wrapMode: 0
-    textureAssignments:
-    - shaderProp: _MainTex
-      material: {instanceID: 0}
-      baseUID: 726416576
-    - shaderProp: _BumpMap
-      material: {instanceID: 0}
-      baseUID: 726416578
-    - shaderProp: _EmissionMap
-      material: {instanceID: 0}
-      baseUID: 717575194
-    - shaderProp: _MetallicGlossMap
-      material: {instanceID: 0}
-      baseUID: 726416582
-    - shaderProp: _ParallaxMap
-      material: {instanceID: 0}
-      baseUID: 717575223
-    buildTargetSettings:
-    - serializedVersion: 2
-      buildTarget: 
-      textureWidth: 512
-      textureHeight: 512
-      textureFormat: 0
-      loadingBehavior: 1
-  deletedPrototypes: []
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+  script: {fileID: 232528478, guid: 43a8bbf65be290d44ba52b94476242b9, type: 3}
+  mGraphInstanceData:
+  - graphLabel: Sci-Core
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://sci-core\" label=\"\" >\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: Base Color,Normal,Metallic,height,emissive
+    texturePackingList:
+    - outputName: Base Color
+      alphaSource: Base Color
+    - outputName: Normal
+      alphaSource: Normal
+    - outputName: Roughness
+      alphaSource: Roughness
+    - outputName: Metallic
+      alphaSource: Smoothness
+    - outputName: height
+      alphaSource: height
+    - outputName: emissive
+      alphaSource: emissive
+    colorSpaceList:
+    - outputName: Base Color
+      bLinear: 0
+    - outputName: Normal
+      bLinear: 1
+    - outputName: Roughness
+      bLinear: 1
+    - outputName: Metallic
+      bLinear: 1
+    - outputName: height
+      bLinear: 1
+    - outputName: emissive
+      bLinear: 0
+    inputTextureMap: []
+    targetSettingList:
+    - label: Default
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      loadBehavior: 0
+    - label: Standalone
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      loadBehavior: 0
+    - label: iPhone
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      loadBehavior: 0
+    material: {instanceID: 0}

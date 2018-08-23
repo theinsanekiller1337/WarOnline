@@ -1,175 +1,86 @@
 fileFormatVersion: 2
 guid: 99267cd9ef908d8469ef526e479775a6
-SubstanceImporter:
-  serializedVersion: 3
-  materialInstances:
-  - name: Pavement_01
-    prototypeName: Pavement_01
-    shaderName: Bumped Specular
-    inputs:
-    - name: $normalformat
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-    - name: $outputsize
-      value:
-        scalar[0]: 9
-        scalar[1]: 9
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-    - name: $randomseed
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-    - name: Age
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-    - name: Colour_Variation
-      value:
-        scalar[0]: .5
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-    - name: Water_Level
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-    - name: Wavelets
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-    - name: Depth
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-    - name: Relief_Balance
-      value:
-        scalar[0]: 32
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-    - name: Normal
-      value:
-        scalar[0]: .5
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-    - name: Emboss
-      value:
-        scalar[0]: 5
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-    - name: Angle
-      value:
-        scalar[0]: .125
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-    - name: Hue_Shift
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-    - name: Saturation
-      value:
-        scalar[0]: .5
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-    - name: Luminosity
-      value:
-        scalar[0]: .5
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-    - name: Contrast
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-    materialInformation:
-      offset: {x: 0, y: 0}
-      scale: {x: 10, y: 10}
-      generatedAtLoading: 1
-      generateAllOutputs: 1
-      animationUpdateRate: 42
-    materialProperties:
-      serializedVersion: 2
-      texEnvs: {}
-      floats: {}
-      colors: {}
-    textureParameters:
-    - name: Pavement_01_Diffuse
-      alphaSource: 5
-      filterMode: 1
-      aniso: 1
-      wrapMode: 0
-    - name: Pavement_01_Specular
-      alphaSource: 0
-      filterMode: 1
-      aniso: 1
-      wrapMode: 0
-    - name: Pavement_01_Normal
-      alphaSource: 0
-      filterMode: 1
-      aniso: 1
-      wrapMode: 0
-    - name: Pavement_01_Bump
-      alphaSource: 0
-      filterMode: 1
-      aniso: 1
-      wrapMode: 0
-    - name: Pavement_01_Displacement
-      alphaSource: 0
-      filterMode: 1
-      aniso: 1
-      wrapMode: 0
-    - name: Pavement_01_Height
-      alphaSource: 0
-      filterMode: 1
-      aniso: 1
-      wrapMode: 0
-    - name: Pavement_01_Glossiness
-      alphaSource: 0
-      filterMode: 1
-      aniso: 1
-      wrapMode: 0
-    buildTargetSettings:
-    - serializedVersion: 2
-      buildTarget: 
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: Pavement_01/Pavement_01
+    400000: Pavement_01/Pavement_01/Transform
+    2100000: mat.Pavement_01
+    2300000: Pavement_01/Pavement_01/MeshRenderer
+    2800000: Pavement_01_Diffuse
+    2800002: Pavement_01_Normal
+    2800004: Pavement_01_Height
+    3300000: Pavement_01/Pavement_01/MeshFilter
+    11400000: sbsar
+    11400002: graph0
+    13500000: Pavement_01/Pavement_01/SphereCollider
+    100100000: Pavement_01
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 232528478, guid: 43a8bbf65be290d44ba52b94476242b9, type: 3}
+  mGraphInstanceData:
+  - graphLabel: Pavement_01
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://Pavement_01/Pavement_01\" label=\"\" >\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: Diffuse,Normal,Height
+    texturePackingList:
+    - outputName: Diffuse
+      alphaSource: Diffuse
+    - outputName: Specular
+      alphaSource: Specular
+    - outputName: Normal
+      alphaSource: Normal
+    - outputName: Bump
+      alphaSource: Bump
+    - outputName: Displacement
+      alphaSource: Displacement
+    - outputName: Height
+      alphaSource: Height
+    - outputName: Glossiness
+      alphaSource: Glossiness
+    colorSpaceList:
+    - outputName: Diffuse
+      bLinear: 0
+    - outputName: Specular
+      bLinear: 0
+    - outputName: Normal
+      bLinear: 1
+    - outputName: Bump
+      bLinear: 1
+    - outputName: Displacement
+      bLinear: 1
+    - outputName: Height
+      bLinear: 1
+    - outputName: Glossiness
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: Default
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
       textureWidth: 512
       textureHeight: 512
       textureFormat: 0
-  deletedPrototypes: []
+      loadBehavior: 0
+    - label: Standalone
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 512
+      textureHeight: 512
+      textureFormat: 0
+      loadBehavior: 0
+    - label: iPhone
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 512
+      textureHeight: 512
+      textureFormat: 0
+      loadBehavior: 0
+    material: {instanceID: 0}
