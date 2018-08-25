@@ -38,6 +38,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4234776481895026}
   - component: {fileID: 114258123785053974}
+  - component: {fileID: 114240847688734234}
   m_Layer: 0
   m_Name: MachineGun
   m_TagString: Untagged
@@ -126,16 +127,16 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1060327466485644}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: 19.75, y: 0.75, z: -9.1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.22098032, y: 1.1553547, z: -0.8245123}
+  m_LocalScale: {x: 1.1789335, y: 1.1789335, z: 1.1789335}
   m_Children:
   - {fileID: 4290356243259716}
   - {fileID: 4133956490477512}
   - {fileID: 4608032929327530}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4290356243259716
 Transform:
   m_ObjectHideFlags: 1
@@ -175,6 +176,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: e5e9f9ccc05956342a3821ea43ce5d8e, type: 2}
   m_StaticBatchInfo:
@@ -209,6 +211,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: e5e9f9ccc05956342a3821ea43ce5d8e, type: 2}
   m_StaticBatchInfo:
@@ -252,7 +255,7 @@ MeshCollider:
   m_GameObject: {fileID: 1004003355009908}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 1
   m_CookingOptions: 14
@@ -266,12 +269,26 @@ MeshCollider:
   m_GameObject: {fileID: 1425495967291556}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 1
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300002, guid: f7b00290c494fee4e9655ac0c2d9ee11, type: 3}
+--- !u!114 &114240847688734234
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1060327466485644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16935992e3631bb47b673d0abd2aa2b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turnValue: 2
+  turnLeftKey: 122
+  turnRightKey: 120
 --- !u!114 &114258123785053974
 MonoBehaviour:
   m_ObjectHideFlags: 1
