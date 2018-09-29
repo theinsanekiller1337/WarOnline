@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4966643470428270}
   - component: {fileID: 33053852573578936}
   - component: {fileID: 23461605926378108}
-  - component: {fileID: 114017538143160752}
   m_Layer: 12
   m_Name: Sniper
   m_TagString: Untagged
@@ -108,6 +107,7 @@ GameObject:
   - component: {fileID: 4660465671540740}
   - component: {fileID: 120548988559561924}
   - component: {fileID: 114576373058665938}
+  - component: {fileID: 114897580481021684}
   m_Layer: 0
   m_Name: Sniper
   m_TagString: Untagged
@@ -192,7 +192,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1846764442994220}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.09, y: 0.12, z: 0.35}
+  m_LocalPosition: {x: 0.09, y: 0.143, z: 0.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4660465671540740}
@@ -220,7 +220,7 @@ Camera:
     height: 1
   near clip plane: 0.01
   far clip plane: 800
-  field of view: 48
+  field of view: 7
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -352,28 +352,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114017538143160752
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1023651082980412}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15f00221cd0eb4448ac3c44af8680b27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera: {fileID: 20423644288631298}
-  sniper: {fileID: 1585054363029964}
-  scope: {fileID: 1846764442994220}
-  ScopeImage: {fileID: 0}
-  zoom_speed: 1
-  zoom_limit: 5
-  buttontozoom: space
-  linerenderer: {fileID: 120548988559561924}
-  shootfrom: {fileID: 4421122700109932}
-  animcontroller: {fileID: 95832165159655238}
-  nameofaparametertoedit: Scoped
 --- !u!114 &114092388011709992
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -426,6 +404,28 @@ MonoBehaviour:
   offsetPosition: {x: 0, y: 5.47, z: 20}
   offsetPositionSpace: 1
   lookAt: 1
+--- !u!114 &114897580481021684
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1944402308406282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15f00221cd0eb4448ac3c44af8680b27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 20423644288631298}
+  sniper: {fileID: 1585054363029964}
+  scope: {fileID: 1846764442994220}
+  ScopeImage: {fileID: 0}
+  zoom_speed: 1
+  zoom_limit: 5
+  buttontozoom: space
+  linerenderer: {fileID: 120548988559561924}
+  shootfrom: {fileID: 4421122700109932}
+  animcontroller: {fileID: 95832165159655238}
+  nameofaparametertoedit: Scoped
 --- !u!120 &120548988559561924
 LineRenderer:
   m_ObjectHideFlags: 1
@@ -462,8 +462,8 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
-  - {x: 0, y: 0, z: 0}
-  - {x: 1, y: 0, z: 1}
+  - {x: 0.049809724, y: 4.19, z: 8.581945}
+  - {x: -72.639534, y: 3.3094044, z: 12.882576}
   m_Parameters:
     serializedVersion: 2
     widthMultiplier: 1
@@ -471,8 +471,8 @@ LineRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0.0026737968
-        value: 0.25748503
+        time: 0
+        value: 0.03723967
         inSlope: 0
         outSlope: 0
         tangentMode: 0

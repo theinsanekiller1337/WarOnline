@@ -55,18 +55,16 @@ public class snipershooting : MonoBehaviour {
             RaycastHit hit1;
             if (Physics.Raycast(shootfrom.transform.position, shootfrom.transform.forward, out hit1))
             {
-                Debug.Log(hit1.transform.name);
+                Debug.Log(hit1.point);
             }
 
             //linerender 
             linerenderer.enabled = true;
-            ray.origin = shootfrom.position;
-            ray.direction = transform.forward;
             linerenderer.SetPosition(0, scope.transform.position);
-            linerenderer.SetPosition(1, hit1.transform.position);
+            linerenderer.SetPosition(1, hit1.point); 
 
             //scopeOverlay
-            if (camera.fieldOfView >= 46f)
+            if (camera.fieldOfView <= 46f)
             {
                 ScopeImage.SetActive(true);
             }
