@@ -79,8 +79,9 @@ public class PhotonConnectEditor : Photon.MonoBehaviour {
 
         playerPrefab.GetComponent<RTCTankController>().enabled = true;
         playerPrefab.GetComponentInChildren<Particle_Emitter>().enabled = true;
-        playerPrefab.transform.Find("Main Camera").gameObject.SetActive(true);
         playerPrefab.GetComponentInChildren<TurretRotation>().enabled = (true);
+        playerPrefab.transform.Find("MainCamera").gameObject.SetActive(true);
+        
 
         
 

@@ -25,6 +25,20 @@ ModelImporter:
     100038: polySurface9
     100040: rigth_staire
     100042: //RootNode
+    100044: Bridge_part_10:polySurface1
+    100046: Bridge_part_11:polySurface1
+    100048: Bridge_part_12:polySurface19
+    100050: Bridge_part_13:polySurface5
+    100052: Bridge_part_14:polySurface7
+    100054: Bridge_part_1:polySurface48
+    100056: Bridge_part_2:polySurface1
+    100058: Bridge_part_3:polySurface1
+    100060: Bridge_part_4:polySurface1
+    100062: Bridge_part_5:polySurface1
+    100064: Bridge_part_6:polySurface1
+    100066: Bridge_part_7:polySurface37
+    100068: Bridge_part_8:polySurface38
+    100070: Bridge_part_9:polySurface43
     400000: left_staire
     400002: polySurface1
     400004: polySurface10
@@ -47,7 +61,48 @@ ModelImporter:
     400038: polySurface9
     400040: rigth_staire
     400042: //RootNode
+    400044: Bridge_part_10:polySurface1
+    400046: Bridge_part_11:polySurface1
+    400048: Bridge_part_12:polySurface19
+    400050: Bridge_part_13:polySurface5
+    400052: Bridge_part_14:polySurface7
+    400054: Bridge_part_1:polySurface48
+    400056: Bridge_part_2:polySurface1
+    400058: Bridge_part_3:polySurface1
+    400060: Bridge_part_4:polySurface1
+    400062: Bridge_part_5:polySurface1
+    400064: Bridge_part_6:polySurface1
+    400066: Bridge_part_7:polySurface37
+    400068: Bridge_part_8:polySurface38
+    400070: Bridge_part_9:polySurface43
     2100000: Material.005
+    2100002: CLEAN_CONCRETE
+    2100004: roughcon
+    2100006: pave
+    2100008: road
+    2100010: STRIPED_CONCRETE
+    2100012: BASE_CONCRETE_ROUGH
+    2100014: Bridge_steel
+    2100016: glass
+    2100018: SCRAPPY_METAL
+    2100020: door
+    2100022: Material.004
+    2100024: frames
+    2100026: roof
+    2100028: Bridge_part_10_Main_Bridge.001SG1
+    2100030: Bridge_part_11_Main_Bridge.001SG1
+    2100032: Bridge_part_12_Main_Bridge.001SG1
+    2100034: Bridge_part_13_Main_Bridge.001SG1
+    2100036: Bridge_part_14_Main_Bridge.001SG1
+    2100038: Bridge_part_1_Main_Bridge.001SG1
+    2100040: Bridge_part_2_Main_Bridge.001SG1
+    2100042: Bridge_part_3_Main_Bridge.001SG1
+    2100044: Bridge_part_4_Main_Bridge.001SG1
+    2100046: Bridge_part_5_Main_Bridge.001SG1
+    2100048: Bridge_part_6_Main_Bridge.001SG1
+    2100050: Bridge_part_7_Main_Bridge.001SG1
+    2100052: Bridge_part_8_Main_Bridge.001SG1
+    2100054: Bridge_part_9_Main_Bridge.001SG1
     2300000: left_staire
     2300002: polySurface1
     2300004: polySurface10
@@ -70,6 +125,20 @@ ModelImporter:
     2300038: polySurface9
     2300040: rigth_staire
     2300042: //RootNode
+    2300044: Bridge_part_10:polySurface1
+    2300046: Bridge_part_11:polySurface1
+    2300048: Bridge_part_12:polySurface19
+    2300050: Bridge_part_13:polySurface5
+    2300052: Bridge_part_14:polySurface7
+    2300054: Bridge_part_1:polySurface48
+    2300056: Bridge_part_2:polySurface1
+    2300058: Bridge_part_3:polySurface1
+    2300060: Bridge_part_4:polySurface1
+    2300062: Bridge_part_5:polySurface1
+    2300064: Bridge_part_6:polySurface1
+    2300066: Bridge_part_7:polySurface37
+    2300068: Bridge_part_8:polySurface38
+    2300070: Bridge_part_9:polySurface43
     3300000: left_staire
     3300002: polySurface1
     3300004: polySurface10
@@ -92,6 +161,20 @@ ModelImporter:
     3300038: polySurface9
     3300040: rigth_staire
     3300042: //RootNode
+    3300044: Bridge_part_10:polySurface1
+    3300046: Bridge_part_11:polySurface1
+    3300048: Bridge_part_12:polySurface19
+    3300050: Bridge_part_13:polySurface5
+    3300052: Bridge_part_14:polySurface7
+    3300054: Bridge_part_1:polySurface48
+    3300056: Bridge_part_2:polySurface1
+    3300058: Bridge_part_3:polySurface1
+    3300060: Bridge_part_4:polySurface1
+    3300062: Bridge_part_5:polySurface1
+    3300064: Bridge_part_6:polySurface1
+    3300066: Bridge_part_7:polySurface37
+    3300068: Bridge_part_8:polySurface38
+    3300070: Bridge_part_9:polySurface43
     4300000: polySurface1
     4300002: polySurface3
     4300004: polySurface5
@@ -114,6 +197,21 @@ ModelImporter:
     4300038: polySurface27
     4300040: rigth_staire
     4300042: Main_Bridge.001
+    4300044: Main_Bridge.000
+    4300046: Bridge_part_10:polySurface1
+    4300048: Bridge_part_11:polySurface1
+    4300050: Bridge_part_12:polySurface19
+    4300052: Bridge_part_13:polySurface5
+    4300054: Bridge_part_14:polySurface7
+    4300056: Bridge_part_1:polySurface48
+    4300058: Bridge_part_2:polySurface1
+    4300060: Bridge_part_3:polySurface1
+    4300062: Bridge_part_4:polySurface1
+    4300064: Bridge_part_5:polySurface1
+    4300066: Bridge_part_6:polySurface1
+    4300068: Bridge_part_7:polySurface37
+    4300070: Bridge_part_8:polySurface38
+    4300072: Bridge_part_9:polySurface43
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -145,7 +243,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.01
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
