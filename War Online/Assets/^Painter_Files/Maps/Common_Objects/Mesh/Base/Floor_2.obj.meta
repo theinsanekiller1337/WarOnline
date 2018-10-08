@@ -11,6 +11,7 @@ ModelImporter:
     2300000: Floor_2:Floor_3
     3300000: Floor_2:Floor_3
     4300000: Floor_2:Floor_3
+    6400000: Floor_2:Floor_3
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -44,7 +45,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1

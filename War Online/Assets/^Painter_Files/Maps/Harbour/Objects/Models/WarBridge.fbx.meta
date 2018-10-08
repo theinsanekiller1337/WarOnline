@@ -39,6 +39,34 @@ ModelImporter:
     100066: Bridge_part_7:polySurface37
     100068: Bridge_part_8:polySurface38
     100070: Bridge_part_9:polySurface43
+    100072: Group003
+    100074: Group004
+    100076: Group005
+    100078: Group006
+    100080: Group1
+    100082: Group2
+    100084: Group3
+    100086: Object001
+    100088: Object002
+    100090: Object003
+    100092: Object004
+    100094: Object005
+    100096: Object006
+    100098: Object007
+    100100: Object008
+    100102: Object009
+    100104: Object010
+    100106: Object011
+    100108: Object012
+    100110: Object013
+    100112: Object014
+    100114: Object015
+    100116: Object016
+    100118: Object017
+    100120: Object018
+    100122: Object019
+    100124: Object020
+    100126: Object021
     400000: left_staire
     400002: polySurface1
     400004: polySurface10
@@ -75,6 +103,34 @@ ModelImporter:
     400066: Bridge_part_7:polySurface37
     400068: Bridge_part_8:polySurface38
     400070: Bridge_part_9:polySurface43
+    400072: Group003
+    400074: Group004
+    400076: Group005
+    400078: Group006
+    400080: Group1
+    400082: Group2
+    400084: Group3
+    400086: Object001
+    400088: Object002
+    400090: Object003
+    400092: Object004
+    400094: Object005
+    400096: Object006
+    400098: Object007
+    400100: Object008
+    400102: Object009
+    400104: Object010
+    400106: Object011
+    400108: Object012
+    400110: Object013
+    400112: Object014
+    400114: Object015
+    400116: Object016
+    400118: Object017
+    400120: Object018
+    400122: Object019
+    400124: Object020
+    400126: Object021
     2100000: Material.005
     2100002: CLEAN_CONCRETE
     2100004: roughcon
@@ -139,6 +195,34 @@ ModelImporter:
     2300066: Bridge_part_7:polySurface37
     2300068: Bridge_part_8:polySurface38
     2300070: Bridge_part_9:polySurface43
+    2300072: Group003
+    2300074: Group004
+    2300076: Group005
+    2300078: Group006
+    2300080: Group1
+    2300082: Group2
+    2300084: Group3
+    2300086: Object001
+    2300088: Object002
+    2300090: Object003
+    2300092: Object004
+    2300094: Object005
+    2300096: Object006
+    2300098: Object007
+    2300100: Object008
+    2300102: Object009
+    2300104: Object010
+    2300106: Object011
+    2300108: Object012
+    2300110: Object013
+    2300112: Object014
+    2300114: Object015
+    2300116: Object016
+    2300118: Object017
+    2300120: Object018
+    2300122: Object019
+    2300124: Object020
+    2300126: Object021
     3300000: left_staire
     3300002: polySurface1
     3300004: polySurface10
@@ -175,6 +259,34 @@ ModelImporter:
     3300066: Bridge_part_7:polySurface37
     3300068: Bridge_part_8:polySurface38
     3300070: Bridge_part_9:polySurface43
+    3300072: Group003
+    3300074: Group004
+    3300076: Group005
+    3300078: Group006
+    3300080: Group1
+    3300082: Group2
+    3300084: Group3
+    3300086: Object001
+    3300088: Object002
+    3300090: Object003
+    3300092: Object004
+    3300094: Object005
+    3300096: Object006
+    3300098: Object007
+    3300100: Object008
+    3300102: Object009
+    3300104: Object010
+    3300106: Object011
+    3300108: Object012
+    3300110: Object013
+    3300112: Object014
+    3300114: Object015
+    3300116: Object016
+    3300118: Object017
+    3300120: Object018
+    3300122: Object019
+    3300124: Object020
+    3300126: Object021
     4300000: polySurface1
     4300002: polySurface3
     4300004: polySurface5
@@ -212,6 +324,34 @@ ModelImporter:
     4300068: Bridge_part_7:polySurface37
     4300070: Bridge_part_8:polySurface38
     4300072: Bridge_part_9:polySurface43
+    4300074: Group1
+    4300076: Group2
+    4300078: Group003
+    4300080: Group3
+    4300082: Group004
+    4300084: Group005
+    4300086: Group006
+    4300088: Object001
+    4300090: Object004
+    4300092: Object003
+    4300094: Object002
+    4300096: Object005
+    4300098: Object006
+    4300100: Object007
+    4300102: Object008
+    4300104: Object009
+    4300106: Object010
+    4300108: Object011
+    4300110: Object012
+    4300112: Object013
+    4300114: Object014
+    4300116: Object015
+    4300118: Object016
+    4300120: Object017
+    4300122: Object018
+    4300124: Object020
+    4300126: Object021
+    4300128: Object019
   externalObjects: {}
   materials:
     importMaterials: 1
