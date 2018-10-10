@@ -283,10 +283,15 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &1186682938721248
 GameObject:
+<<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
+=======
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+>>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 4245069786996224}
   m_Layer: 0
@@ -512,9 +517,9 @@ GameObject:
 --- !u!1 &1402073831168766
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 4986935138254402}
   - component: {fileID: 120428862223074692}
@@ -536,8 +541,12 @@ GameObject:
   - component: {fileID: 4127375362888018}
   - component: {fileID: 54175004604029522}
   - component: {fileID: 114507136372782780}
+<<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
 <<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/DominatorFT.prefab
   - component: {fileID: 114541501734671190}
+=======
+  - component: {fileID: 114432993664738588}
+>>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
 =======
   - component: {fileID: 114432993664738588}
 >>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
@@ -1007,9 +1016,9 @@ GameObject:
 --- !u!1 &1763367102826714
 GameObject:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 4246736961912636}
   m_Layer: 0
@@ -1544,7 +1553,7 @@ Transform:
 --- !u!4 &4246736961912636
 Transform:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1763367102826714}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -1695,7 +1704,7 @@ Transform:
 --- !u!4 &4413201502157828
 Transform:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1216894763690676}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
@@ -2317,7 +2326,7 @@ Transform:
 --- !u!4 &4892314780770670
 Transform:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1460556084925520}
   m_LocalRotation: {x: -0, y: -0, z: -0.16926317, w: -0.9855709}
@@ -2371,7 +2380,7 @@ Transform:
 --- !u!4 &4930527204354234
 Transform:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1983296116362746}
   m_LocalRotation: {x: 0.000000081460335, y: 0, z: -0, w: 1}
@@ -2409,7 +2418,7 @@ Transform:
 --- !u!4 &4986935138254402
 Transform:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1402073831168766}
   m_LocalRotation: {x: -0.29883623, y: 0.64085644, z: 0.29883623, w: -0.64085644}
@@ -2518,7 +2527,7 @@ MeshRenderer:
 --- !u!23 &23118452892390306
 MeshRenderer:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1460556084925520}
   m_Enabled: 1
@@ -3344,7 +3353,7 @@ MeshFilter:
 --- !u!33 &33888958865651920
 MeshFilter:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1983296116362746}
   m_Mesh: {fileID: 4300002, guid: f7b00290c494fee4e9655ac0c2d9ee11, type: 3}
@@ -3613,6 +3622,9 @@ MonoBehaviour:
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
+<<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
+>>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
+=======
 >>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -3652,7 +3664,7 @@ MonoBehaviour:
 --- !u!114 &114541501734671190
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1427969965975700}
   m_Enabled: 1
@@ -3667,7 +3679,7 @@ MonoBehaviour:
 --- !u!114 &114585602855013872
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1402073831168766}
   m_Enabled: 1
@@ -4370,8 +4382,11 @@ ParticleSystem:
           weightedMode: 0
           inWeight: 0.33333334
           outWeight: 0.33333334
+<<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
 <<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/DominatorFT.prefab
 =======
+=======
+>>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
         - serializedVersion: 3
           time: 1
           value: 1
@@ -4381,6 +4396,9 @@ ParticleSystem:
           weightedMode: 0
           inWeight: 0.33333334
           outWeight: 0.33333334
+<<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
+>>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
+=======
 >>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
         m_PreInfinity: 2
         m_PostInfinity: 2
@@ -4430,8 +4448,11 @@ ParticleSystem:
           weightedMode: 0
           inWeight: 0.33333334
           outWeight: 0.33333334
+<<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
 <<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/DominatorFT.prefab
 =======
+=======
+>>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
         - serializedVersion: 3
           time: 1
           value: 1
@@ -4441,6 +4462,9 @@ ParticleSystem:
           weightedMode: 0
           inWeight: 0.33333334
           outWeight: 0.33333334
+<<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
+>>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
+=======
 >>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
         m_PreInfinity: 2
         m_PostInfinity: 2
@@ -5042,8 +5066,11 @@ ParticleSystem:
           weightedMode: 0
           inWeight: 0.33333334
           outWeight: 0.33333334
+<<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
 <<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/DominatorFT.prefab
 =======
+=======
+>>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
         - serializedVersion: 3
           time: 1
           value: 1
@@ -5053,6 +5080,9 @@ ParticleSystem:
           weightedMode: 0
           inWeight: 0.33333334
           outWeight: 0.33333334
+<<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
+>>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
+=======
 >>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
         m_PreInfinity: 2
         m_PostInfinity: 2
@@ -5171,10 +5201,13 @@ ParticleSystem:
           inWeight: 0.33333334
           outWeight: 0.33333334
         - serializedVersion: 3
+<<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
 <<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/DominatorFT.prefab
           time: 0.9888195
           value: 0.9918033
 =======
+=======
+>>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
           time: 1
           value: 0.5
 >>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
@@ -5199,6 +5232,7 @@ ParticleSystem:
           weightedMode: 0
           inWeight: 0.33333334
           outWeight: 0.33333334
+<<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
 <<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/DominatorFT.prefab
         - serializedVersion: 3
           time: 1
@@ -5209,6 +5243,8 @@ ParticleSystem:
           weightedMode: 0
           inWeight: 0.33333334
           outWeight: 0.33333334
+=======
+>>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
 =======
 >>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
         m_PreInfinity: 2
@@ -5446,6 +5482,7 @@ ParticleSystem:
           weightedMode: 0
           inWeight: 0.33333334
           outWeight: 0.33333334
+<<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
 <<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/DominatorFT.prefab
         - serializedVersion: 3
           time: 1
@@ -5456,6 +5493,8 @@ ParticleSystem:
           weightedMode: 0
           inWeight: 0.33333334
           outWeight: 0.33333334
+=======
+>>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
 =======
 >>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
         m_PreInfinity: 2
@@ -5473,6 +5512,7 @@ ParticleSystem:
           weightedMode: 0
           inWeight: 0.33333334
           outWeight: 0.33333334
+<<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
 <<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/DominatorFT.prefab
         - serializedVersion: 3
           time: 1
@@ -5483,6 +5523,8 @@ ParticleSystem:
           weightedMode: 0
           inWeight: 0.33333334
           outWeight: 0.33333334
+=======
+>>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
 =======
 >>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
         m_PreInfinity: 2
@@ -5742,6 +5784,9 @@ ParticleSystem:
           weightedMode: 0
           inWeight: 0.33333334
           outWeight: 0.33333334
+<<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
+>>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
+=======
 >>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
         m_PreInfinity: 2
         m_PostInfinity: 2
@@ -5779,12 +5824,15 @@ ParticleSystem:
         serializedVersion: 2
         m_Curve:
         - serializedVersion: 3
+<<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
 <<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/DominatorFT.prefab
           time: 0.002272727
           value: 1
           inSlope: -6.127189
           outSlope: -6.127189
 =======
+=======
+>>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
           time: 0
           value: 1
           inSlope: 0
@@ -6212,6 +6260,401 @@ ParticleSystem:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
+    orbitalX:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    orbitalY:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    orbitalZ:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    orbitalOffsetX:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+<<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+=======
+        - serializedVersion: 3
+          time: 1
+          value: 0
+>>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+<<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+=======
+        - serializedVersion: 3
+          time: 1
+          value: 0
+>>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    orbitalOffsetY:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    orbitalOffsetZ:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    radial:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
     speedModifier:
       serializedVersion: 2
       minMaxState: 0
@@ -6334,7 +6777,20 @@ ParticleSystem:
         m_Curve:
         - serializedVersion: 3
           time: 0
+<<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 1
+=======
           value: -1
+>>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -6356,6 +6812,18 @@ ParticleSystem:
           weightedMode: 0
           inWeight: 0.33333334
           outWeight: 0.33333334
+<<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+=======
+>>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
@@ -6369,7 +6837,20 @@ ParticleSystem:
         m_Curve:
         - serializedVersion: 3
           time: 0
+<<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 1
+=======
           value: 0
+>>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -6391,6 +6872,8 @@ ParticleSystem:
           weightedMode: 0
           inWeight: 0.33333334
           outWeight: 0.33333334
+<<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
+=======
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
@@ -6802,6 +7285,7 @@ ParticleSystem:
           weightedMode: 0
           inWeight: 0.33333334
           outWeight: 0.33333334
+>>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
         - serializedVersion: 3
           time: 1
           value: 1
@@ -10160,6 +10644,7 @@ ParticleSystem:
         serializedVersion: 2
         m_Curve:
         - serializedVersion: 3
+<<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
           time: 0
           value: 1
           inSlope: 0
@@ -10213,6 +10698,384 @@ ParticleSystem:
         serializedVersion: 2
         m_Curve:
         - serializedVersion: 3
+=======
+>>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+<<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    orbitalX:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    orbitalY:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    orbitalZ:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    orbitalOffsetX:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    orbitalOffsetY:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    orbitalOffsetZ:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+=======
+>>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    radial:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+<<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
+=======
           time: 0
           value: 1
           inSlope: 0
@@ -10584,6 +11447,7 @@ ParticleSystem:
         serializedVersion: 2
         m_Curve:
         - serializedVersion: 3
+>>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
           time: 0
           value: 0
           inSlope: 0
@@ -14276,6 +15140,430 @@ ParticleSystem:
           weightedMode: 0
           inWeight: 0.33333334
           outWeight: 0.33333334
+<<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+=======
+>>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    orbitalZ:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+<<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
+<<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/DominatorFT.prefab
+=======
+>>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+<<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
+=======
+>>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
+=======
+>>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    orbitalOffsetX:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+<<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
+          time: 1
+          value: 0
+=======
+          time: 0.9888195
+          value: 0.9918033
+>>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    orbitalOffsetY:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+<<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
+<<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/DominatorFT.prefab
+=======
+>>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+<<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
+=======
+>>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
+=======
+>>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    orbitalOffsetZ:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+<<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
+<<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/DominatorFT.prefab
+=======
+>>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+=======
+          time: 0.002272727
+          value: 1
+          inSlope: -6.127189
+          outSlope: -6.127189
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 0.21991122
+          value: 0.30227187
+          inSlope: -0.82989186
+          outSlope: -0.82989186
+>>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    radial:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+<<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
+<<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/DominatorFT.prefab
+=======
+=======
+>>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+<<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
+=======
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+>>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    orbitalX:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    orbitalY:
+      serializedVersion: 2
+      minMaxState: 0
+      scalar: 0
+      minScalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
         - serializedVersion: 3
           time: 1
           value: 0
@@ -14329,7 +15617,6 @@ ParticleSystem:
           weightedMode: 0
           inWeight: 0.33333334
           outWeight: 0.33333334
-<<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/DominatorFT.prefab
         - serializedVersion: 3
           time: 1
           value: 0
@@ -14339,8 +15626,6 @@ ParticleSystem:
           weightedMode: 0
           inWeight: 0.33333334
           outWeight: 0.33333334
-=======
->>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
@@ -14438,7 +15723,7 @@ ParticleSystem:
           weightedMode: 0
           inWeight: 0.33333334
           outWeight: 0.33333334
-<<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/DominatorFT.prefab
+<<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
         - serializedVersion: 3
           time: 1
           value: 0
@@ -14486,7 +15771,7 @@ ParticleSystem:
         serializedVersion: 2
         m_Curve:
         - serializedVersion: 3
-<<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/DominatorFT.prefab
+<<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
           time: 0
           value: 0
           inSlope: 0
@@ -14555,7 +15840,8 @@ ParticleSystem:
         serializedVersion: 2
         m_Curve:
         - serializedVersion: 3
-<<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/DominatorFT.prefab
+<<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
+>>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
 =======
           time: 0
           value: 0
@@ -17580,8 +18866,12 @@ ParticleSystem:
     vectorLabel1_3: W
 --- !u!199 &199331597716785640
 ParticleSystemRenderer:
+<<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
 <<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/DominatorFT.prefab
   serializedVersion: 5
+=======
+  serializedVersion: 6
+>>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
 =======
   serializedVersion: 6
 >>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
@@ -17632,7 +18922,11 @@ ParticleSystemRenderer:
   m_Pivot: {x: 0, y: 0, z: 0}
   m_UseCustomVertexStreams: 0
   m_EnableGPUInstancing: 0
+<<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
 <<<<<<< HEAD:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/DominatorFT.prefab
+=======
+  m_ApplyActiveColorSpace: 0
+>>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
 =======
   m_ApplyActiveColorSpace: 0
 >>>>>>> 8fa288cbc5ac02af821ac45cdc3a1a6ed0f6d253:War Online/Assets/_Completed_Tanks_Prefabs/Flame_Thrower/Resources/DominatorFT.prefab
