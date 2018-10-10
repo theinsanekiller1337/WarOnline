@@ -4,7 +4,7 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: FireParticleFlameSheetMaterial
   m_Shader: {fileID: 4800000, guid: 246a7a15f0e80a64c8cb5b2f79bbd616, type: 3}
@@ -39,7 +39,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 4e505ad81f5b19c4cb6f445d36463955, type: 3}
+        m_Texture: {fileID: 2800000, guid: 6d87b8a2f48c5fc49ac111a9f929194b, type: 3}
         m_Scale: {x: 50, y: 50}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:

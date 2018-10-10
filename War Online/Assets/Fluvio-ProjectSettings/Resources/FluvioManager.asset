@@ -8,7 +8,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -373855183, guid: b435991485f6c8a4f9af5ca764dd7f07, type: 3}
+  m_Script: {fileID: 0}
   m_Name: FluvioManager
   m_EditorClassIdentifier: 
   m_FixedDeltaTime: 0.033333335
@@ -26,5 +26,5 @@ MonoBehaviour:
   m_EnableOpenCLGPUOnMac: 0
   m_OpenCLPlatformBlacklist: []
   m_OpenCLDeviceBlacklist: []
-  m_ProjectID: 8e1d9844-43f8-4ddc-a14f-d532c3456d16
+  m_ProjectID: a81b46c3-f591-4da0-bcb7-e6c10d84afb5
   m_SortingLayerUniqueIDs: 00000000
