@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HullChange : MonoBehaviour {
+public class TurretChange : MonoBehaviour {
     public Button btn;
-    public GameObject Scorpion;
-    public GameObject Dominator;
-    public GameObject Falcon;
-    public GameObject Panzer;
-    public GameObject Trapper;
+    public GameObject FlameThrower;
+    public GameObject MachineGun;
+    public GameObject MissileLauncher;
+    public GameObject Sniper;
     public GameObject parent;
 
 	// Use this for initialization
@@ -27,38 +26,33 @@ public class HullChange : MonoBehaviour {
     }
     void disableAll()
     {
-        Scorpion.SetActive(false);
-        Falcon.SetActive(false);
-        Panzer.SetActive(false);
-        Dominator.SetActive(false);
+        FlameThrower.SetActive(false);
+        MachineGun.SetActive(false);
+        MissileLauncher.SetActive(false);
+        Sniper.SetActive(false);
     }
     void TaskOnClick()
     {
-        Debug.Log("You have clicked me cunt");
+        
         if (gameObject.name == "DominatorBtn")
         {
             disableAll();
-            Dominator.SetActive(true);
+            FlameThrower.SetActive(true);
         }
         else if (gameObject.name == "FalconBtn")
         {
             disableAll();
-            Falcon.SetActive(true);
+            MachineGun.SetActive(true);
         }
         else if (gameObject.name == "PanzerBtn")
         {
             disableAll();
-            Panzer.SetActive(true);
+            MissileLauncher.SetActive(true);
         }
         else if (gameObject.name == "ScorpionBtn")
         {
             disableAll();
-            Scorpion.SetActive(true);
-        }
-        else if (gameObject.name == "TrapperBtn")
-        {
-            disableAll();
-            Trapper.SetActive(true);
+            Sniper.SetActive(true);
         }
     }
 }

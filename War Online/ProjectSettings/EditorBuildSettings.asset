@@ -33,8 +33,12 @@ EditorBuildSettings:
     path: Assets/_Scenes/TEST.unity
     guid: a94d94e8283b07c46bff190db65ddfd7
   - enabled: 0
-    path: Assets/_Tank_Controllers/Tank - Mark V drivable/Show.unity
+    path: 
     guid: 3aa6a0bfb7bfbf54ba6126cc70ed1d0c
   - enabled: 0
     path: Assets/_Scenes/Osaka.unity
     guid: 0926ae6bf6816f145834afd77ccb2410
+  - enabled: 1
+    path: Assets/_Scenes/StartScene.unity
+    guid: 9b750669cc643204496665e726720bfc
+  m_configObjects: {}
