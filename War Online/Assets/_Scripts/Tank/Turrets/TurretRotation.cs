@@ -17,12 +17,12 @@ public class TurretRotation : Photon.PunBehaviour, IPunObservable
 
     void Start()
     {
-        DoLockMouse();
+     
     }
 
     void Update()
     {
-        yaw += MouseRotateSpeed * Input.GetAxis("Mouse X");
+       // yaw += MouseRotateSpeed * Input.GetAxis("Mouse X");
       //  pitch -= MouseRotateSpeed * Input.GetAxis("Mouse Y");
         if (Input.GetKey("x"))
         {

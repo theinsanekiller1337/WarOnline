@@ -3,24 +3,31 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class snipershooting : MonoBehaviour {
-    #region variables
-    public Camera camera;
+    #region GameObjects
+    public new Camera camera;
     public GameObject sniper;
     public GameObject scope;
     public GameObject ScopeImage;
+    #endregion
+    #region Floats
     public float zoom_speed = 1f;
     public float zoom_limit = 5f;
+    float camerastartingfov = 48f;
+    #endregion
+    #region Others
     public string buttontozoom;
     public LineRenderer linerenderer;
     public Transform shootfrom;
+    #endregion
+    #region Animators
     public Animator animcontroller;
     [Header("Parameter in Anim Controller:" + " has to be bool" + " only the name of a parameter")]
     public string nameofaparametertoedit;
     [Tooltip("has to be bool" + "only the name of a parameter")]
-    
     private Ray ray;
-    float camerastartingfov;
     #endregion
+
+
     private void Start()
     {
         camerastartingfov = camera.fieldOfView;
@@ -29,7 +36,12 @@ public class snipershooting : MonoBehaviour {
         {
             linerenderer = GetComponent<LineRenderer>();
         }
-
+        if (ScopeImage == null)
+        {
+            Canvas canvas = GetComponent<Canvas>();
+            GameObject scopeOverlay = canvas.transform.Find("ScopeOverlay").gameObject;
+           // ScopeImage = canvas.GetComponent<ScopeOverlay>
+        }
     }
     private void Update()
     {

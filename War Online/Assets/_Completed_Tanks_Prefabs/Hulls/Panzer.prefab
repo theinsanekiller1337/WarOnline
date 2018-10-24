@@ -11,27 +11,6 @@ Prefab:
   m_SourcePrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1222081822538446}
   m_IsPrefabAsset: 1
---- !u!1 &1030886421006398
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4796960405626748}
-  - component: {fileID: 20542912806173874}
-  - component: {fileID: 124228450428107848}
-  - component: {fileID: 81678887406458846}
-  - component: {fileID: 114321465334555658}
-  - component: {fileID: 114936039066144558}
-  - component: {fileID: 114333789203197958}
-  m_Layer: 0
-  m_Name: MainCamera
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1038327512440922
 GameObject:
   m_ObjectHideFlags: 1
@@ -257,8 +236,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4830931042032600}
-  - component: {fileID: 54437161203664960}
-  - component: {fileID: 114225477712700140}
   m_Layer: 0
   m_Name: Panzer
   m_TagString: Player
@@ -1720,19 +1697,6 @@ Transform:
   m_Father: {fileID: 4461113879012902}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4796960405626748
-Transform:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1030886421006398}
-  m_LocalRotation: {x: 0.11706076, y: 0, z: 0, w: 0.9931248}
-  m_LocalPosition: {x: 0.02, y: 3.6, z: -9.04}
-  m_LocalScale: {x: 1.0572392, y: 1.0572388, z: 1.0572392}
-  m_Children: []
-  m_Father: {fileID: 4830931042032600}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 13.445001, y: 0, z: 0}
 --- !u!4 &4801406547430034
 Transform:
   m_ObjectHideFlags: 1
@@ -1784,9 +1748,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1222081822538446}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -55.06, y: 1.6905736, z: 16.79}
-  m_LocalScale: {x: 0.8023014, y: 0.8023014, z: 0.8023014}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.37, y: 1.03, z: -1.91}
+  m_LocalScale: {x: 0.73197687, y: 0.7319771, z: 0.7319771}
   m_Children:
   - {fileID: 4976639163424982}
   - {fileID: 4810031937709644}
@@ -1798,10 +1762,9 @@ Transform:
   - {fileID: 4902342552406234}
   - {fileID: 4818503669758880}
   - {fileID: 4593436701925968}
-  - {fileID: 4796960405626748}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4836615949348482
 Transform:
   m_ObjectHideFlags: 1
@@ -2005,46 +1968,6 @@ Transform:
   m_Father: {fileID: 4818503669758880}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!20 &20542912806173874
-Camera:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1030886421006398}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.01
-  far clip plane: 800
-  field of view: 48
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: 1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 1
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
 --- !u!23 &23030090180673552
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -2446,7 +2369,7 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: e190dc8e3e8f0d94f8d5f485dbea99d1, type: 2}
-  - {fileID: 2100000, guid: b59cfe9c956d4094aa53b735c5a491e8, type: 2}
+  - {fileID: 2100000, guid: 97255938e42635c45beca177aa15f4cb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2760,21 +2683,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1508943655363182}
   m_Mesh: {fileID: 4300004, guid: 370a35a658a46124c8b1169342e6c7de, type: 3}
---- !u!54 &54437161203664960
-Rigidbody:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1222081822538446}
-  serializedVersion: 2
-  m_Mass: 10000
-  m_Drag: 0
-  m_AngularDrag: 0.5
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 1
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &64564433429749994
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -2789,174 +2697,6 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 3dcae5b9400713c49b05418c667f7c57, type: 3}
---- !u!81 &81678887406458846
-AudioListener:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1030886421006398}
-  m_Enabled: 1
---- !u!114 &114225477712700140
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1222081822538446}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 643afdf0678e4de4497211894c3d1945, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speedmultiplier: 6
-  fuelInputMultiplier: 6
-  gasInputMultiplier: 3
-  runEngineAtAwake: 1
-  engineRunning: 0
-  wheelTransform_L:
-  - {fileID: 4234701909369074}
-  - {fileID: 4723212617375496}
-  - {fileID: 4546822827503540}
-  - {fileID: 4542794958043412}
-  - {fileID: 4019508781167972}
-  - {fileID: 4437438664235276}
-  wheelTransform_R:
-  - {fileID: 4155811695545444}
-  - {fileID: 4113960850343124}
-  - {fileID: 4919324313024920}
-  - {fileID: 4875138728843094}
-  - {fileID: 4343321843698278}
-  - {fileID: 4456567274633032}
-  wheelColliders_L:
-  - {fileID: 146952022565191230}
-  - {fileID: 146979995446285944}
-  - {fileID: 146539634758987944}
-  - {fileID: 146541600683924150}
-  - {fileID: 146189943211767046}
-  - {fileID: 146333609412655262}
-  wheelColliders_R:
-  - {fileID: 146355752295242660}
-  - {fileID: 146848092626022212}
-  - {fileID: 146396380681062658}
-  - {fileID: 146935515708885918}
-  - {fileID: 146624521060955316}
-  - {fileID: 146361410712109610}
-  uselessGearTransform_L:
-  - {fileID: 4461983335306310}
-  - {fileID: 4801406547430034}
-  uselessGearTransform_R:
-  - {fileID: 4888961131759710}
-  - {fileID: 4765622512398388}
-  trackBoneTransform_L:
-  - {fileID: 4730676873162790}
-  - {fileID: 4836615949348482}
-  - {fileID: 4525259657802096}
-  - {fileID: 4463943982181034}
-  - {fileID: 4019244962280612}
-  - {fileID: 4688411650991780}
-  trackBoneTransform_R:
-  - {fileID: 4929034823174564}
-  - {fileID: 4680668962140502}
-  - {fileID: 4640630094384580}
-  - {fileID: 4669274231754600}
-  - {fileID: 4576238449046668}
-  - {fileID: 4886947581799730}
-  leftTrackMesh: {fileID: 1255686066540358}
-  rightTrackMesh: {fileID: 1038327512440922}
-  trackOffset: 0.025
-  trackScrollSpeedMultiplier: 1
-  COM: {fileID: 4924224142168146}
-  engineTorqueCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 20044.742
-      value: -268.71594
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
-  engineTorque: 7000
-  brakeTorque: 7500
-  minEngineRPM: 1000
-  maxEngineRPM: 15000
-  maxSpeed: 35
-  steerTorque: 5
-  gasInput: 0
-  brakeInput: 0
-  steerInput: 0
-  fuelInput: 1
-  engineStartUpAudioClip: {fileID: 8300000, guid: 51ff55c3770bcd34191213df5160f54c,
-    type: 3}
-  engineIdleAudioClip: {fileID: 8300000, guid: 5f8220451d140e947b5aa4bdc1bdd4a7, type: 3}
-  engineRunningAudioClip: {fileID: 8300000, guid: 28383e20e2d5db84b9dc96832c27db3b,
-    type: 3}
-  brakeClip: {fileID: 8300000, guid: 9364a522f58f8fb46be493ed3c580446, type: 3}
-  minEngineSoundPitch: 0.5
-  maxEngineSoundPitch: 1.15
-  minEngineSoundVolume: 0.05
-  maxEngineSoundVolume: 0.85
-  maxBrakeSoundVolume: 0.35
-  wheelSlip: {fileID: 0}
-  exhaustSmoke: {fileID: 0}
---- !u!114 &114321465334555658
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1030886421006398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  profile: {fileID: 11400000, guid: fcfd93a948620d048a8cf6870d582d09, type: 2}
---- !u!114 &114333789203197958
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1030886421006398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afc833a08e2042e4aaf096710d571db0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 4830931042032600}
-  offsetPosition: {x: 0, y: 5.47, z: 20}
-  offsetPositionSpace: 1
-  lookAt: 1
---- !u!114 &114936039066144558
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1030886421006398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b331d475c9159e4998db018316215b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!124 &124228450428107848
-Behaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1030886421006398}
-  m_Enabled: 1
 --- !u!137 &137247615945954730
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

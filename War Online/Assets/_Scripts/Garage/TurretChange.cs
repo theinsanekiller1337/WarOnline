@@ -34,7 +34,7 @@ public class TurretChange : MonoBehaviour {
     void TaskOnClick()
     {
         
-        if (gameObject.name == "DominatorBtn")
+        if (gameObject.name == "FlameBtn")
         {
             disableAll();
             FlameThrower.SetActive(true);

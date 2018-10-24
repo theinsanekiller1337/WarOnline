@@ -254,8 +254,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4576792550940696}
-  - component: {fileID: 54968353965835204}
-  - component: {fileID: 114548861845792674}
   m_Layer: 0
   m_Name: Scorpion
   m_TagString: Player
@@ -1564,9 +1562,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1207450998054608}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -33.5, y: 2.19, z: -1.5909743}
-  m_LocalScale: {x: 0.8482242, y: 0.8482242, z: 0.8482242}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.37, y: 1.1, z: -1.84}
+  m_LocalScale: {x: 0.73197687, y: 0.7319771, z: 0.7690883}
   m_Children:
   - {fileID: 4711892347512742}
   - {fileID: 4560535244744154}
@@ -1581,7 +1579,7 @@ Transform:
   - {fileID: 4949065507194862}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4578813706760696
 Transform:
   m_ObjectHideFlags: 1
@@ -2757,21 +2755,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1601023360084778}
   m_Mesh: {fileID: 4300032, guid: 370a35a658a46124c8b1169342e6c7de, type: 3}
---- !u!54 &54968353965835204
-Rigidbody:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1207450998054608}
-  serializedVersion: 2
-  m_Mass: 10000
-  m_Drag: 0
-  m_AngularDrag: 0.5
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 1
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &64701186509888870
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -2786,122 +2769,6 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300004, guid: aab8a0e95642c4c4cb0c98f93e774e87, type: 3}
---- !u!114 &114548861845792674
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1207450998054608}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 643afdf0678e4de4497211894c3d1945, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speedmultiplier: 6
-  fuelInputMultiplier: 6
-  gasInputMultiplier: 3
-  runEngineAtAwake: 1
-  engineRunning: 0
-  wheelTransform_L:
-  - {fileID: 4411535083486384}
-  - {fileID: 4516578503534790}
-  - {fileID: 4422977639125232}
-  - {fileID: 4868109734970990}
-  - {fileID: 4346077269667728}
-  - {fileID: 4051541802753846}
-  wheelTransform_R:
-  - {fileID: 4124754739742408}
-  - {fileID: 4327117121000472}
-  - {fileID: 4847210701865962}
-  - {fileID: 4967530069743452}
-  - {fileID: 4128397119329310}
-  - {fileID: 4113306892298522}
-  wheelColliders_L:
-  - {fileID: 146333055219414936}
-  - {fileID: 146597294950409012}
-  - {fileID: 146846370180626674}
-  - {fileID: 146837625082455476}
-  - {fileID: 146725605282358092}
-  - {fileID: 146516209547925324}
-  wheelColliders_R:
-  - {fileID: 146666999262395486}
-  - {fileID: 146561597012539312}
-  - {fileID: 146323620373787672}
-  - {fileID: 146615454147611056}
-  - {fileID: 146511749308982316}
-  - {fileID: 146385401686424232}
-  uselessGearTransform_L:
-  - {fileID: 4680889136876934}
-  - {fileID: 4940249645920538}
-  uselessGearTransform_R:
-  - {fileID: 4990766533077808}
-  - {fileID: 4932223739219076}
-  trackBoneTransform_L:
-  - {fileID: 4370552302216502}
-  - {fileID: 4130692638517982}
-  - {fileID: 4188375349441232}
-  - {fileID: 4836232681581718}
-  - {fileID: 4229676599801130}
-  - {fileID: 4618825608828428}
-  trackBoneTransform_R:
-  - {fileID: 4223123121813264}
-  - {fileID: 4421656990621468}
-  - {fileID: 4029877910563028}
-  - {fileID: 4640185315806760}
-  - {fileID: 4563721259975528}
-  - {fileID: 4979967299164322}
-  leftTrackMesh: {fileID: 1977545061791080}
-  rightTrackMesh: {fileID: 1826670137858444}
-  trackOffset: 0.025
-  trackScrollSpeedMultiplier: 1
-  COM: {fileID: 4901624097637496}
-  engineTorqueCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 20044.742
-      value: -268.71594
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
-  engineTorque: 7000
-  brakeTorque: 7500
-  minEngineRPM: 1000
-  maxEngineRPM: 15000
-  maxSpeed: 35
-  steerTorque: 5
-  gasInput: 0
-  brakeInput: 0
-  steerInput: 0
-  fuelInput: 1
-  engineStartUpAudioClip: {fileID: 8300000, guid: 51ff55c3770bcd34191213df5160f54c,
-    type: 3}
-  engineIdleAudioClip: {fileID: 8300000, guid: 5f8220451d140e947b5aa4bdc1bdd4a7, type: 3}
-  engineRunningAudioClip: {fileID: 8300000, guid: 28383e20e2d5db84b9dc96832c27db3b,
-    type: 3}
-  brakeClip: {fileID: 8300000, guid: 9364a522f58f8fb46be493ed3c580446, type: 3}
-  minEngineSoundPitch: 0.5
-  maxEngineSoundPitch: 1.15
-  minEngineSoundVolume: 0.05
-  maxEngineSoundVolume: 0.85
-  maxBrakeSoundVolume: 0.35
-  wheelSlip: {fileID: 0}
-  exhaustSmoke: {fileID: 0}
 --- !u!137 &137465479356110730
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

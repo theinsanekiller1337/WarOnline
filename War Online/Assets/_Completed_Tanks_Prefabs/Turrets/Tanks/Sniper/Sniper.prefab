@@ -148,8 +148,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1944402308406282}
   m_LocalRotation: {x: 0, y: -0.67365766, z: 0, w: 0.73904353}
-  m_LocalPosition: {x: 0.39, y: 4.07, z: 8.46}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0, y: 4.8, z: 5.4}
+  m_LocalScale: {x: 1.4, y: 1.4, z: 1.4}
   m_Children:
   - {fileID: 4696153193340914}
   - {fileID: 4966643470428270}
@@ -220,7 +220,7 @@ Camera:
     height: 1
   near clip plane: 0.01
   far clip plane: 800
-  field of view: 7
+  field of view: 48
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -260,7 +260,7 @@ Camera:
     height: 1
   near clip plane: 0.01
   far clip plane: 800
-  field of view: 26.991467
+  field of view: 48
   orthographic: 0
   orthographic size: 5
   m_Depth: 1
@@ -381,14 +381,15 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1944402308406282}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 16935992e3631bb47b673d0abd2aa2b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnValue: 2
-  turnLeftKey: 122
-  turnRightKey: 120
+  MouseRotateSpeed: 2.5
+  KeyRotateSpeed: 8
+  min: -30
+  max: 15
 --- !u!114 &114585826727129962
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -410,7 +411,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1944402308406282}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15f00221cd0eb4448ac3c44af8680b27, type: 3}
   m_Name: 
@@ -432,7 +433,7 @@ LineRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1944402308406282}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
