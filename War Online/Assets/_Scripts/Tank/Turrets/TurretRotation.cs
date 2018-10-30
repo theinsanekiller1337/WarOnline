@@ -35,7 +35,7 @@ public class TurretRotation : Photon.PunBehaviour, IPunObservable
 
         pitch = Mathf.Clamp(pitch, min, max);
 
-        transform.eulerAngles = new Vector3(0.0f, yaw, 0.0f);
+        transform.eulerAngles = new Vector3(0, yaw,0);
     }
     void DoLockMouse()
     {

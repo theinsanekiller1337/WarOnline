@@ -1,18 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class snipershooting : MonoBehaviour {
     #region GameObjects
     public new Camera camera;
-    public GameObject sniper;
     public GameObject scope;
-    public GameObject ScopeImage;
+    public Image ScopeImage;
     #endregion
     #region Floats
     public float zoom_speed = 1f;
     public float zoom_limit = 5f;
     float camerastartingfov = 48f;
+    public float zoomedRotateSpeed = 3.5f;
     #endregion
     #region Others
     public string buttontozoom;
@@ -25,6 +26,9 @@ public class snipershooting : MonoBehaviour {
     public string nameofaparametertoedit;
     [Tooltip("has to be bool" + "only the name of a parameter")]
     private Ray ray;
+    private TurretRotation turretRotation;
+    private float rotateSpeed;
+   
     #endregion
 
 
@@ -38,14 +42,15 @@ public class snipershooting : MonoBehaviour {
         }
         if (ScopeImage == null)
         {
-            Canvas canvas = GetComponent<Canvas>();
-            GameObject scopeOverlay = canvas.transform.Find("ScopeOverlay").gameObject;
-           // ScopeImage = canvas.GetComponent<ScopeOverlay>
+            GameObject canvas = GameObject.Find("WarCanvas");
+            ScopeImage = canvas.GetComponentInChildren<Image>();
         }
+
+        rotateSpeed = turretRotation.KeyRotateSpeed;
     }
     private void Update()
     {
-        ScopeImage.SetActive(false);
+        ScopeImage.enabled =false;
         linerenderer.enabled = false;
         bool zoomheld = Input.GetKey(buttontozoom);
         bool zoomreleased = Input.GetKeyUp(buttontozoom);
@@ -61,7 +66,7 @@ public class snipershooting : MonoBehaviour {
                 camera.fieldOfView = zoom_limit;
             }
             animcontroller.SetBool(nameofaparametertoedit, true);
-            sniper.SetActive(false);
+           
 
             // Raycast for Line Renderer
             RaycastHit hit1;
@@ -73,23 +78,34 @@ public class snipershooting : MonoBehaviour {
             //linerender 
             linerenderer.enabled = true;
             linerenderer.SetPosition(0, scope.transform.position);
-            linerenderer.SetPosition(1, hit1.point); 
+            linerenderer.SetPosition(1, hit1.point);
+
+            camera.transform.LookAt(hit1.point);
 
             //scopeOverlay
             if (camera.fieldOfView <= 46f)
             {
-                ScopeImage.SetActive(true);
+                ScopeImage.enabled = true;
             }
+            //disabling object(s)
+            gameObject.GetComponentInChildren<CamTest>().enabled = false;
+            gameObject.GetComponentInChildren<Animator>().enabled = false;
+            turretRotation.KeyRotateSpeed = zoomedRotateSpeed;
         }
 
         if (zoomreleased)
-        {
+        {   //enabling Object(s)
             linerenderer.enabled = false;
+            gameObject.GetComponentInChildren<CamTest>().enabled = true;
+            gameObject.GetComponentInChildren<Animator>().enabled = true;
+
             camera.fieldOfView = camerastartingfov;
             shoot();
             animcontroller.SetBool(nameofaparametertoedit, false);
-            sniper.SetActive(true);
-            ScopeImage.SetActive(false);
+           
+            ScopeImage.enabled = false;
+
+            turretRotation.KeyRotateSpeed = rotateSpeed;
         }
         
 
