@@ -19,6 +19,12 @@ public class snipershooting : MonoBehaviour {
     public string buttontozoom;
     public LineRenderer linerenderer;
     public Transform shootfrom;
+    [SerializeField]
+    private RaycastHit LookAtRayCast;
+    public RaycastHit lookAtRaycast
+    {
+        get { return LookAtRayCast; }
+    }
     #endregion
     #region Animators
     public Animator animcontroller;
@@ -45,10 +51,10 @@ public class snipershooting : MonoBehaviour {
             GameObject canvas = GameObject.Find("WarCanvas");
             ScopeImage = canvas.GetComponentInChildren<Image>();
         }
-
+        turretRotation = GetComponent<TurretRotation>();
         rotateSpeed = turretRotation.KeyRotateSpeed;
     }
-    private void Update()
+    public void Update()
     {
         ScopeImage.enabled =false;
         linerenderer.enabled = false;
@@ -75,12 +81,12 @@ public class snipershooting : MonoBehaviour {
                 Debug.Log(hit1.point);
             }
 
+            LookAtRayCast = hit1;
+
             //linerender 
             linerenderer.enabled = true;
             linerenderer.SetPosition(0, scope.transform.position);
             linerenderer.SetPosition(1, hit1.point);
-
-            camera.transform.LookAt(hit1.point);
 
             //scopeOverlay
             if (camera.fieldOfView <= 46f)
@@ -89,7 +95,11 @@ public class snipershooting : MonoBehaviour {
             }
             //disabling object(s)
             gameObject.GetComponentInChildren<CamTest>().enabled = false;
-            gameObject.GetComponentInChildren<Animator>().enabled = false;
+            
+            //shootAnime.enabled = false;
+            //camera.transform.LookAt(hit1.point);
+            
+
             turretRotation.KeyRotateSpeed = zoomedRotateSpeed;
         }
 
