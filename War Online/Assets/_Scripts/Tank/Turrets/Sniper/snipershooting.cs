@@ -19,11 +19,12 @@ public class snipershooting : MonoBehaviour {
     public string buttontozoom;
     public LineRenderer linerenderer;
     public Transform shootfrom;
+
     [SerializeField]
     private RaycastHit LookAtRayCast;
     public RaycastHit lookAtRaycast
     {
-        get { return LookAtRayCast; }
+        get { return LookAtRayCast; } set { LookAtRayCast = value; } 
     }
     #endregion
     #region Animators
@@ -56,6 +57,7 @@ public class snipershooting : MonoBehaviour {
     }
     public void Update()
     {
+
         ScopeImage.enabled =false;
         linerenderer.enabled = false;
         bool zoomheld = Input.GetKey(buttontozoom);
@@ -97,7 +99,6 @@ public class snipershooting : MonoBehaviour {
             gameObject.GetComponentInChildren<CamTest>().enabled = false;
             
             //shootAnime.enabled = false;
-            //camera.transform.LookAt(hit1.point);
             
 
             turretRotation.KeyRotateSpeed = zoomedRotateSpeed;
@@ -120,6 +121,16 @@ public class snipershooting : MonoBehaviour {
         
 
     }
+
+    private void LateUpdate()
+    {
+        AnimatorClipInfo[] m_CurrentClipInfo = animcontroller.GetCurrentAnimatorClipInfo(1);
+        AnimationClip animeClip = m_CurrentClipInfo[1].clip;
+       
+        animcontroller.SetLookAtPosition(lookAtRaycast.point);
+
+    }
+
     public void shoot() //code for shooting
     {
         Debug.Log("Shot fired");

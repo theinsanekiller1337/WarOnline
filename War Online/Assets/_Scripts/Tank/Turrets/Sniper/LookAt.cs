@@ -4,16 +4,23 @@ using UnityEngine;
 
 public class LookAt : MonoBehaviour {
 
-    private RaycastHit _raySniper;
+  
     private snipershooting SniperScript;
     public Vector3 toLookAt;
-    
-    private void Update()
+
+    private void Start()
     {
-        Debug.Log(SniperScript.lookAtRaycast);
+        SniperScript = GetComponentInParent<snipershooting>(); 
+    }
+
+
+    private void LateUpdate()
+    {
 
         RaycastHit raySniper = SniperScript.lookAtRaycast;
-        raySniper = _raySniper;
-        toLookAt = _raySniper.point;
+        raySniper.point = toLookAt;
+
+        Debug.Log(toLookAt);
+        
     }
 }
