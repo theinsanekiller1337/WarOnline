@@ -7,7 +7,7 @@ public class TurretChange : MonoBehaviour {
     public Button btn;
     public GameObject FlameThrower;
     public GameObject MachineGun;
-    public GameObject MissileLauncher;
+    public GameObject Acidton;
     public GameObject Sniper;
     public GameObject parent;
 
@@ -28,7 +28,7 @@ public class TurretChange : MonoBehaviour {
     {
         FlameThrower.SetActive(false);
         MachineGun.SetActive(false);
-        MissileLauncher.SetActive(false);
+        Acidton.SetActive(false);
         Sniper.SetActive(false);
     }
     void TaskOnClick()
@@ -39,20 +39,20 @@ public class TurretChange : MonoBehaviour {
             disableAll();
             FlameThrower.SetActive(true);
         }
-        else if (gameObject.name == "FalconBtn")
+        else if (gameObject.name == "MachineGunBtn")
         {
             disableAll();
             MachineGun.SetActive(true);
         }
-        else if (gameObject.name == "PanzerBtn")
-        {
-            disableAll();
-            MissileLauncher.SetActive(true);
-        }
-        else if (gameObject.name == "ScorpionBtn")
+        else if (gameObject.name == "SniperBtn")
         {
             disableAll();
             Sniper.SetActive(true);
+        }
+        else if (gameObject.name == "AcidtonBtn")
+        {
+            disableAll();
+            Acidton.SetActive(true);
         }
     }
 }

@@ -31,6 +31,7 @@ public class HullChange : MonoBehaviour {
         Falcon.SetActive(false);
         Panzer.SetActive(false);
         Dominator.SetActive(false);
+        Trapper.SetActive(false);
     }
     void TaskOnClick()
     {

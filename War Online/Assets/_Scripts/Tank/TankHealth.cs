@@ -14,9 +14,13 @@ public class TankHealth : MonoBehaviour
     private AudioSource m_ExplosionAudio;          
     private ParticleSystem m_ExplosionParticles;   
     public float m_CurrentHealth;  
-    private bool m_Dead;  
-	
+    private bool m_Dead;
 
+    private void Start()
+    {
+
+        
+    }
 
     private void Awake()
     {
@@ -67,14 +71,16 @@ public class TankHealth : MonoBehaviour
         // Play the effects for the death of the tank and deactivate it.
 
 		m_Dead = true;
-
-		/*m_ExplosionParticles.transform.position = transform.position;
+      /*
+		m_ExplosionParticles.transform.position = transform.position;
 		m_ExplosionParticles.gameObject.SetActive (true);
 
-		m_ExplosionParticles.Play();
+		m_ExplosionParticles.Play();*/
 
-		m_ExplosionAudio.Play();*/
-	
-		Destroy(gameObject);
+		m_ExplosionAudio.Play();
+
+        Destroy(gameObject, 2f);
     }
+
+    
 }

@@ -13,7 +13,7 @@ public class snipershooting : MonoBehaviour {
     public float zoom_speed = 1f;
     public float zoom_limit = 5f;
     float camerastartingfov = 48f;
-    public float zoomedRotateSpeed = 3.5f;
+    public float zoomedRotateSpeed = 0.8f;
     #endregion
     #region Others
     public string buttontozoom;

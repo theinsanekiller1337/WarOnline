@@ -35,7 +35,7 @@ public class TurretRotation : Photon.PunBehaviour, IPunObservable
 
         pitch = Mathf.Clamp(pitch, min, max);
 
-        transform.rotation =  Quaternion.Euler(0, yaw * Time.deltaTime, 0);
+        transform.rotation =  Quaternion.Euler(0, yaw, 0);
     }
     void DoLockMouse()
     {

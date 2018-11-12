@@ -77,9 +77,21 @@ public class PhotonConnectEditor : Photon.MonoBehaviour {
 
         //finding components to turn on in photonview
 
+        GameObject.Find("WarCanvas").SetActive(true);
+
         playerPrefab.GetComponent<RTCTankController>().enabled = true;
-        playerPrefab.GetComponentInChildren<Particle_Emitter>().enabled = true;
-        playerPrefab.GetComponentInChildren<TurretRotation>().enabled = (true);
+
+        if (GameObject.Find("Flame_Thrower") != null)
+        {
+            playerPrefab.GetComponentInChildren<Particle_Emitter>().enabled = true;
+        }
+        if (GameObject.Find("Sniper") != null)
+        {
+            playerPrefab.GetComponentInChildren<snipershooting>().enabled = true;
+        }
+
+        playerPrefab.GetComponent<TankHealth>().enabled = true;
+        playerPrefab.GetComponentInChildren<TurretRotation>().enabled = true;
         playerPrefab.transform.Find("MainCamera").gameObject.SetActive(true);
         
 
