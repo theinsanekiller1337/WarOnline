@@ -9,6 +9,7 @@ public class Particle_Emitter : Photon.PunBehaviour, IPunObservable {
     public ParticleSystem particleFire;
     public ParticleSystem particleSmoke;
     public float radius = 4f;
+    public float damage = 4f;
     public GameObject secondObject;
     bool isFiring;
 
@@ -22,14 +23,34 @@ public class Particle_Emitter : Photon.PunBehaviour, IPunObservable {
 	void Start () {
         particleFire.Stop();
         particleSmoke.Stop();
+        
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
         Vector3 newPos = secondObject.GetComponent<Transform>().position;
-        Physics.OverlapCapsule(transform.position, newPos, radius);
-        /*if (photonView.isMine)*/ ProcessFireInput();
+        Collider[] colliders = Physics.OverlapCapsule(transform.position, newPos, radius);
+
+        for (int i = 0; i < colliders.Length; i++)
+        {
+            Rigidbody targetRigidbody = colliders[i].GetComponent<Rigidbody>();
+            if (!targetRigidbody)
+                continue;
+
+            TankHealth targetHealth = targetRigidbody.GetComponent<TankHealth>();
+            if (!targetHealth)
+            {
+                continue;
+            }
+            else if(targetHealth)
+            targetHealth.TakeDamage(damage);
+
+        }
+
+
+            /*if (photonView.isMine)*/
+            ProcessFireInput();
         
         if (isFiring)
         {
@@ -42,6 +63,8 @@ public class Particle_Emitter : Photon.PunBehaviour, IPunObservable {
             particleFire.Stop();
             particleSmoke.Stop();
         }
+
+       
 	}
 
     void IPunObservable.OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)

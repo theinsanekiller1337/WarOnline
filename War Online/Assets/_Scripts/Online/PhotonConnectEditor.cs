@@ -8,6 +8,8 @@ public class PhotonConnectEditor : Photon.MonoBehaviour {
     public GameObject playerToInstantiate;
     public Transform[] spawnPoints;
     public GameObject SceneCamera;
+    public GameObject Canvas;
+
     private RTCTankController tankControllerScript;
     private Particle_Emitter particleEmmiter;
     private TurretRotation turretRotator;
@@ -73,29 +75,28 @@ public class PhotonConnectEditor : Photon.MonoBehaviour {
     {
         
         SceneCamera.SetActive(false);
+
+        GameObject warCanvas = (GameObject)PhotonNetwork.Instantiate(Canvas.name, Vector3.zero, gameObject.transform.rotation, 0);
         GameObject playerPrefab = (GameObject)PhotonNetwork.Instantiate(playerToInstantiate.name, spawnPoints[PhotonNetwork.room.PlayerCount - 1].position, spawnPoints[PhotonNetwork.room.PlayerCount - 1].rotation, 0);
 
-        //finding components to turn on in photonview
+            //finding components to turn on in photonview
+            warCanvas.SetActive(true);
 
-        GameObject.Find("WarCanvas").SetActive(true);
+            playerPrefab.GetComponent<RTCTankController>().enabled = true;
 
-        playerPrefab.GetComponent<RTCTankController>().enabled = true;
+            if (GameObject.Find("Flame_Thrower") != null)
+            {
+                playerPrefab.GetComponentInChildren<Particle_Emitter>().enabled = true;
+            }
+            if (GameObject.Find("Sniper") != null)
+            {
+                playerPrefab.GetComponentInChildren<snipershooting>().enabled = true;
+                GameObject sniper = playerPrefab.transform.Find("Sniper").gameObject;
+                sniper.transform.Find("MainCamera").gameObject.SetActive(true);
+            }
 
-        if (GameObject.Find("Flame_Thrower") != null)
-        {
-            playerPrefab.GetComponentInChildren<Particle_Emitter>().enabled = true;
-        }
-        if (GameObject.Find("Sniper") != null)
-        {
-            playerPrefab.GetComponentInChildren<snipershooting>().enabled = true;
-        }
-
-        playerPrefab.GetComponent<TankHealth>().enabled = true;
+            playerPrefab.GetComponent<TankHealth>().enabled = true;
         playerPrefab.GetComponentInChildren<TurretRotation>().enabled = true;
-        playerPrefab.transform.Find("MainCamera").gameObject.SetActive(true);
-        
-
-        
 
     }
 

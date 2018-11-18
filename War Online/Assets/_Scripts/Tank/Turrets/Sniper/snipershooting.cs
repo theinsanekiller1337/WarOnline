@@ -14,6 +14,7 @@ public class snipershooting : MonoBehaviour {
     public float zoom_limit = 5f;
     float camerastartingfov = 48f;
     public float zoomedRotateSpeed = 0.8f;
+    public float damage = 150f;
     #endregion
     #region Others
     public string buttontozoom;
@@ -49,8 +50,8 @@ public class snipershooting : MonoBehaviour {
         }
         if (ScopeImage == null)
         {
-            GameObject canvas = GameObject.Find("WarCanvas");
-            ScopeImage = canvas.GetComponentInChildren<Image>();
+            GameObject scope = GameObject.Find("ScopeOverlay");
+            ScopeImage = scope.GetComponent<Image>();
         }
         turretRotation = GetComponent<TurretRotation>();
         rotateSpeed = turretRotation.KeyRotateSpeed;
@@ -80,7 +81,7 @@ public class snipershooting : MonoBehaviour {
             RaycastHit hit1;
             if (Physics.Raycast(shootfrom.transform.position, shootfrom.transform.forward, out hit1))
             {
-                Debug.Log(hit1.point);
+                
             }
 
             LookAtRayCast = hit1;
@@ -124,16 +125,25 @@ public class snipershooting : MonoBehaviour {
 
     private void LateUpdate()
     {
-        AnimatorClipInfo[] m_CurrentClipInfo = animcontroller.GetCurrentAnimatorClipInfo(1);
-        AnimationClip animeClip = m_CurrentClipInfo[1].clip;
-       
-        animcontroller.SetLookAtPosition(lookAtRaycast.point);
+         //   AnimatorClipInfo[] m_CurrentClipInfo = animcontroller.GetCurrentAnimatorClipInfo(1);
+         //   AnimationClip animeClip = m_CurrentClipInfo[1].clip;
+
+            animcontroller.SetLookAtPosition(lookAtRaycast.point);
 
     }
 
     public void shoot() //code for shooting
     {
-        Debug.Log("Shot fired");
+       
+
+        TankHealth targetHealth = LookAtRayCast.transform.gameObject.GetComponent<TankHealth>();
+
+        if (targetHealth)
+        {
+            // Deal this damage to the tank.
+            targetHealth.TakeDamage(damage);
+        }
+
 
 
     }

@@ -171,7 +171,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1220601357367574
 GameObject:
   m_ObjectHideFlags: 1
@@ -387,7 +387,7 @@ GameObject:
   - component: {fileID: 33546440702034900}
   - component: {fileID: 23757701942836730}
   m_Layer: 12
-  m_Name: Sniper
+  m_Name: Sniper_Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -451,6 +451,8 @@ GameObject:
   - component: {fileID: 54282322053059824}
   - component: {fileID: 114911413447658396}
   - component: {fileID: 114570588216769048}
+  - component: {fileID: 114988241466308988}
+  - component: {fileID: 114220373167231014}
   m_Layer: 0
   m_Name: FalconSN
   m_TagString: Player
@@ -3043,6 +3045,83 @@ MonoBehaviour:
   offsetPosition: {x: -0.18, y: 2.63, z: -8.89}
   offsetPositionSpace: 1
   lookAt: 1
+--- !u!114 &114220373167231014
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1555982248903926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PositionModel:
+    SynchronizeEnabled: 1
+    TeleportEnabled: 1
+    TeleportIfDistanceGreaterThan: 3
+    InterpolateOption: 2
+    InterpolateMoveTowardsSpeed: 1
+    InterpolateLerpSpeed: 1
+    InterpolateMoveTowardsAcceleration: 2
+    InterpolateMoveTowardsDeceleration: 2
+    InterpolateSpeedCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: -1
+        value: 0
+        inSlope: 0
+        outSlope: Infinity
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 4
+        value: 4
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    ExtrapolateOption: 0
+    ExtrapolateSpeed: 1
+    ExtrapolateIncludingRoundTripTime: 1
+    ExtrapolateNumberOfStoredPositions: 1
+    DrawErrorGizmo: 1
+  m_RotationModel:
+    SynchronizeEnabled: 1
+    InterpolateOption: 1
+    InterpolateRotateTowardsSpeed: 180
+    InterpolateLerpSpeed: 5
+  m_ScaleModel:
+    SynchronizeEnabled: 0
+    InterpolateOption: 0
+    InterpolateMoveTowardsSpeed: 1
+    InterpolateLerpSpeed: 0
 --- !u!114 &114405727602143786
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3083,6 +3162,7 @@ MonoBehaviour:
   zoom_speed: 1
   zoom_limit: 5
   zoomedRotateSpeed: 3
+  damage: 150
   buttontozoom: space
   linerenderer: {fileID: 120253532196599592}
   shootfrom: {fileID: 4346598397390962}
@@ -3094,7 +3174,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1555982248903926}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8326b9dca06e5bc4885942c9371f51f1, type: 3}
   m_Name: 
@@ -3104,7 +3184,8 @@ MonoBehaviour:
   m_FillImage: {fileID: 0}
   m_FullHealthColor: {r: 0, g: 1, b: 0, a: 1}
   m_ZeroHealthColor: {r: 1, g: 0, b: 0, a: 1}
-  m_ExplosionPrefab: {fileID: 0}
+  falconDestoyed: {fileID: 2100000, guid: edd04636d8f10104380bd7f205bf70bb, type: 2}
+  sniperDestoyed: {fileID: 2100000, guid: 5441e0d21605cd342bfa95e5550ea014, type: 2}
   m_CurrentHealth: 0
 --- !u!114 &114911413447658396
 MonoBehaviour:
@@ -3112,7 +3193,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1555982248903926}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 643afdf0678e4de4497211894c3d1945, type: 3}
   m_Name: 
@@ -3237,6 +3318,32 @@ MonoBehaviour:
   KeyRotateSpeed: 5.5
   min: -30
   max: 15
+--- !u!114 &114988241466308988
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1555982248903926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ownerId: 0
+  group: 0
+  OwnerShipWasTransfered: 0
+  prefixBackup: -1
+  synchronization: 3
+  onSerializeTransformOption: 3
+  onSerializeRigidBodyOption: 2
+  ownershipTransfer: 0
+  ObservedComponents:
+  - {fileID: 4098799002241870}
+  ObservedComponentsFoldoutOpen: 1
+  viewIdField: 0
+  instantiationId: -1
+  currentMasterID: -1
+  isRuntimeInstantiated: 0
 --- !u!120 &120253532196599592
 LineRenderer:
   m_ObjectHideFlags: 1
