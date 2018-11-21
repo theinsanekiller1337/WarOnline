@@ -8,8 +8,10 @@ public class gameManager : Photon.PunBehaviour {
     [Tooltip("To be honest, this shouldn't be changed at all. But if you do feel like a badass, this controls which scene the player exits to when quitting.")]
     [SerializeField] string exitScene = "Lobby";
     [Tooltip("The prefab to use for representing the player")]
-    public GameObject playerPrefab;
+    public GameObject newPlayerPrefab;
+    public GameObject realPlayerPrefab;
     public Transform[] spawnPoints;
+    private PhotonConnectEditor photonConnectEditor; //gods was here :)
 
     // Why are we using a static gameManager instance? The tutorial says nothing about this.
     // "It's a surprise tool that will help us later." -- Mickey Mouse
@@ -23,7 +25,7 @@ public class gameManager : Photon.PunBehaviour {
 
     private void Start()
     {
-        if (playerPrefab == null)
+        if (realPlayerPrefab == null)
         {
 
             Debug.LogError("<Color=Red><b>Missing</b></Color> playerPrefab Reference. Please set it up in GameObject 'Game Manager'", this);
@@ -35,7 +37,9 @@ public class gameManager : Photon.PunBehaviour {
             if (RTCTankController.LocalPlayerInstance == null)
             {
                 Debug.Log("We are Instantiating LocalPlayer from " + SceneManagerHelper.ActiveSceneName);
-                PhotonNetwork.Instantiate(playerPrefab.name, spawnPoints[PhotonNetwork.room.PlayerCount - 1].position, spawnPoints[PhotonNetwork.room.PlayerCount - 1].rotation, 0);
+                realPlayerPrefab =(GameObject)PhotonNetwork.Instantiate(newPlayerPrefab.name, spawnPoints[PhotonNetwork.room.PlayerCount - 1].position, spawnPoints[PhotonNetwork.room.PlayerCount - 1].rotation, 0);
+
+                photonConnectEditor.SetActive(); //wrote my script so controls don't get interlinked :)" - gods
             }
             else
             {

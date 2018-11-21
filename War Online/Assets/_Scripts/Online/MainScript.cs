@@ -37,13 +37,15 @@ public class MainScript : Photon.PunBehaviour {
     {
         PhotonNetwork.autoJoinLobby = true;
         PhotonNetwork.automaticallySyncScene = false;
+        Connect();
     }
+
 
     public void Connect()
     {
         isConnecting = true;
         if (PhotonNetwork.connected) PhotonNetwork.JoinRandomRoom();
-        else PhotonNetwork.ConnectUsingSettings(Application.version);
+        else PhotonNetwork.ConnectUsingSettings("Waronline v0.0.2");
     }
 
     #region Photon.PunBehaviour CallBacks
@@ -74,7 +76,7 @@ public class MainScript : Photon.PunBehaviour {
         PhotonNetwork.LoadLevel("Harbour");
         //Prefab not Instantiatng in Editor, hence adding this script, temporary
         //started
-        PhotonNetwork.Instantiate(playerPrefab.name, spawnPoints[PhotonNetwork.room.PlayerCount - 1].position, spawnPoints[PhotonNetwork.room.PlayerCount - 1].rotation, 0);
+      //  PhotonNetwork.Instantiate(playerPrefab.name, spawnPoints[PhotonNetwork.room.PlayerCount - 1].position, spawnPoints[PhotonNetwork.room.PlayerCount - 1].rotation, 0);
         //ended
         if (playerPrefab != null)
             Debug.Log("Success");

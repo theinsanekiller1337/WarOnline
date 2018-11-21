@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class PhotonConnectEditor : Photon.MonoBehaviour {
 
-    public GameObject playerToInstantiate;
-    public Transform[] spawnPoints;
+   // public GameObject playerToInstantiate;
+   // public Transform[] spawnPoints;
     public GameObject SceneCamera;
     public GameObject Canvas;
 
@@ -15,7 +15,8 @@ public class PhotonConnectEditor : Photon.MonoBehaviour {
     private TurretRotation turretRotator;
     private GameObject playercamera;
     private GameObject[] playerList;
-
+    private gameManager GameMan;
+    /*
     public void Start()
     {
         /*
@@ -34,7 +35,7 @@ public class PhotonConnectEditor : Photon.MonoBehaviour {
             playercamera = playerPrefab.transform.Find("Main Camera").gameObject;
             playercamera.SetActive(false);
         } */
-
+        /*
         Connect();
     }
 
@@ -68,19 +69,30 @@ public class PhotonConnectEditor : Photon.MonoBehaviour {
 
     void OnJoinedRoom()
     {
-        SpawnMyPlayer();
-    }
+        SetActive();
+    } */
 
-    public void SpawnMyPlayer()
+    public void SetActive()
     {
-        
         SceneCamera.SetActive(false);
 
         GameObject warCanvas = (GameObject)PhotonNetwork.Instantiate(Canvas.name, Vector3.zero, gameObject.transform.rotation, 0);
-        GameObject playerPrefab = (GameObject)PhotonNetwork.Instantiate(playerToInstantiate.name, spawnPoints[PhotonNetwork.room.PlayerCount - 1].position, spawnPoints[PhotonNetwork.room.PlayerCount - 1].rotation, 0);
+        warCanvas.SetActive(true);
+        SpawnMyPlayer();
 
+    } 
+
+
+    public void SpawnMyPlayer()
+    {
+
+
+
+        GameObject playerPrefab = GameMan.realPlayerPrefab;
+            
+            
             //finding components to turn on in photonview
-            warCanvas.SetActive(true);
+            
 
             playerPrefab.GetComponent<RTCTankController>().enabled = true;
 

@@ -1780,7 +1780,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_TargetDisplay: 0
 --- !u!224 &519471877
 RectTransform:
@@ -2467,14 +2467,14 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 673734237}
-        m_MethodName: LoadLeveli
-        m_Mode: 5
+        m_MethodName: OnClick_CreateRoom
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Harbour
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -2535,9 +2535,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 673734231}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa101274dd2b2c94fac940c930179c98, type: 3}
+  m_Script: {fileID: 11500000, guid: 3e99631eec5978b4cb5f58fa04236580, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxPlayersPerRoom: 8
+  logLevel: 1
+  isConnecting: 0
+  playerPrefab: {fileID: 1555982248903926, guid: 1a6872029a1c1294782fcfe9095213d7,
+    type: 2}
+  spawnPoints: []
+  RoomName: Harbour
 --- !u!1001 &692554735
 Prefab:
   m_ObjectHideFlags: 0
