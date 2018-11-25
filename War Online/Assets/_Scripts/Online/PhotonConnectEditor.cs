@@ -96,11 +96,13 @@ public class PhotonConnectEditor : Photon.MonoBehaviour {
 
             playerPrefab.GetComponent<RTCTankController>().enabled = true;
 
-            if (GameObject.Find("Flame_Thrower") != null)
+            if (playerPrefab.transform.Find("Flame_Thrower") != null)
             {
                 playerPrefab.GetComponentInChildren<Particle_Emitter>().enabled = true;
-            }
-            if (GameObject.Find("Sniper") != null)
+                GameObject flameThrower = playerPrefab.transform.Find("Flame_Thrower").gameObject;
+                flameThrower.transform.Find("MainCamera").gameObject.SetActive(true);
+        }
+            if (playerPrefab.transform.Find("Sniper") != null)
             {
                 playerPrefab.GetComponentInChildren<snipershooting>().enabled = true;
                 GameObject sniper = playerPrefab.transform.Find("Sniper").gameObject;

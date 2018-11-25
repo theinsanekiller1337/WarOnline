@@ -9,14 +9,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 45b3b3073315a4191bcde3b6ca445dc7, type: 3}
-  m_Name: Dense
+  m_Name: New Obi.ObiEmitterMaterialFluid
   m_EditorClassIdentifier: 
-  resolution: 0.7
-  restDensity: 1000
-  smoothing: 10.88
-  viscosity: 7.12
-  surfaceTension: 1
-  buoyancy: -1
+  resolution: 25.76
+  restDensity: 10171.46
+  smoothing: 852
+  viscosity: 1030.7
+  surfaceTension: 34.77
+  buoyancy: -1.18
   atmosphericDrag: 0
-  atmosphericPressure: 0.1
-  vorticity: 6.66
+  atmosphericPressure: 0
+  vorticity: 18.63

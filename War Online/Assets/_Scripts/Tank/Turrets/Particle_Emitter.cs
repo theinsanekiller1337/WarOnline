@@ -10,7 +10,8 @@ public class Particle_Emitter : Photon.PunBehaviour, IPunObservable {
     public ParticleSystem particleSmoke;
     public float radius = 4f;
     public float damage = 4f;
-    public GameObject secondObject;
+    public GameObject startPoint;
+    public GameObject endPoint;
     bool isFiring;
 
     void ProcessFireInput()
@@ -29,23 +30,30 @@ public class Particle_Emitter : Photon.PunBehaviour, IPunObservable {
 	// Update is called once per frame
 	void Update () {
 
-        Vector3 newPos = secondObject.GetComponent<Transform>().position;
-        Collider[] colliders = Physics.OverlapCapsule(transform.position, newPos, radius);
-
-        for (int i = 0; i < colliders.Length; i++)
+        if (isFiring)
         {
-            Rigidbody targetRigidbody = colliders[i].GetComponent<Rigidbody>();
-            if (!targetRigidbody)
-                continue;
+            Vector3 newStartPos = startPoint.GetComponent<Transform>().position;
+            Vector3 newPos = endPoint.GetComponent<Transform>().position;
+            Collider[] colliders = Physics.OverlapCapsule(newStartPos, newPos, radius);
 
-            TankHealth targetHealth = targetRigidbody.GetComponent<TankHealth>();
-            if (!targetHealth)
+            Debug.Log(colliders[0] + "wtu");
+
+            for (int i = 0; i < colliders.Length; i++)
             {
-                continue;
-            }
-            else if(targetHealth)
-            targetHealth.TakeDamage(damage);
+                Rigidbody targetRigidbody = colliders[i].GetComponentInParent<Rigidbody>();
+                if (!targetRigidbody)
+                    continue;
+                Debug.Log(targetRigidbody + "R");
 
+                TankHealth targetHealth = targetRigidbody.GetComponent<TankHealth>();
+                if (!targetHealth)
+                {
+                    continue;
+                }
+                else if (targetHealth)
+                 targetHealth.TakeDamage(damage);
+                    
+            }
         }
 
 
@@ -56,7 +64,7 @@ public class Particle_Emitter : Photon.PunBehaviour, IPunObservable {
         {
             particleFire.Play();
             particleSmoke.Play();
-            if (particleFire.isPlaying) Debug.Log("Working!!");
+            if (particleFire.isPlaying);
         }
         else
         {
