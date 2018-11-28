@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{30e9501f-2fa6-4a03-ac37-434be35fff60}">
+        <property name="assetPath">
+            <value>SFX/Game/flamethrower_shoot_reload.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>4.0688435374149661</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{b500c7ce-d936-4452-b3bf-b3d0f8e0fdbf}</destination>
+        </relationship>
+    </object>
+</objects>
