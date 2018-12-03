@@ -1397,7 +1397,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1439024970323020}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.447979, y: 0.62, z: -3.3733687}
+  m_LocalPosition: {x: -36.223133, y: 3.6998186, z: 3.7052271}
   m_LocalScale: {x: 0.72248834, y: 0.72248846, z: 0.72248846}
   m_Children:
   - {fileID: 4721138550071602}
@@ -1625,7 +1625,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1871680963260614}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -24.65}
+  m_LocalPosition: {x: 0, y: 0, z: -30.09}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4855965673402448}
@@ -3335,7 +3335,6 @@ MonoBehaviour:
   maxEngineSoundVolume: 0.85
   maxBrakeSoundVolume: 0.35
   wheelSlip: {fileID: 0}
-  exhaustSmoke: {fileID: 198328355789759676}
 --- !u!114 &114526027588596940
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3373,7 +3372,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1439024970323020}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8326b9dca06e5bc4885942c9371f51f1, type: 3}
+  m_Script: {fileID: 11500000, guid: 87d2b2d044554a542a3e8d1087f80588, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_StartingHealth: 100
@@ -3381,8 +3380,6 @@ MonoBehaviour:
   m_FillImage: {fileID: 0}
   m_FullHealthColor: {r: 0, g: 1, b: 0, a: 1}
   m_ZeroHealthColor: {r: 1, g: 0, b: 0, a: 1}
-  falconDestoyed: {fileID: 0}
-  sniperDestoyed: {fileID: 0}
   m_CurrentHealth: 0
 --- !u!114 &114744900855581460
 MonoBehaviour:

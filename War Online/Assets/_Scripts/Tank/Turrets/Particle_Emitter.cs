@@ -36,14 +36,14 @@ public class Particle_Emitter : Photon.PunBehaviour, IPunObservable {
             Vector3 newPos = endPoint.GetComponent<Transform>().position;
             Collider[] colliders = Physics.OverlapCapsule(newStartPos, newPos, radius);
 
-            Debug.Log(colliders[0] + "wtu");
+            
 
             for (int i = 0; i < colliders.Length; i++)
             {
                 Rigidbody targetRigidbody = colliders[i].GetComponentInParent<Rigidbody>();
                 if (!targetRigidbody)
                     continue;
-                Debug.Log(targetRigidbody + "R");
+                
 
                 TankHealth targetHealth = targetRigidbody.GetComponent<TankHealth>();
                 if (!targetHealth)

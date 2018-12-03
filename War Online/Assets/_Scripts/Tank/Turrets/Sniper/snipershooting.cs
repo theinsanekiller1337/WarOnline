@@ -5,11 +5,13 @@ using UnityEngine;
 
 public class snipershooting : MonoBehaviour {
     #region GameObjects
+    [Header("GameObjects")]
     public new Camera camera;
     public GameObject scope;
     public Image ScopeImage;
     #endregion
     #region Floats
+    [Header("Floats")]
     public float zoom_speed = 1f;
     public float zoom_limit = 5f;
     float camerastartingfov = 48f;
@@ -17,9 +19,12 @@ public class snipershooting : MonoBehaviour {
     public float damage = 150f;
     #endregion
     #region Others
+    [Header("Others")]
     public string buttontozoom;
     public LineRenderer linerenderer;
     public Transform shootfrom;
+    public ParticleSystem sniperLight;
+    public ParticleSystem hitParticle;
 
     [SerializeField]
     private RaycastHit LookAtRayCast;
@@ -55,8 +60,9 @@ public class snipershooting : MonoBehaviour {
         }
         turretRotation = GetComponent<TurretRotation>();
         rotateSpeed = turretRotation.KeyRotateSpeed;
+        
     }
-    public void Update()
+    public void LateUpdate()
     {
 
         ScopeImage.enabled =false;
@@ -98,10 +104,11 @@ public class snipershooting : MonoBehaviour {
             }
             //disabling object(s)
             gameObject.GetComponentInChildren<CamTest>().enabled = false;
-            
+
+            Camera sniperCam = gameObject.GetComponentInChildren<Camera>();
+            sniperCam.cullingMask = 8 << 0;
             //shootAnime.enabled = false;
             
-
             turretRotation.KeyRotateSpeed = zoomedRotateSpeed;
         }
 
@@ -117,20 +124,18 @@ public class snipershooting : MonoBehaviour {
            
             ScopeImage.enabled = false;
 
+            //enabling afterHitEffect
+            Instantiate(hitParticle, LookAtRayCast.point, Quaternion.identity);
+            sniperLight.Play();
             turretRotation.KeyRotateSpeed = rotateSpeed;
+
+            Camera sniperCam = gameObject.GetComponentInChildren<Camera>();
+           // sniperCam.cullingMask = 8 << 0;
         }
-        
 
+        animcontroller.SetLookAtPosition(lookAtRaycast.point);
     }
 
-    private void LateUpdate()
-    {
-         //   AnimatorClipInfo[] m_CurrentClipInfo = animcontroller.GetCurrentAnimatorClipInfo(1);
-         //   AnimationClip animeClip = m_CurrentClipInfo[1].clip;
-
-            animcontroller.SetLookAtPosition(lookAtRaycast.point);
-
-    }
 
     public void shoot() //code for shooting
     {

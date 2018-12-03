@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{47d189a9-f77d-4fd4-85a8-2060e84abdab}">
+        <property name="name">
+            <value>Cannon_Reload</value>
+        </property>
+        <relationship name="folder">
+            <destination>{88875612-ba53-45d2-bc4a-24ec8e85a17e}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{ad49834f-335e-4317-aee2-2423b84f1259}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{ad49834f-335e-4317-aee2-2423b84f1259}">
+        <property name="initialValue">
+            <value>0</value>
+        </property>
+    </object>
+</objects>

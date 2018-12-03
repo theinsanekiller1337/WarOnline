@@ -8,8 +8,7 @@ public class TankHealth : MonoBehaviour
     public Image m_FillImage;                      
     public Color m_FullHealthColor = Color.green;  
     public Color m_ZeroHealthColor = Color.red;
-    public Material falconDestoyed;
-    public Material sniperDestoyed;
+    
 
     //public GameObject m_ExplosionPrefab;
 
@@ -110,11 +109,7 @@ public class TankHealth : MonoBehaviour
           m_ExplosionParticles.Play();*/
 
         //m_ExplosionAudio.Play();
-
-        MeshRenderer destroyedMeshH = GameObject.Find("Falcon_Body").GetComponent<MeshRenderer>();
-        destroyedMeshH.material = falconDestoyed;
-        MeshRenderer destroyedMeshT = GameObject.Find("Sniper_Body").GetComponent<MeshRenderer>();
-        destroyedMeshT.material = sniperDestoyed;
+      
         Destroy(this.gameObject, 2f);
 
         if (!spawnCalled)

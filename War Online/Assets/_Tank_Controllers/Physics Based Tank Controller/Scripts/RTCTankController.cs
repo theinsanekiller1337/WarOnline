@@ -109,7 +109,7 @@ public class RTCTankController : Photon.PunBehaviour
 	public GameObject wheelSlip;
 	private List <ParticleSystem> wheelParticles = new List<ParticleSystem>();
 
-	public ParticleSystem exhaustSmoke;
+	
 
     [Header("Photon")]
     [Tooltip("The local player instance. Use this to know if the local player is represented in the Scene")]
@@ -606,7 +606,7 @@ public class RTCTankController : Photon.PunBehaviour
 	}
 		
 	void Smoke (){
-        /*
+        
 		if (wheelParticles.Count > 0){
 
 			for(int i = 0; i < allWheelColliders.Count; i++){
@@ -624,13 +624,7 @@ public class RTCTankController : Photon.PunBehaviour
 			}
 			
 		}
-			
-		if(exhaustSmoke){
-			exhaustSmoke.emissionRate = Mathf.Lerp(0f, 50f, engineRPM / maxEngineRPM);
-			exhaustSmoke.startSpeed = Mathf.Lerp(0f, 10f, engineRPM / maxEngineRPM);
-			exhaustSmoke.startSize = Mathf.Lerp(.1f, 1f, engineRPM / maxEngineRPM);
-		}
-		*/
+		
 	}
 
     #if !UNITY_MIN_5_4

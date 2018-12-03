@@ -15,7 +15,7 @@ public class PhotonConnectEditor : Photon.MonoBehaviour {
     private TurretRotation turretRotator;
     private GameObject playercamera;
     private GameObject[] playerList;
-    private gameManager GameMan;
+    
     /*
     public void Start()
     {
@@ -87,8 +87,8 @@ public class PhotonConnectEditor : Photon.MonoBehaviour {
     {
 
 
-
-        GameObject playerPrefab = GameMan.realPlayerPrefab;
+        gameManager GameMan = this.gameObject.GetComponent<gameManager>();
+        GameObject playerPrefab = GameMan.RealPlayerPrefab;
             
             
             //finding components to turn on in photonview
@@ -101,15 +101,21 @@ public class PhotonConnectEditor : Photon.MonoBehaviour {
                 playerPrefab.GetComponentInChildren<Particle_Emitter>().enabled = true;
                 GameObject flameThrower = playerPrefab.transform.Find("Flame_Thrower").gameObject;
                 flameThrower.transform.Find("MainCamera").gameObject.SetActive(true);
-        }
+             }
             if (playerPrefab.transform.Find("Sniper") != null)
             {
                 playerPrefab.GetComponentInChildren<snipershooting>().enabled = true;
                 GameObject sniper = playerPrefab.transform.Find("Sniper").gameObject;
                 sniper.transform.Find("MainCamera").gameObject.SetActive(true);
             }
+        if (playerPrefab.transform.Find("MachineGun") != null)
+        {
+            playerPrefab.GetComponentInChildren<MachineGun>().enabled = true;
+            GameObject machineGun = playerPrefab.transform.Find("MachineGun").gameObject;
+            machineGun.transform.Find("MainCamera").gameObject.SetActive(true);
+        }
 
-            playerPrefab.GetComponent<TankHealth>().enabled = true;
+        playerPrefab.GetComponent<TankHealth>().enabled = true;
         playerPrefab.GetComponentInChildren<TurretRotation>().enabled = true;
 
     }

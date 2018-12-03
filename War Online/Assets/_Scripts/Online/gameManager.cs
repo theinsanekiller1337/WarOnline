@@ -9,9 +9,16 @@ public class gameManager : Photon.PunBehaviour {
     [SerializeField] string exitScene = "Lobby";
     [Tooltip("The prefab to use for representing the player")]
     public GameObject newPlayerPrefab;
-    public GameObject realPlayerPrefab;
+
+    [SerializeField]
+    private GameObject realPlayerPrefab;
+    public GameObject RealPlayerPrefab
+    {
+        get { return realPlayerPrefab; }
+        set { realPlayerPrefab = value; }
+    }
     public Transform[] spawnPoints;
-    private PhotonConnectEditor photonConnectEditor; //gods was here :)
+  
 
     // Why are we using a static gameManager instance? The tutorial says nothing about this.
     // "It's a surprise tool that will help us later." -- Mickey Mouse
@@ -25,7 +32,7 @@ public class gameManager : Photon.PunBehaviour {
 
     private void Start()
     {
-        if (realPlayerPrefab == null)
+        if (newPlayerPrefab == null)
         {
 
             Debug.LogError("<Color=Red><b>Missing</b></Color> playerPrefab Reference. Please set it up in GameObject 'Game Manager'", this);
@@ -37,7 +44,12 @@ public class gameManager : Photon.PunBehaviour {
             if (RTCTankController.LocalPlayerInstance == null)
             {
                 Debug.Log("We are Instantiating LocalPlayer from " + SceneManagerHelper.ActiveSceneName);
-                realPlayerPrefab =(GameObject)PhotonNetwork.Instantiate(newPlayerPrefab.name, spawnPoints[PhotonNetwork.room.PlayerCount - 1].position, spawnPoints[PhotonNetwork.room.PlayerCount - 1].rotation, 0);
+
+                int spawnNumber = Random.Range(0, spawnPoints.Length);
+
+                GameObject playerPref =(GameObject)PhotonNetwork.Instantiate(newPlayerPrefab.name, spawnPoints[spawnNumber].position, spawnPoints[spawnNumber].rotation, 0);
+                playerPref = realPlayerPrefab;
+                PhotonConnectEditor photonConnectEditor = this.gameObject.GetComponent<PhotonConnectEditor>();
 
                 photonConnectEditor.SetActive(); //wrote my script so controls don't get interlinked :)" - gods
             }
