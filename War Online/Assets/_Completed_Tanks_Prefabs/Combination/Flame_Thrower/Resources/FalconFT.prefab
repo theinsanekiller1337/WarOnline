@@ -223,7 +223,7 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &1118020275201114
 GameObject:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
@@ -568,6 +568,7 @@ GameObject:
   - component: {fileID: 114089238359814340}
   - component: {fileID: 114614047435069932}
   - component: {fileID: 114768260614654612}
+  - component: {fileID: 114229293293328560}
   m_Layer: 0
   m_Name: FalconFT
   m_TagString: Player
@@ -1019,7 +1020,7 @@ GameObject:
   - component: {fileID: 114526027588596940}
   - component: {fileID: 114070997232062064}
   m_Layer: 0
-  m_Name: 'Flame_Thrower '
+  m_Name: FlameThrower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1283,7 +1284,7 @@ Transform:
   - {fileID: 4965663328076998}
   - {fileID: 4453146342718306}
   m_Father: {fileID: 4189193747165132}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4132153992687200
 Transform:
@@ -1335,7 +1336,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4189193747165132}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4160096778264978
 Transform:
@@ -1397,13 +1398,12 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1439024970323020}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -36.223133, y: 3.6998186, z: 3.7052271}
+  m_LocalPosition: {x: -60.13341, y: -0.5243707, z: -17.187187}
   m_LocalScale: {x: 0.72248834, y: 0.72248846, z: 0.72248846}
   m_Children:
   - {fileID: 4721138550071602}
   - {fileID: 4855965673402448}
   - {fileID: 4243106758250430}
-  - {fileID: 4421618906554132}
   - {fileID: 4545872788203222}
   - {fileID: 4622747247992646}
   - {fileID: 4734443647608868}
@@ -1509,7 +1509,7 @@ Transform:
   - {fileID: 4727487815906536}
   - {fileID: 4160096778264978}
   m_Father: {fileID: 4189193747165132}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4308085427351346
 Transform:
@@ -1682,7 +1682,7 @@ Transform:
   - {fileID: 4531350317359672}
   - {fileID: 4431227505581976}
   m_Father: {fileID: 4189193747165132}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4421618906554132
 Transform:
@@ -1690,12 +1690,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1118020275201114}
-  m_LocalRotation: {x: 0.117058545, y: -0, z: -0, w: 0.9931251}
-  m_LocalPosition: {x: 0, y: 2.24, z: -8.69}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: -0.9931251, z: 0.117058545, w: 0}
+  m_LocalPosition: {x: -0.10127194, y: 0.7646368, z: 12.947569}
+  m_LocalScale: {x: 1.6991941, y: 1.6832515, z: 1.4202348}
   m_Children: []
-  m_Father: {fileID: 4189193747165132}
-  m_RootOrder: 3
+  m_Father: {fileID: 4855965673402448}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 13.445001, y: 0, z: 0}
 --- !u!4 &4431227505581976
 Transform:
@@ -1741,7 +1741,7 @@ Transform:
   - {fileID: 4509281030657910}
   - {fileID: 4966432764848440}
   m_Father: {fileID: 4189193747165132}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4503435912650338
 Transform:
@@ -1815,7 +1815,7 @@ Transform:
   - {fileID: 4345877694390056}
   - {fileID: 4354119841905654}
   m_Father: {fileID: 4189193747165132}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4575618098310032
 Transform:
@@ -1895,7 +1895,7 @@ Transform:
   - {fileID: 4596101363269288}
   - {fileID: 4312007387349250}
   m_Father: {fileID: 4189193747165132}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4634425246100164
 Transform:
@@ -2015,7 +2015,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4189193747165132}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4774149212990766
 Transform:
@@ -2113,6 +2113,7 @@ Transform:
   - {fileID: 4261375345533858}
   - {fileID: 4395652332718326}
   - {fileID: 4912516945903362}
+  - {fileID: 4421618906554132}
   m_Father: {fileID: 4189193747165132}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -2240,7 +2241,7 @@ Transform:
   - {fileID: 4990009139006044}
   - {fileID: 4503435912650338}
   m_Father: {fileID: 4189193747165132}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4990009139006044
 Transform:
@@ -3335,6 +3336,83 @@ MonoBehaviour:
   maxEngineSoundVolume: 0.85
   maxBrakeSoundVolume: 0.35
   wheelSlip: {fileID: 0}
+--- !u!114 &114229293293328560
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1439024970323020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PositionModel:
+    SynchronizeEnabled: 1
+    TeleportEnabled: 1
+    TeleportIfDistanceGreaterThan: 3
+    InterpolateOption: 2
+    InterpolateMoveTowardsSpeed: 1
+    InterpolateLerpSpeed: 1
+    InterpolateMoveTowardsAcceleration: 2
+    InterpolateMoveTowardsDeceleration: 2
+    InterpolateSpeedCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: -1
+        value: 0
+        inSlope: 0
+        outSlope: Infinity
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 4
+        value: 4
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    ExtrapolateOption: 0
+    ExtrapolateSpeed: 1
+    ExtrapolateIncludingRoundTripTime: 1
+    ExtrapolateNumberOfStoredPositions: 1
+    DrawErrorGizmo: 1
+  m_RotationModel:
+    SynchronizeEnabled: 1
+    InterpolateOption: 1
+    InterpolateRotateTowardsSpeed: 180
+    InterpolateLerpSpeed: 5
+  m_ScaleModel:
+    SynchronizeEnabled: 0
+    InterpolateOption: 0
+    InterpolateMoveTowardsSpeed: 1
+    InterpolateLerpSpeed: 0
 --- !u!114 &114526027588596940
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8557,7 +8635,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startSizeY:
       serializedVersion: 2
-      minMaxState: 0
+      minMaxState: 3
       scalar: 1
       minScalar: 1
       maxCurve:
@@ -8610,7 +8688,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startSizeZ:
       serializedVersion: 2
-      minMaxState: 0
+      minMaxState: 3
       scalar: 1
       minScalar: 1
       maxCurve:
@@ -8663,7 +8741,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startRotationX:
       serializedVersion: 2
-      minMaxState: 0
+      minMaxState: 3
       scalar: 0
       minScalar: 0
       maxCurve:
@@ -8716,7 +8794,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startRotationY:
       serializedVersion: 2
-      minMaxState: 0
+      minMaxState: 3
       scalar: 0
       minScalar: 0
       maxCurve:
@@ -17159,7 +17237,7 @@ ParticleSystemRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 5f5bbe8b7718b4f4c8a004de96b51a0b, type: 2}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -17216,8 +17294,8 @@ ParticleSystemRenderer:
   m_ReflectionProbeUsage: 0
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: c9089de7b6c3e1b44b3dc25f6e549eb1, type: 2}
-  - {fileID: 2100000, guid: c9089de7b6c3e1b44b3dc25f6e549eb1, type: 2}
+  - {fileID: 2100000, guid: 1402721190994cd46b64bf7cba78f5d8, type: 2}
+  - {fileID: 2100000, guid: 1402721190994cd46b64bf7cba78f5d8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

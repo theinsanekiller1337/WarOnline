@@ -9,15 +9,14 @@ public class gameManager : Photon.PunBehaviour {
     [SerializeField] string exitScene = "Lobby";
     [Tooltip("The prefab to use for representing the player")]
     public GameObject newPlayerPrefab;
+    public GameObject sceneCam;
 
-    [SerializeField]
-    private GameObject realPlayerPrefab;
-    public GameObject RealPlayerPrefab
-    {
-        get { return realPlayerPrefab; }
-        set { realPlayerPrefab = value; }
-    }
+    private GameObject Canvas;
     public Transform[] spawnPoints;
+    private GameObject playerPrefab;
+   
+
+    private bool firstTimeCalled;
   
 
     // Why are we using a static gameManager instance? The tutorial says nothing about this.
@@ -32,6 +31,9 @@ public class gameManager : Photon.PunBehaviour {
 
     private void Start()
     {
+        firstTimeCalled = false;
+
+        Canvas = Resources.Load<GameObject>("WarCanvas");
         if (newPlayerPrefab == null)
         {
 
@@ -43,15 +45,7 @@ public class gameManager : Photon.PunBehaviour {
 
             if (RTCTankController.LocalPlayerInstance == null)
             {
-                Debug.Log("We are Instantiating LocalPlayer from " + SceneManagerHelper.ActiveSceneName);
-
-                int spawnNumber = Random.Range(0, spawnPoints.Length);
-
-                GameObject playerPref =(GameObject)PhotonNetwork.Instantiate(newPlayerPrefab.name, spawnPoints[spawnNumber].position, spawnPoints[spawnNumber].rotation, 0);
-                playerPref = realPlayerPrefab;
-                PhotonConnectEditor photonConnectEditor = this.gameObject.GetComponent<PhotonConnectEditor>();
-
-                photonConnectEditor.SetActive(); //wrote my script so controls don't get interlinked :)" - gods
+                SpawnTank();
             }
             else
             {
@@ -115,6 +109,58 @@ public class gameManager : Photon.PunBehaviour {
 
     #endregion
 
+    //^^gods was here
+    #region Instantiating Method
+
+      public void SpawnTank()
+    {
+        Debug.Log("We are Instantiating LocalPlayer from " + SceneManagerHelper.ActiveSceneName);
+
+        int spawnNumber = Random.Range(0, spawnPoints.Length);
+
+        GameObject playerPrefab = (GameObject)PhotonNetwork.Instantiate(newPlayerPrefab.name, spawnPoints[spawnNumber].position, spawnPoints[spawnNumber].rotation, 0);
+        Debug.Log(playerPrefab);
+        sceneCam.SetActive(false);
+        //Activating Objects
+
+        playerPrefab.GetComponent<RTCTankController>().enabled = true;
+
+        if (playerPrefab.transform.Find("FlameThrower") != null)
+        {
+            
+            playerPrefab.GetComponentInChildren<Particle_Emitter>().enabled = true;
+            GameObject flameThrower = playerPrefab.transform.Find("FlameThrower").gameObject;
+            flameThrower.transform.Find("MainCamera").gameObject.SetActive(true);
+        }
+        else if (playerPrefab.transform.Find("Sniper") != null)
+        {
+            playerPrefab.GetComponentInChildren<snipershooting>().enabled = true;
+            GameObject sniper = playerPrefab.transform.Find("Sniper").gameObject;
+            sniper.transform.Find("MainCamera").gameObject.SetActive(true);
+        }
+        else if (playerPrefab.transform.Find("MachineGun") != null)
+        {
+            playerPrefab.GetComponentInChildren<MachineGun>().enabled = true;
+            GameObject machineGun = playerPrefab.transform.Find("MachineGun").gameObject;
+            machineGun.transform.Find("MainCamera").gameObject.SetActive(true);
+        }
+
+        playerPrefab.GetComponent<TankHealth>().enabled = true;
+        playerPrefab.GetComponentInChildren<TurretRotation>().enabled = true;
+
+        if (!firstTimeCalled)
+        {
+            CanvasInstantiate();
+            firstTimeCalled = true;
+        }
+    }
+
+    private void CanvasInstantiate()
+    {
+        GameObject warCanvas = (GameObject)PhotonNetwork.Instantiate(Canvas.name, Vector3.zero, gameObject.transform.rotation, 0);
+        warCanvas.SetActive(true);
+    }
+ #endregion
 
     #region Public Methods
 

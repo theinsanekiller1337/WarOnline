@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class TankHealth : MonoBehaviour
+public class TankHealth : Photon.PunBehaviour
 {
     public float m_StartingHealth = 100f;          
     public Slider m_Slider;                        
@@ -12,13 +12,14 @@ public class TankHealth : MonoBehaviour
 
     //public GameObject m_ExplosionPrefab;
 
-
+    private string playerTankName;
     private AudioSource m_ExplosionAudio;          
     private ParticleSystem m_ExplosionParticles;   
     public float m_CurrentHealth;  
     private bool m_Dead;
-    private PhotonConnectEditor photonScript;
-    private bool spawnCalled;
+    private gameManager photonScript;
+    private bool destroyCalled;
+    
 
     private void Start()
     {
@@ -32,9 +33,9 @@ public class TankHealth : MonoBehaviour
         m_Dead = false;
 
         m_CurrentHealth = m_StartingHealth;
-        photonScript = GameObject.Find("Game Manager").GetComponent<PhotonConnectEditor>();
+        photonScript = GameObject.Find("GameManager").GetComponent<gameManager>();
 
-        spawnCalled = false;
+        destroyCalled = false;
     }
 
     private void Awake()
@@ -44,6 +45,7 @@ public class TankHealth : MonoBehaviour
 
         // m_ExplosionParticles.gameObject.SetActive(false);
         m_Dead = false;
+        
     }
 	
 
@@ -102,22 +104,33 @@ public class TankHealth : MonoBehaviour
         // Play the effects for the death of the tank and deactivate it.
 
 		m_Dead = true;
-        /*
-          m_ExplosionParticles.transform.position = transform.position;
-          m_ExplosionParticles.gameObject.SetActive (true);
 
-          m_ExplosionParticles.Play();*/
+        Vector3 newVelocity = this.GetComponentInChildren<Rigidbody>().velocity;
+        Vector3 newAngularVelocity = this.GetComponentInChildren<Rigidbody>().angularVelocity;
+        Vector3 newDesPos = this.GetComponentInParent<Transform>().position;
+        Quaternion newDesRos = this.GetComponentInParent<Transform>().rotation;
+        Destroy(this.gameObject);
 
-        //m_ExplosionAudio.Play();
-      
-        Destroy(this.gameObject, 2f);
-
-        if (!spawnCalled)
+        if (!destroyCalled)
         {
-            photonScript.SpawnMyPlayer();
-            spawnCalled = true;
-        } 
+            playerTankName = photonScript.newPlayerPrefab.name;
+            GameObject playerDes = (GameObject)PhotonNetwork.Instantiate(playerTankName + "D", newDesPos, newDesRos, 0);
+            playerDes.GetComponent<Rigidbody>().velocity = newVelocity;
+            playerDes.GetComponent<Rigidbody>().angularVelocity = newAngularVelocity;
+            playerDes.transform.Find("MainCamera").gameObject.SetActive(true);
+            Destroy(playerDes, 1.3f);
+            destroyCalled = true;
+            //  Physics.IgnoreCollision(this.GetComponentInParent<Transform>().gameObject.GetComponentInChildren<Collider>(), playerDes.GetComponent<Collider>());
+        }
+        
       }
+      
+   
+    /*
+        m_ExplosionParticles.transform.position = transform.position;
+        m_ExplosionParticles.gameObject.SetActive (true);
 
-    
+        m_ExplosionParticles.Play();*/
+
+    //m_ExplosionAudio.Play();
 }

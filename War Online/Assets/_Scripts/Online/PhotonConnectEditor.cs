@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class PhotonConnectEditor : Photon.MonoBehaviour {
+public class PhotonConnectEditor : Photon.MonoBehaviour
+{
 
-   // public GameObject playerToInstantiate;
-   // public Transform[] spawnPoints;
+    // public GameObject playerToInstantiate;
+    // public Transform[] spawnPoints;
     public GameObject SceneCamera;
     public GameObject Canvas;
 
@@ -15,7 +16,7 @@ public class PhotonConnectEditor : Photon.MonoBehaviour {
     private TurretRotation turretRotator;
     private GameObject playercamera;
     private GameObject[] playerList;
-    
+
     /*
     public void Start()
     {
@@ -35,44 +36,44 @@ public class PhotonConnectEditor : Photon.MonoBehaviour {
             playercamera = playerPrefab.transform.Find("Main Camera").gameObject;
             playercamera.SetActive(false);
         } */
-        /*
-        Connect();
-    }
+    /*
+    Connect();
+}
 
-    public void Update()
-    {
+public void Update()
+{
 
-    }
+}
 
-    private void Connect()
-    {
-        PhotonNetwork.ConnectUsingSettings("Waronline v0.0.2");
-        Debug.Log("Connected");
-    }
-    private void OnGUI()
-    {
-        GUILayout.Label(PhotonNetwork.connectionStateDetailed.ToString());
-    }
+private void Connect()
+{
+    PhotonNetwork.ConnectUsingSettings("Waronline v0.0.2");
+    Debug.Log("Connected");
+}
+private void OnGUI()
+{
+    GUILayout.Label(PhotonNetwork.connectionStateDetailed.ToString());
+}
 
-    void OnJoinedLobby()
-    {
-        Debug.Log("At last BMC");
-        PhotonNetwork.JoinRandomRoom();
+void OnJoinedLobby()
+{
+    Debug.Log("At last BMC");
+    PhotonNetwork.JoinRandomRoom();
 
-    }
+}
 
-    void OnPhotonRandomJoinFailed()
-    {
-        PhotonNetwork.CreateRoom("Harbour");
-            
-    }
+void OnPhotonRandomJoinFailed()
+{
+    PhotonNetwork.CreateRoom("Harbour");
 
-    void OnJoinedRoom()
-    {
-        SetActive();
-    } */
+}
 
-    public void SetActive()
+void OnJoinedRoom()
+{
+    SetActive();
+} */
+
+  /*  public void SetActive()
     {
         SceneCamera.SetActive(false);
 
@@ -80,46 +81,23 @@ public class PhotonConnectEditor : Photon.MonoBehaviour {
         warCanvas.SetActive(true);
         SpawnMyPlayer();
 
-    } 
+    }*/
 
 
     public void SpawnMyPlayer()
     {
 
 
-        gameManager GameMan = this.gameObject.GetComponent<gameManager>();
-        GameObject playerPrefab = GameMan.RealPlayerPrefab;
-            
-            
-            //finding components to turn on in photonview
-            
+        //  gameManager GameMan = this.gameObject.GetComponent<gameManager>();
+        //  GameObject playerPrefab = GameMan.RealPlayerPrefab;
 
-            playerPrefab.GetComponent<RTCTankController>().enabled = true;
 
-            if (playerPrefab.transform.Find("Flame_Thrower") != null)
-            {
-                playerPrefab.GetComponentInChildren<Particle_Emitter>().enabled = true;
-                GameObject flameThrower = playerPrefab.transform.Find("Flame_Thrower").gameObject;
-                flameThrower.transform.Find("MainCamera").gameObject.SetActive(true);
-             }
-            if (playerPrefab.transform.Find("Sniper") != null)
-            {
-                playerPrefab.GetComponentInChildren<snipershooting>().enabled = true;
-                GameObject sniper = playerPrefab.transform.Find("Sniper").gameObject;
-                sniper.transform.Find("MainCamera").gameObject.SetActive(true);
-            }
-        if (playerPrefab.transform.Find("MachineGun") != null)
-        {
-            playerPrefab.GetComponentInChildren<MachineGun>().enabled = true;
-            GameObject machineGun = playerPrefab.transform.Find("MachineGun").gameObject;
-            machineGun.transform.Find("MainCamera").gameObject.SetActive(true);
-        }
+        //finding components to turn on in photonview
 
-        playerPrefab.GetComponent<TankHealth>().enabled = true;
-        playerPrefab.GetComponentInChildren<TurretRotation>().enabled = true;
+
+
 
     }
-
 }
 
 
