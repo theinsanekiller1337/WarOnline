@@ -33,13 +33,15 @@ public class Particle_Emitter : Photon.PunBehaviour, IPunObservable {
         if (isFiring)
         {
             Vector3 newStartPos = startPoint.GetComponent<Transform>().position;
+            Debug.Log(newStartPos);
             Vector3 newPos = endPoint.GetComponent<Transform>().position;
             Collider[] colliders = Physics.OverlapCapsule(newStartPos, newPos, radius);
-
             
 
-            for (int i = 0; i < colliders.Length; i++)
+
+            for (int i = 1; i < colliders.Length; i++)
             {
+                
                 Rigidbody targetRigidbody = colliders[i].GetComponentInParent<Rigidbody>();
                 if (!targetRigidbody)
                     continue;
@@ -47,11 +49,18 @@ public class Particle_Emitter : Photon.PunBehaviour, IPunObservable {
 
                 TankHealth targetHealth = targetRigidbody.GetComponent<TankHealth>();
                 if (!targetHealth)
-                {
                     continue;
-                }
+
                 else if (targetHealth)
-                 targetHealth.TakeDamage(damage);
+                {
+                 
+                    if ( targetHealth.GetComponentInParent<Transform>().gameObject.GetComponentInChildren<Particle_Emitter>().gameObject == this.gameObject.GetComponentInParent<Transform>().gameObject)
+                    {
+                        targetHealth.TakeDamage(-damage);
+                        continue;
+                    }
+                    targetHealth.TakeDamage(damage);
+                }
                     
             }
         }

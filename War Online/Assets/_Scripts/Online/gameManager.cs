@@ -8,13 +8,13 @@ public class gameManager : Photon.PunBehaviour {
     [Tooltip("To be honest, this shouldn't be changed at all. But if you do feel like a badass, this controls which scene the player exits to when quitting.")]
     [SerializeField] string exitScene = "Lobby";
     [Tooltip("The prefab to use for representing the player")]
-    public GameObject newPlayerPrefab;
+    public string newPlayerPrefab;
     public GameObject sceneCam;
 
     private GameObject Canvas;
     public Transform[] spawnPoints;
     private GameObject playerPrefab;
-   
+    private PrefabChange prefabChange;
 
     private bool firstTimeCalled;
   
@@ -114,11 +114,17 @@ public class gameManager : Photon.PunBehaviour {
 
       public void SpawnTank()
     {
+
+        prefabChange = GameObject.Find("Dropdown").GetComponent<PrefabChange>();
+
+        newPlayerPrefab = prefabChange.prefabToSpawn;
+        Debug.Log(newPlayerPrefab);
+
         Debug.Log("We are Instantiating LocalPlayer from " + SceneManagerHelper.ActiveSceneName);
 
         int spawnNumber = Random.Range(0, spawnPoints.Length);
 
-        GameObject playerPrefab = (GameObject)PhotonNetwork.Instantiate(newPlayerPrefab.name, spawnPoints[spawnNumber].position, spawnPoints[spawnNumber].rotation, 0);
+        GameObject playerPrefab = (GameObject)PhotonNetwork.Instantiate(newPlayerPrefab, spawnPoints[spawnNumber].position, spawnPoints[spawnNumber].rotation, 0);
         Debug.Log(playerPrefab);
         sceneCam.SetActive(false);
         //Activating Objects

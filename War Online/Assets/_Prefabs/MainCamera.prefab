@@ -24,7 +24,6 @@ GameObject:
   - component: {fileID: 81594053750127076}
   - component: {fileID: 114998011948812528}
   - component: {fileID: 114256241591805200}
-  - component: {fileID: 114577976716276088}
   - component: {fileID: 95800574066975480}
   m_Layer: 0
   m_Name: MainCamera
@@ -40,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1828930285502738}
   m_LocalRotation: {x: -0.07378054, y: 0.7032471, z: -0.07378055, w: -0.7032471}
-  m_LocalPosition: {x: 69.47003, y: 17.51001, z: 0.3000002}
+  m_LocalPosition: {x: -12.844925, y: 4.67, z: 22.841354}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children: []
   m_Father: {fileID: 0}
@@ -81,7 +80,7 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
+  m_AllowDynamicResolution: 1
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -122,21 +121,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b331d475c9159e4998db018316215b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114577976716276088
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1828930285502738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afc833a08e2042e4aaf096710d571db0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  offsetPosition: {x: 64.8, y: 13.19, z: -1.4}
-  offsetPositionSpace: 1
-  lookAt: 1
 --- !u!114 &114998011948812528
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -148,7 +132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  profile: {fileID: 0}
+  profile: {fileID: 11400000, guid: fcfd93a948620d048a8cf6870d582d09, type: 2}
 --- !u!124 &124517191011647474
 Behaviour:
   m_ObjectHideFlags: 1

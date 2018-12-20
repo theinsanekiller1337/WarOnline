@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.IO;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class TankHealth : Photon.PunBehaviour
@@ -113,8 +114,8 @@ public class TankHealth : Photon.PunBehaviour
 
         if (!destroyCalled)
         {
-            playerTankName = photonScript.newPlayerPrefab.name;
-            GameObject playerDes = (GameObject)PhotonNetwork.Instantiate(playerTankName + "D", newDesPos, newDesRos, 0);
+            playerTankName = photonScript.newPlayerPrefab;
+            GameObject playerDes = (GameObject)PhotonNetwork.Instantiate(Path.Combine("Destroyed", playerTankName + "D"), newDesPos, newDesRos, 0);
             playerDes.GetComponent<Rigidbody>().velocity = newVelocity;
             playerDes.GetComponent<Rigidbody>().angularVelocity = newAngularVelocity;
             playerDes.transform.Find("MainCamera").gameObject.SetActive(true);
