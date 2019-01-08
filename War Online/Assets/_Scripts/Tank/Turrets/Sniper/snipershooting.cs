@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 
-public class snipershooting : MonoBehaviour {
+public class snipershooting : Photon.PunBehaviour, IPunObservable
+{
     #region GameObjects
     [Header("GameObjects")]
     public new Camera camera;
@@ -28,6 +29,7 @@ public class snipershooting : MonoBehaviour {
 
     [SerializeField]
     private RaycastHit LookAtRayCast;
+    private bool isZooming;
     public RaycastHit lookAtRaycast
     {
         get { return LookAtRayCast; } set { LookAtRayCast = value; } 
@@ -68,8 +70,11 @@ public class snipershooting : MonoBehaviour {
         ScopeImage.enabled =false;
         linerenderer.enabled = false;
         bool zoomheld = Input.GetKey(buttontozoom);
+        if (zoomheld)
+            isZooming = true;
         bool zoomreleased = Input.GetKeyUp(buttontozoom);
-
+        if (zoomreleased)
+            isZooming = false;
         if (zoomheld)
         { 
             if (camera.fieldOfView > zoom_limit)
@@ -106,7 +111,7 @@ public class snipershooting : MonoBehaviour {
             gameObject.GetComponentInChildren<CamTest>().enabled = false;
 
             Camera sniperCam = gameObject.GetComponentInChildren<Camera>();
-            sniperCam.cullingMask = 8 << 0;
+            //sniperCam.cullingMask = 8 << 0;
             //shootAnime.enabled = false;
             
             turretRotation.KeyRotateSpeed = zoomedRotateSpeed;
@@ -153,4 +158,9 @@ public class snipershooting : MonoBehaviour {
 
     }
 
+    void IPunObservable.OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+    {
+        if (stream.isWriting) stream.SendNext(isZooming);
+        else this.isZooming = (bool)stream.ReceiveNext();
+    }
 }

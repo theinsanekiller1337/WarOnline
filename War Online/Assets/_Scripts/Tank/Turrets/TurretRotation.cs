@@ -23,19 +23,19 @@ public class TurretRotation : Photon.PunBehaviour, IPunObservable
     void Update()
     {
         yaw += MouseRotateSpeed * Input.GetAxis("Mouse X");
-      //  pitch -= MouseRotateSpeed * Input.GetAxis("Mouse Y");
+   
         if (Input.GetKey("x"))
         {
             yaw += KeyRotateSpeed;
+            transform.rotation = Quaternion.Euler(Vector3.up * yaw);
         }
         if (Input.GetKey("z"))
         {
             yaw -= KeyRotateSpeed;
+            transform.rotation = Quaternion.Euler(Vector3.up * yaw);
         }
 
-        pitch = Mathf.Clamp(pitch, min, max);
-
-        transform.rotation =  Quaternion.Euler(0, yaw, 0);
+        
     }
     void DoLockMouse()
     {

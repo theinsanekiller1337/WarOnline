@@ -84,7 +84,7 @@ public class MachineGun : MonoBehaviour {
                         bulletRenderer.enabled = true;
                         bulletRenderer.SetPosition(0, bulletStartPoint.transform.position);
                         bulletRenderer.SetPosition(1, bulletCast.point);
-                        Debug.Log(":(");
+                        
                     }
                         
                     else if (targetHealth)

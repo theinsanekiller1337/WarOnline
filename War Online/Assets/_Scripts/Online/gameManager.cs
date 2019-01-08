@@ -17,6 +17,7 @@ public class gameManager : Photon.PunBehaviour {
     private PrefabChange prefabChange;
 
     private bool firstTimeCalled;
+    private bool firstTimeTankCalled;
   
 
     // Why are we using a static gameManager instance? The tutorial says nothing about this.
@@ -32,6 +33,7 @@ public class gameManager : Photon.PunBehaviour {
     private void Start()
     {
         firstTimeCalled = false;
+        firstTimeTankCalled = false;
 
         Canvas = Resources.Load<GameObject>("WarCanvas");
         if (newPlayerPrefab == null)
@@ -43,9 +45,10 @@ public class gameManager : Photon.PunBehaviour {
         {
 
 
-            if (RTCTankController.LocalPlayerInstance == null)
+            if (RTCTankController.LocalPlayerInstance == null && !firstTimeTankCalled)
             {
                 SpawnTank();
+                firstTimeTankCalled = true;
             }
             else
             {
@@ -124,7 +127,7 @@ public class gameManager : Photon.PunBehaviour {
 
         int spawnNumber = Random.Range(0, spawnPoints.Length);
 
-        GameObject playerPrefab = (GameObject)PhotonNetwork.Instantiate(newPlayerPrefab, spawnPoints[spawnNumber].position, spawnPoints[spawnNumber].rotation, 0);
+        GameObject playerPrefab = (GameObject)PhotonNetwork.Instantiate(newPlayerPrefab + " Variant", spawnPoints[spawnNumber].position, spawnPoints[spawnNumber].rotation, 0);
         Debug.Log(playerPrefab);
         sceneCam.SetActive(false);
         //Activating Objects

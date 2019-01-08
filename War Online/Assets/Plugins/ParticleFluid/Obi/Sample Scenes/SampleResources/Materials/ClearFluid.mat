@@ -5,7 +5,8 @@ Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: ClearFluid
   m_Shader: {fileID: 4800000, guid: 357625946a6e744b5948e12849e28171, type: 3}
   m_ShaderKeywords: _EMISSION
@@ -67,16 +68,16 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _RefractionCoeff: 0.02
-    - _Smoothness: 0.8
+    - _RefractionCoeff: 0.051
+    - _Smoothness: 0.847
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _ThicknessScale: 5
+    - _ThicknessScale: 6.2
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
     - _Cloudiness: {r: 0.63235295, g: 0.5443623, b: 0.17668687, a: 1}
-    - _CloudinessColor: {r: 1, g: 1, b: 1, a: 1}
+    - _CloudinessColor: {r: 0.06754399, g: 0.6698113, b: 0, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

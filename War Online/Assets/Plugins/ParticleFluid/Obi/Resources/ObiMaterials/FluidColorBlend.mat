@@ -5,7 +5,8 @@ Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: FluidColorBlend
   m_Shader: {fileID: 4800000, guid: 4e9aef83000c34544a0a1f20b88e86c5, type: 3}
   m_ShaderKeywords: _EMISSION
@@ -77,5 +78,5 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.7280363, g: 1, b: 0.7216981, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

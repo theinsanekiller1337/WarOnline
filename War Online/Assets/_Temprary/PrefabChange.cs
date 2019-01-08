@@ -30,7 +30,7 @@ public class PrefabChange : MonoBehaviour {
         }
         else if(dropdown.value == 2)
         {
-            prefabToSpawn = "DominatorSN";
+            prefabToSpawn = "DominatorSP";
         }
     }
 }

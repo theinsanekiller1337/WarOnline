@@ -18,20 +18,15 @@ public class MainScript : Photon.PunBehaviour {
     public void LoadScene(string SceneName) {
 		SceneManager.LoadScene(SceneName);
 	}
-   
+
     public void OnClick_CreateRoom() {
 
-        RoomOptions roomOptions = new RoomOptions() { IsVisible = true, IsOpen = true, MaxPlayers = 4 };
+        PhotonNetwork.JoinRandomRoom();
 
-        if (PhotonNetwork.CreateRoom(RoomName, roomOptions, TypedLobby.Default))
-        {
-            print("create room successfully sent.");
-        }
-        else
-        {
-            print("create room failed to send");
-        }
     }
+        
+        
+    
 
     private void Awake()
     {
@@ -67,7 +62,17 @@ public class MainScript : Photon.PunBehaviour {
     public override void OnPhotonRandomJoinFailed(object[] codeAndMsg)
     {
         Debug.Log("DemoAnimator/Launcher:OnPhotonRandomJoinFailed() was called by PUN. No random room available, so we create one.\nCalling: PhotonNetwork.CreateRoom(null, new RoomOptions() {maxPlayers = 4}, null);");
-        PhotonNetwork.CreateRoom(null, new RoomOptions() { MaxPlayers = maxPlayersPerRoom }, null);
+
+        RoomOptions roomOptions = new RoomOptions() { IsVisible = true, IsOpen = true, MaxPlayers = 4 };
+
+        if (PhotonNetwork.CreateRoom(RoomName, roomOptions, TypedLobby.Default))
+        {
+            print("create room successfully sent.");
+        }
+        else
+        {
+            print("create room failed to send");
+        }
     }
 
     public override void OnJoinedRoom()

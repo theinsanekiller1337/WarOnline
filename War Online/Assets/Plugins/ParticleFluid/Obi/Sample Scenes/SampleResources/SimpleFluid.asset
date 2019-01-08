@@ -4,19 +4,20 @@
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 45b3b3073315a4191bcde3b6ca445dc7, type: 3}
   m_Name: SimpleFluid
   m_EditorClassIdentifier: 
-  resolution: 0.8
-  restDensity: 1000
-  smoothing: 2
-  viscosity: 0.02
-  surfaceTension: 0.2
+  resolution: 2
+  restDensity: 3026.21
+  smoothing: 1.59
+  viscosity: 1
+  surfaceTension: -0.05
   buoyancy: -1
   atmosphericDrag: 0
-  atmosphericPressure: 0
-  vorticity: 0
+  atmosphericPressure: -0.6
+  vorticity: 3.22
