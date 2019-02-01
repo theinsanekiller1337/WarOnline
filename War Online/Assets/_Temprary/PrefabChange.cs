@@ -15,11 +15,12 @@ public class PrefabChange : MonoBehaviour {
 	void Start () {
         GameObject gameMan = GameObject.Find("GameManager");
         connectionScript = gameMan.GetComponent<gameManager>();
+        prefabToSpawn = dontdestroy.instance.prefab;
        
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	/*void Update () {
         if (dropdown.value == 0)
         {
             prefabToSpawn = "FalconFT";
@@ -32,5 +33,5 @@ public class PrefabChange : MonoBehaviour {
         {
             prefabToSpawn = "DominatorSP";
         }
-    }
+    }*/
 }

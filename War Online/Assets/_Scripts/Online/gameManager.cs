@@ -36,6 +36,7 @@ public class gameManager : Photon.PunBehaviour {
         firstTimeTankCalled = false;
 
         Canvas = Resources.Load<GameObject>("WarCanvas");
+        newPlayerPrefab = dontdestroy.instance.prefab;
         if (newPlayerPrefab == null)
         {
 

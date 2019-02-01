@@ -2,64 +2,49 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HullChange : MonoBehaviour {
-    public Button btn;
-    public GameObject Scorpion;
-    public GameObject Dominator;
-    public GameObject Falcon;
-    public GameObject Panzer;
-    public GameObject Trapper;
-    public GameObject parent;
-
-	// Use this for initialization
-	void Start ()
+    public int selection;
+    public GameObject[] hulls;
+    private int lasttimenumber;
+    public GameObject game_manager;
+    // Use this for initialization
+    
+    void Start ()
     {
-        
-        //parent = GameObject.Find("HullSpawn");
-        //Scorpion = parent.FindObject("Scorpion");
-        //Dominator = parent.Find("Dominator");
-        //Falcon = GameObject.Find("Falcon");
-        //Panzer = GameObject.Find("Panzer");
-        
-        Button btnclick = btn.GetComponent<Button>();
-        btnclick.onClick.AddListener(TaskOnClick);
+
+            //Debug.Log(SceneManager.GetActiveScene().name);
+            disableAll();
+            hulls[selection].SetActive(true);
+            lasttimenumber = selection;
+
+
+
+    }
+    private void Update()
+    {
+
+        if (selection != lasttimenumber)
+        {
+            disableAll();
+            hulls[selection].SetActive(true);
+            lasttimenumber = selection;
+        }
+        else
+        {
+
+        }
+
+
     }
     void disableAll()
     {
-        Scorpion.SetActive(false);
-        Falcon.SetActive(false);
-        Panzer.SetActive(false);
-        Dominator.SetActive(false);
-        Trapper.SetActive(false);
+        for(int x = 0; x<hulls.Length; x++)
+        {
+            hulls[x].SetActive(false);
+        }
+      
     }
-    void TaskOnClick()
-    {
-        Debug.Log("You have clicked me cunt");
-        if (gameObject.name == "DominatorBtn")
-        {
-            disableAll();
-            Dominator.SetActive(true);
-        }
-        else if (gameObject.name == "FalconBtn")
-        {
-            disableAll();
-            Falcon.SetActive(true);
-        }
-        else if (gameObject.name == "PanzerBtn")
-        {
-            disableAll();
-            Panzer.SetActive(true);
-        }
-        else if (gameObject.name == "ScorpionBtn")
-        {
-            disableAll();
-            Scorpion.SetActive(true);
-        }
-        else if (gameObject.name == "TrapperBtn")
-        {
-            disableAll();
-            Trapper.SetActive(true);
-        }
-    }
+
 }
