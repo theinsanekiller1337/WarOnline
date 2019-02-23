@@ -2746,7 +2746,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxPlayersPerRoom: 8
-  logLevel: 1
+  logLevel: 2
   isConnecting: 0
   playerPrefab: {fileID: 1555982248903926, guid: 1a6872029a1c1294782fcfe9095213d7,
     type: 2}

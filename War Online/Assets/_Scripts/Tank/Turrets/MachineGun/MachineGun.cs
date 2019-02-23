@@ -30,6 +30,7 @@ public class MachineGun : MonoBehaviour {
     private Material bulletMaterial;
     private RaycastHit bulletCast;
     private LineRenderer bulletRenderer;
+    private TankHealth enemy;
 
     public float rollingSpeed;
 
@@ -90,7 +91,6 @@ public class MachineGun : MonoBehaviour {
                     else if (targetHealth)
                     {
                         target = targetTransform;
-                        Debug.Log("Hit" + target);
                         bulletRenderer.enabled = true;
                         bulletRenderer.SetPosition(0, bulletStartPoint.transform.position);
                         bulletRenderer.SetPosition(1, target.position);
@@ -122,7 +122,18 @@ public class MachineGun : MonoBehaviour {
 
         if (targetHealth && Time.time >= delayTime)
         {
-            targetHealth.TakeDamage(damage);
+            FactionID fID = targetHealth.gameObject.GetComponent<FactionID>();
+            FactionID myID = gameObject.GetComponent<FactionID>();
+
+            if (fID == null || fID._teamID == 1 || myID._teamID == null || myID._teamID == 1 || fID._teamID != myID._teamID)
+            {
+                if (fID.myAccID != myID.myAccID)
+                {
+                    Damage();
+                    enemy = targetHealth;
+                }
+            }
+            
 
             delayTime = Time.time + 1 / bulletSec;
 
@@ -131,10 +142,24 @@ public class MachineGun : MonoBehaviour {
             TankHealth targetH = bulletCast.transform.gameObject.GetComponentInParent<TankHealth>();
             if (targetH)
             {
-                targetHealth.TakeDamage(damage);
+                FactionID fID = targetHealth.gameObject.GetComponent<FactionID>();
+                FactionID myID = gameObject.GetComponent<FactionID>();
+
+                if (fID == null || fID._teamID == 0 || myID._teamID == null || myID._teamID == 0 || fID._teamID != myID._teamID)
+                {
+                    if (fID.myAccID != myID.myAccID)
+                    {
+                        Damage();
+                        enemy = targetHealth;
+                    }
+                }
                 delayTime = Time.time + 1 / bulletSec;
-                Debug.Log("Should Work");
             }
         }
+    }
+     void Damage()
+    {
+        if(enemy != null)
+        enemy.gameObject.GetComponent<PhotonView>().RPC("TakeDamage", enemy.GetComponent<PhotonView>().owner, damage);
     }
 }

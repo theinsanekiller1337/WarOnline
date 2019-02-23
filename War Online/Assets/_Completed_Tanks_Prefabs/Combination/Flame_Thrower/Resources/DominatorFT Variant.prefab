@@ -70,17 +70,17 @@ PrefabInstance:
     - target: {fileID: 2819878482383010088, guid: 2b17a866042f78c43a137c4439c929cc,
         type: 3}
       propertyPath: viewIdField
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2819878482383010088, guid: 2b17a866042f78c43a137c4439c929cc,
         type: 3}
       propertyPath: instantiationId
-      value: 1
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 2784688415548330668, guid: 2b17a866042f78c43a137c4439c929cc,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b17a866042f78c43a137c4439c929cc, type: 3}

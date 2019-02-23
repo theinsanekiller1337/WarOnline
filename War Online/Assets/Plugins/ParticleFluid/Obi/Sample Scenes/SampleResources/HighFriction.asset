@@ -1,18 +1,3 @@
-%YAML 1.1
-%TAG !u! tag:unity3d.com,2011:
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b9c84cdb747944209b1c8753933c5db, type: 3}
-  m_Name: HighFriction
-  m_EditorClassIdentifier: 
-  friction: 0.8
-  stickiness: 0
-  stickDistance: 0
-  frictionCombine: 3
-  stickinessCombine: 0
+version https://git-lfs.github.com/spec/v1
+oid sha256:e7a09d81c36a916dfb4f00ff98b4f50b682806037f8a354992893790b7451757
+size 467

@@ -8,18 +8,21 @@ public class TankHealth : Photon.PunBehaviour
     public float m_StartingHealth = 100f;
     public Slider m_Slider;
     public Image m_FillImage;
-    public Color m_FullHealthColor = Color.green;
-    public Color m_ZeroHealthColor = Color.red;
+    public Color m_FullHealthColor;
+    public Color m_ZeroHealthColor;
     public GameObject actualHull;
+    public GameObject actualTurret;
 
+    [HideInInspector]
+    public GameObject destroyedTurret;
+   
+    public GameObject warCanvas;
 
 
     //public GameObject m_ExplosionPrefab;
 
     private bool spawnCalled;
-    private GameObject actualTurret;
     private GameObject destroyedHull;
-    private GameObject destoyedTurret;
     private string playerTankName;
     private AudioSource m_ExplosionAudio;
     private ParticleSystem m_ExplosionParticles;
@@ -27,14 +30,20 @@ public class TankHealth : Photon.PunBehaviour
     private bool m_Dead;
     private gameManager photonScript;
     private bool destroyCalled;
+    
 
 
-    private void Start()
+    private void Awake()
     {
-        GameObject warslider = GameObject.Find("WarSlider");
+        GameObject canvas = gameObject.transform.Find("WarCanvas").gameObject;
+        canvas.SetActive(true);
+        warCanvas = canvas;
+        
+        GameObject warslider = canvas.transform.Find("TankHealthUI").gameObject;
+        
         Slider slider = warslider.GetComponent<Slider>();
         m_Slider = slider;
-        GameObject health = GameObject.Find("Health");
+        GameObject health = warslider.transform.Find("Health").gameObject;
         Image healthImage = health.GetComponentInChildren<Image>();
         m_FillImage = healthImage;
 
@@ -42,49 +51,25 @@ public class TankHealth : Photon.PunBehaviour
 
         m_CurrentHealth = m_StartingHealth;
         photonScript = GameObject.Find("GameManager").GetComponent<gameManager>();
-
-        //gettingTurrets
-        if (gameObject.transform.Find("FlameThrower") != null)
-        {
-            GameObject ftTurret = gameObject.transform.Find("FlameThrower").gameObject;
-            actualTurret = ftTurret.transform.Find("FlameThrower_Body").gameObject;
-            destoyedTurret = ftTurret.transform.Find("FlameThrower_Body_D").gameObject;
-
-        }
-        else if (gameObject.transform.Find("Sniper") != null)
-        {
-            actualTurret = gameObject.transform.Find("Sniper_Body").gameObject;
-            destoyedTurret = gameObject.transform.Find("Sniper_Body_D").gameObject;
-
-        }
-        else if (gameObject.transform.Find("MachineGun") != null)
-        {
-            actualTurret = gameObject.transform.Find("MachineGun_Body").gameObject;
-            destoyedTurret = gameObject.transform.Find("MachineGun_Body_D").gameObject;
-        }
-
+       
         //getting destroyed tank prefabs
         destroyedHull = gameObject.transform.Find(actualHull.name + "_D").gameObject;
-
+        
 
         destroyCalled = false;
-    }
+        GameObject mainCanvas = GameObject.Find("MainWarCanvas");
+        canvas.transform.parent = mainCanvas.transform;
 
-    private void Awake()
-    {
-        //   m_ExplosionParticles = Instantiate(m_ExplosionPrefab).GetComponent<ParticleSystem>();
-        // m_ExplosionAudio = m_ExplosionParticles.GetComponent<AudioSource>();
-
-        // m_ExplosionParticles.gameObject.SetActive(false);
         m_Dead = false;
-
     }
+
+
 
 
     private void Update()
     {
 
-        SetHealthUI();
+        SetHealthUI(m_CurrentHealth);
 
         if (m_CurrentHealth <= 0)
         {
@@ -99,13 +84,16 @@ public class TankHealth : Photon.PunBehaviour
         }
     }
 
-
-    public void TakeDamage(float amount)
+    [PunRPC]
+    public void TakeDamage(float damage)
     {
         // Adjust the tank's current health, update the UI based on the new health and check whether or not the tank is dead.
 
-        m_CurrentHealth -= amount;
-        SetHealthUI();
+        m_CurrentHealth -= damage;
+
+        SetHealthUI(m_CurrentHealth);
+
+        photonView.RPC("UpdateHealth", PhotonTargets.Others, m_CurrentHealth);
 
         if (m_CurrentHealth <= 0)
         {
@@ -116,13 +104,13 @@ public class TankHealth : Photon.PunBehaviour
 
     }
 
-
-    private void SetHealthUI()
+    [PunRPC]
+    private void SetHealthUI(float health)
     {
         // Adjust the value and colour of the slider.
 
-        m_Slider.value = m_CurrentHealth;
-        m_FillImage.color = Color.Lerp(m_ZeroHealthColor, m_FullHealthColor, m_CurrentHealth / m_StartingHealth);
+        m_Slider.value = health;
+        m_FillImage.color = Color.Lerp(m_ZeroHealthColor, m_FullHealthColor, health / m_StartingHealth);
 
     }
 
@@ -139,7 +127,7 @@ public class TankHealth : Photon.PunBehaviour
             actualHull.SetActive(false);
             actualTurret.SetActive(false);
 
-            destoyedTurret.SetActive(true);
+            destroyedTurret.SetActive(true);
             destroyedHull.SetActive(true);
             destroyCalled = true;
             RTCTankController tankController = gameObject.GetComponent<RTCTankController>();
@@ -152,7 +140,7 @@ public class TankHealth : Photon.PunBehaviour
 
     private IEnumerator Destroying()
     {
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(1.8f);
 
         PhotonNetwork.Destroy(this.gameObject);
     }
@@ -163,6 +151,7 @@ public class TankHealth : Photon.PunBehaviour
         {
             photonScript.SpawnTank();
             spawnCalled = true;
+            Destroy(warCanvas);
         }
     }
 }

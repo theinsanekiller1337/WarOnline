@@ -20,7 +20,7 @@ public class AcidtonAcidator : Photon.PunBehaviour, IPunObservable
 
     
     private bool isFiring;
-
+    private TankHealth enemy;
 
     void Start()
     {
@@ -59,13 +59,17 @@ public class AcidtonAcidator : Photon.PunBehaviour, IPunObservable
 
                 else if (targetHealth)
                 {
+                    FactionID fID = targetHealth.gameObject.GetComponent<FactionID>();
+                    FactionID myID = gameObject.GetComponent<FactionID>();
 
-                    if (targetHealth.GetComponentInParent<Transform>().gameObject.GetComponentInChildren<Particle_Emitter>().gameObject == this.gameObject.GetComponentInParent<Transform>().gameObject)
+                    if (fID == null || fID._teamID == 1 || myID._teamID == null || myID._teamID == 1 || fID._teamID != myID._teamID)
                     {
-                        targetHealth.TakeDamage(-damage);
-                        continue;
+                        if (fID.myAccID != myID.myAccID)
+                        {
+                            Damage();
+                            enemy = targetHealth;
+                        }
                     }
-                    targetHealth.TakeDamage(damage);
                 }
 
 
@@ -96,6 +100,11 @@ public class AcidtonAcidator : Photon.PunBehaviour, IPunObservable
             }
         }
         
+    }
+
+    void Damage()
+    {
+        enemy.gameObject.GetComponent<PhotonView>().RPC("TakeDamage", enemy.GetComponent<PhotonView>().owner, damage);
     }
 
     void IPunObservable.OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)

@@ -352,9 +352,51 @@ ModelImporter:
     4300124: Object020
     4300126: Object021
     4300128: Object019
+    6400000: Bridge_part_10:polySurface1
+    6400002: Bridge_part_11:polySurface1
+    6400004: Bridge_part_12:polySurface19
+    6400006: Bridge_part_13:polySurface5
+    6400008: Bridge_part_14:polySurface7
+    6400010: Bridge_part_1:polySurface48
+    6400012: Bridge_part_2:polySurface1
+    6400014: Bridge_part_3:polySurface1
+    6400016: Bridge_part_4:polySurface1
+    6400018: Bridge_part_5:polySurface1
+    6400020: Bridge_part_6:polySurface1
+    6400022: Bridge_part_7:polySurface37
+    6400024: Bridge_part_8:polySurface38
+    6400026: Bridge_part_9:polySurface43
+    6400028: Group003
+    6400030: Group004
+    6400032: Group005
+    6400034: Group006
+    6400036: Group1
+    6400038: Group2
+    6400040: Group3
+    6400042: Object001
+    6400044: Object002
+    6400046: Object003
+    6400048: Object004
+    6400050: Object005
+    6400052: Object006
+    6400054: Object007
+    6400056: Object008
+    6400058: Object009
+    6400060: Object010
+    6400062: Object011
+    6400064: Object012
+    6400066: Object013
+    6400068: Object014
+    6400070: Object015
+    6400072: Object016
+    6400074: Object017
+    6400076: Object018
+    6400078: Object019
+    6400080: Object020
+    6400082: Object021
   externalObjects: {}
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -385,7 +427,8 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 0.01
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
+    useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -394,7 +437,7 @@ ModelImporter:
     generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
-    keepQuads: 0
+    keepQuads: 1
     weldVertices: 1
     preserveHierarchy: 0
     indexFormat: 0
@@ -410,6 +453,9 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
@@ -424,7 +470,6 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1

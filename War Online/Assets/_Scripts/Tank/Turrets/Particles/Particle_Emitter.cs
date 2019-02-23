@@ -14,6 +14,8 @@ public class Particle_Emitter : Photon.PunBehaviour, IPunObservable {
     public GameObject endPoint;
     bool isFiring;
 
+    private TankHealth enemy;
+
 
 	// Use this for initialization
 	void Start () {
@@ -30,9 +32,6 @@ public class Particle_Emitter : Photon.PunBehaviour, IPunObservable {
             Vector3 newPos = endPoint.GetComponent<Transform>().position;
             Collider[] colliders = Physics.OverlapCapsule(newStartPos, newPos, radius);
 
-            
-
-
             for (int i = 1; i < colliders.Length; i++)
             {
                 
@@ -40,30 +39,27 @@ public class Particle_Emitter : Photon.PunBehaviour, IPunObservable {
                 if (!targetRigidbody)
                     continue;
                 
-
                 TankHealth targetHealth = targetRigidbody.GetComponent<TankHealth>();
                 if (!targetHealth)
                     continue;
-                
 
                 else if (targetHealth)
                 {
-
-                    Debug.Log(targetHealth.gameObject.name);
-                    Debug.Log(this.gameObject.GetComponentInParent<Transform>().parent.gameObject.name);
-
-                    if (targetHealth.GetComponentInParent<Transform>().gameObject.name == this.gameObject.GetComponentInParent<Transform>().parent.gameObject.name)
+                    FactionID fID = targetHealth.gameObject.GetComponent<FactionID>();
+                    FactionID myID = gameObject.GetComponentInParent<FactionID>();
+                    
+                    if (fID == null || fID._teamID == 1 || myID._teamID == null || myID._teamID == 1 || fID._teamID != myID._teamID)
                     {
-                        targetHealth.TakeDamage(-damage);
-                        continue;
+                        if(fID.myAccID != myID.myAccID)
+                        {
+                            Damage();
+                            enemy = targetHealth;
+                        } 
                     }
-                    targetHealth.TakeDamage(damage);
                 }
                     
             }
         }
-
-
             /*if (photonView.isMine)*/
             ProcessFireInput();
         
@@ -81,6 +77,14 @@ public class Particle_Emitter : Photon.PunBehaviour, IPunObservable {
 
        
 	}
+
+    void Damage()
+    {
+        if (enemy != null)
+        {
+            enemy.gameObject.GetComponent<PhotonView>().RPC("TakeDamage", enemy.GetComponent<PhotonView>().owner, damage);
+        }
+    }
 
 
     void ProcessFireInput()

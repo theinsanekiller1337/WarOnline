@@ -39,8 +39,8 @@ public class MainScript : Photon.PunBehaviour {
     public void Connect()
     {
         isConnecting = true;
-        if (PhotonNetwork.connected) PhotonNetwork.JoinRandomRoom();
-        else PhotonNetwork.ConnectUsingSettings("Waronline v0.0.2");
+        if(!PhotonNetwork.connected)
+       PhotonNetwork.ConnectUsingSettings("Waronline v0.0.2");
     }
 
     #region Photon.PunBehaviour CallBacks

@@ -4,48 +4,61 @@ using UnityEngine;
 
 public class DuosBulletDestroy : MonoBehaviour
 {
-    public GameObject Sp1;
-    public GameObject Sp2;
-    public GameObject Ref;
-    public float distance;
-    public float damage = 30f;
-    Duos ts;
-    // Use this for initialization
-    void Start()
+    public float destroyTime;
+    public ParticleSystem particle;
+    public ParticleSystem destroyedParticle;
+    public float damage;
+
+    private TankHealth enemy;
+
+    private void Start()
     {
-        Ref = GameObject.Find("Cube");
-        Sp1 = GameObject.Find("GameObject");
-        Sp2 = GameObject.Find("GameObject1");
-        ts = Ref.GetComponent<Duos>();
+        particle.Play();
+        Destroy();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        if (ts.right == true)
+        if (particle.isStopped == true)
         {
-            distance = Vector3.Distance(this.transform.position, Sp1.transform.position);
+            particle.Play();
+        }
+        
+    }
 
-        }
-        if (ts.left == true)
-        {
-            distance = Vector3.Distance(this.transform.position, Sp2.transform.position);
+    private void Destroy()
+    {
+        Destroy(gameObject, destroyTime);
+    }
 
-        }
-        if (distance > 50f && distance < 50.5f)
-        {
-            damage -= 5;
-        }
-        else if (distance > 100 && distance < 100.1f)
-        {
-            damage -= 5;
+    private void OnCollisionEnter(Collision collision)
+    {
+        Vector3 collisionPoint = collision.GetContact(0).point;
+        GameObject destroyedpart = Instantiate(destroyedParticle, collisionPoint, Quaternion.identity).gameObject;
+        Destroy(destroyedpart, 0.5f);
+        Destroy(gameObject);
 
-        }
-        else if (distance > 200 && distance < 200.1f)
+        if (collision.gameObject.GetComponentInParent<TankHealth>() != null)
         {
-            damage -= 10;
+            FactionID fID = collision.gameObject.GetComponentInParent<FactionID>();
+            FactionID myID = gameObject.GetComponent<FactionID>();
+
+            if (fID == null || fID._teamID == 1 || myID._teamID == null || myID._teamID == 1 || fID._teamID != myID._teamID)
+            {
+                if (fID.myAccID != myID.myAccID)
+                {
+                    Damage();
+                    enemy = collision.gameObject.GetComponentInParent<TankHealth>();
+                }
+            }
         }
-        Destroy(this.gameObject, 3f);
+    }
+
+    
+    void Damage()
+    {
+        if(enemy != null)
+        enemy.gameObject.GetComponent<PhotonView>().RPC("TakeDamage", enemy.GetComponent<PhotonView>().owner, damage);
     }
 }
 

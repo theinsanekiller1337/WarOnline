@@ -1,22 +1,3 @@
-%YAML 1.1
-%TAG !u! tag:unity3d.com,2011:
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45b3b3073315a4191bcde3b6ca445dc7, type: 3}
-  m_Name: Honey
-  m_EditorClassIdentifier: 
-  resolution: 4
-  restDensity: 600
-  smoothing: 2.2
-  viscosity: 0.7
-  surfaceTension: 1
-  buoyancy: -1
-  atmosphericDrag: 0
-  atmosphericPressure: 0
-  vorticity: 0
+version https://git-lfs.github.com/spec/v1
+oid sha256:cf8fba5b2f5788e13f13d07601edfee5a3145a5a4090ee413bc43ca6043c4c0f
+size 530

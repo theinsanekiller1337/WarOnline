@@ -1,25 +1,3 @@
-%YAML 1.1
-%TAG !u! tag:unity3d.com,2011:
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 093286084a3d1994a9c28281a1c38b1d, type: 3}
-  m_Name: PlayFabSharedSettings
-  m_EditorClassIdentifier: 
-  TitleId: EDD5
-  DeveloperSecretKey: WH5938E7S1PJDJ866CCPCUDZP8UNKXBR7HESWJ4KKEP78QE3KK
-  ProductionEnvironmentUrl: .playfabapi.com
-  RequestType: 0
-  RequestTimeout: 2000
-  RequestKeepAlive: 1
-  CompressApiData: 0
-  LogLevel: 12
-  LoggerHost: 
-  LoggerPort: 0
-  EnableRealTimeLogging: 0
-  LogCapLimit: 30
+version https://git-lfs.github.com/spec/v1
+oid sha256:89c1d7266655a17f39b5f1b1026e117591357b0ebc42a58cfc34d95eb538123c
+size 706

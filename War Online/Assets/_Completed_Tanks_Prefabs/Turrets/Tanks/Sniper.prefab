@@ -30,6 +30,7 @@ GameObject:
   - component: {fileID: 7641743098996859231}
   - component: {fileID: 7752414117287859965}
   - component: {fileID: 7752367427108724501}
+  - component: {fileID: 7781979153886473472}
   m_Layer: 0
   m_Name: Sniper
   m_TagString: Untagged
@@ -101,6 +102,18 @@ MonoBehaviour:
     type: 3}
   animcontroller: {fileID: 1994326576778576535}
   nameofaparametertoedit: Scoped
+--- !u!114 &7781979153886473472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7639588166470598177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d08c22adc872a4499b62be16ade9b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7639780250354281415
 GameObject:
   m_ObjectHideFlags: 0

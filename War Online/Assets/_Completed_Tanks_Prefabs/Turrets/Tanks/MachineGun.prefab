@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 7913437697431475984}
   - component: {fileID: 7912891880434564934}
   - component: {fileID: 7920689397664468222}
+  - component: {fileID: 1987139424841607074}
   m_Layer: 0
   m_Name: MachineGun
   m_TagString: Untagged
@@ -204,6 +205,18 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &1987139424841607074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7800969146756815542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d08c22adc872a4499b62be16ade9b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7800981198360362046
 GameObject:
   m_ObjectHideFlags: 0
@@ -641,11 +654,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3611382276312306445, guid: 3dd89036b088ed247919f8882986dd2d,
-        type: 3}
-      propertyPath: far clip plane
-      value: 600
-      objectReference: {fileID: 0}
     - target: {fileID: 3729181054776707575, guid: 3dd89036b088ed247919f8882986dd2d,
         type: 3}
       propertyPath: offsetPosition.y
@@ -661,6 +669,11 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 7806623588006340806}
+    - target: {fileID: 3611382276312306445, guid: 3dd89036b088ed247919f8882986dd2d,
+        type: 3}
+      propertyPath: far clip plane
+      value: 600
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3dd89036b088ed247919f8882986dd2d, type: 3}
 --- !u!4 &7965799578297120778 stripped

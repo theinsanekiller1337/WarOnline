@@ -60234,6 +60234,8 @@ GameObject:
   m_Component:
   - component: {fileID: 501025225412141119}
   - component: {fileID: 501025225412141118}
+  - component: {fileID: 6012039874857314115}
+  - component: {fileID: 1607058546696962469}
   m_Layer: 0
   m_Name: Acidton
   m_TagString: Untagged
@@ -60280,6 +60282,34 @@ MonoBehaviour:
   startPoint: {fileID: 501025225332511217}
   endPoint: {fileID: 501025226408328390}
   radius: 3
+--- !u!114 &6012039874857314115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501025225412141116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16935992e3631bb47b673d0abd2aa2b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MouseRotateSpeed: 2.5
+  KeyRotateSpeed: 8
+  min: -30
+  max: 15
+--- !u!114 &1607058546696962469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501025225412141116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d08c22adc872a4499b62be16ade9b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &501025225519550779
 GameObject:
   m_ObjectHideFlags: 0
@@ -60504,11 +60534,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3611382276312306445, guid: 3dd89036b088ed247919f8882986dd2d,
-        type: 3}
-      propertyPath: m_ForceIntoRT
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3729181054776707575, guid: 3dd89036b088ed247919f8882986dd2d,
         type: 3}
       propertyPath: offsetPosition.y
@@ -60524,6 +60549,11 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 501025225412141119}
+    - target: {fileID: 3611382276312306445, guid: 3dd89036b088ed247919f8882986dd2d,
+        type: 3}
+      propertyPath: m_ForceIntoRT
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3941309498150201783, guid: 3dd89036b088ed247919f8882986dd2d,
         type: 3}
       propertyPath: particleRenderers.Array.data[0]
